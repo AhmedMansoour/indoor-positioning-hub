@@ -228,3 +228,56 @@
   .timeline-item { grid-template-columns: 1fr; }
   .cv-profile-card img { width: 120px; height: 120px; }
 }
+
+/* ============================================================
+   Main hub homepage with combined research themes and visual atlas
+   Added by scripts/make_cv_homepage.py
+   ============================================================ */
+.combined-research-atlas-section {
+  padding-top: 2.4rem;
+  padding-bottom: 2.6rem;
+}
+.combined-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.combined-theme-card {
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #dfe7ea);
+  border-radius: 18px;
+  padding: 1rem 1.05rem;
+  box-shadow: 0 12px 28px rgba(13, 45, 55, 0.07);
+}
+.combined-theme-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.02rem;
+}
+.combined-theme-card p {
+  margin: 0;
+  color: var(--muted-foreground, #56646b);
+  line-height: 1.6;
+}
+.combined-atlas-intro {
+  margin: 1.4rem 0 0.3rem;
+  padding: 1.05rem 1.15rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(13,111,126,0.09), rgba(70,153,170,0.05));
+  border: 1px solid rgba(13,111,126,0.13);
+}
+.combined-atlas-intro h3 {
+  margin: 0 0 0.35rem;
+}
+.combined-atlas-intro p {
+  margin: 0;
+  color: var(--muted-foreground, #56646b);
+  line-height: 1.65;
+}
+@media (max-width: 950px) {
+  .combined-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .combined-theme-grid { grid-template-columns: 1fr; }
+}
