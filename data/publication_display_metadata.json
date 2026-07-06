@@ -1,0 +1,132 @@
+{
+  "version": "v5-publication-visual-cards",
+  "note": "Editable display metadata for publication cards. Impact factors and quartiles change over time. Update these labels if your institution uses a different source or classification.",
+  "venue_metrics": {
+    "Information Fusion": {
+      "impact_factor": "17.4",
+      "quartile": "Q1",
+      "tier": "A* / top-tier journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "IEEE Internet of Things Journal": {
+      "impact_factor": "8.7",
+      "quartile": "Q1",
+      "tier": "A* / Q1 journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "IEEE Transactions on Instrumentation and Measurement": {
+      "impact_factor": "7.0",
+      "quartile": "Q1",
+      "tier": "A* / Q1 journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "Automation in Construction": {
+      "impact_factor": "12.6",
+      "quartile": "Q1",
+      "tier": "A* / top-tier journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "Scientific Reports": {
+      "impact_factor": "4.9",
+      "quartile": "Q1",
+      "tier": "Q1 journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "Sensors": {
+      "impact_factor": "4.0",
+      "quartile": "Q2 JCR / Q1 Scopus by category",
+      "tier": "indexed journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "Remote Sensing": {
+      "impact_factor": "4.3",
+      "quartile": "Q1",
+      "tier": "Q1 journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "Geo-spatial Information Science": {
+      "impact_factor": "5.4",
+      "quartile": "Q1",
+      "tier": "Q1 journal",
+      "metric_note": "2026 JCR release, based on 2025 data"
+    },
+    "International Conference on Indoor Positioning and Indoor Navigation (IPIN)": {
+      "impact_factor": "n/a",
+      "quartile": "conference",
+      "tier": "peer-reviewed conference",
+      "metric_note": "conference publication"
+    },
+    "IPIN-WCAL / CEUR Workshop Proceedings": {
+      "impact_factor": "n/a",
+      "quartile": "workshop proceedings",
+      "tier": "peer-reviewed workshop",
+      "metric_note": "workshop publication"
+    },
+    "ISPRS Archives": {
+      "impact_factor": "n/a",
+      "quartile": "conference proceedings",
+      "tier": "peer-reviewed proceedings",
+      "metric_note": "conference proceedings"
+    },
+    "ION GNSS+": {
+      "impact_factor": "n/a",
+      "quartile": "conference",
+      "tier": "peer-reviewed conference",
+      "metric_note": "conference publication"
+    },
+    "Engineering Proceedings": {
+      "impact_factor": "n/a",
+      "quartile": "proceedings",
+      "tier": "peer-reviewed proceedings",
+      "metric_note": "proceedings publication"
+    },
+    "PhD thesis, The Hong Kong Polytechnic University": {
+      "impact_factor": "n/a",
+      "quartile": "doctoral thesis",
+      "tier": "PhD thesis",
+      "metric_note": "doctoral dissertation"
+    }
+  },
+  "visual_preferences": {
+    "reliability-governed-3d-radio-mapping-lifecycle-review": [
+      "assets/figures/reliability-governed-3d-radio-mapping-lifecycle-review/radio-map-reliability-write-back.webp",
+      "assets/figures/reliability-governed-3d-radio-mapping-lifecycle-review/skeleton-assembly-refinement.webp"
+    ],
+    "towards-scalable-ips-user-centric-crowd-powered-framework": [
+      "assets/figures/towards-scalable-ips-user-centric-crowd-powered-framework/deployment-realities.webp",
+      "assets/figures/towards-scalable-ips-user-centric-crowd-powered-framework/scaling-ips-principles.webp"
+    ],
+    "towards-ubiquitous-ips-crowdsourced-data-accumulation": [
+      "assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/skeleton-assembly-refinement.webp"
+    ],
+    "everywhere-framework-ubiquitous-indoor-localization": [
+      "assets/figures/everywhere-framework-ubiquitous-indoor-localization/scaling-ips-principles.webp",
+      "assets/figures/everywhere-framework-ubiquitous-indoor-localization/fig_03_page_6.webp"
+    ],
+    "suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness": [
+      "assets/figures/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness/context-descriptor-atlas.webp"
+    ],
+    "modular-prompting-ai-guided-user-engagement-crowd-powered-ips": [
+      "assets/figures/modular-prompting-ai-guided-user-engagement-crowd-powered-ips/context-descriptor-atlas.webp"
+    ],
+    "hybrid-neural-network-pdr-multi-layer-heading-correction": [
+      "assets/figures/hybrid-neural-network-pdr-multi-layer-heading-correction/smartphone-poses-trajectories.webp"
+    ],
+    "enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors": [
+      "assets/figures/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors/smartphone-poses-trajectories.webp"
+    ],
+    "drift-resistant-heading-estimation-wifi-magnetic-stability": [
+      "assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/smartphone-poses-trajectories.webp",
+      "assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/fig_01_page_9.webp"
+    ],
+    "leveraging-human-mobility-pervasive-smartphone-crowdsourcing": [
+      "assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_01_page_3.webp"
+    ],
+    "power-of-many-multi-user-collaborative-indoor-localization": [
+      "assets/figures/power-of-many-multi-user-collaborative-indoor-localization/fig_01_page_4.webp"
+    ],
+    "drift-control-pdr-long-period-navigation-smartphone-poses": [
+      "assets/figures/drift-control-pdr-long-period-navigation-smartphone-poses/fig_01_page_3.webp"
+    ]
+  }
+}
