@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahmedmansoour.github.io/indoor-positioning-hub/sitemap.xml

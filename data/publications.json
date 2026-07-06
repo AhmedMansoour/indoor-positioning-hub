@@ -1,0 +1,547 @@
+[
+  {
+    "slug": "ac-hmm-azimuth-constrained-map-matching-urban-canyons",
+    "title": "AC-HMM: azimuth-constrained hidden Markov model-based map matching for robust pedestrian positioning in urban canyons",
+    "year": "2026",
+    "venue": "Geo-spatial Information Science",
+    "type": "Journal article",
+    "doi": "10.1080/10095020.2026.2681349",
+    "authors": [
+      "Jingxian Wang",
+      "Ahmed Mansour",
+      "Mengyu Ding",
+      "Duojie Weng",
+      "Huan Luo",
+      "Wu Chen"
+    ],
+    "keywords": [
+      "map matching",
+      "hidden Markov model",
+      "azimuth constraint",
+      "pedestrian positioning",
+      "urban canyon",
+      "GNSS",
+      "PDR"
+    ],
+    "summary": "This paper develops an azimuth-constrained HMM map-matching approach for robust pedestrian positioning in urban canyons, where constrained motion and directional information can improve trajectory reliability.",
+    "when": [
+      "HMM-based map matching is used for pedestrian positioning",
+      "azimuth or heading constraints support urban navigation",
+      "urban canyon GNSS/PDR positioning is corrected by map information",
+      "robust trajectory estimation is required in constrained street networks"
+    ],
+    "theme": "Urban and seamless positioning"
+  },
+  {
+    "slug": "drift-resistant-heading-estimation-wifi-magnetic-stability",
+    "title": "Drift-Resistant Heading Estimation for Smartphone-Based Indoor Positioning via Adaptive Calibration Using Wi-Fi Fingerprinting and Magnetic Stability",
+    "year": "2026",
+    "venue": "IEEE Transactions on Instrumentation and Measurement",
+    "type": "Journal article",
+    "doi": "10.1109/TIM.2026.3661693",
+    "authors": [
+      "Ahmed Mansour",
+      "Jingxian Wang",
+      "Huan Luo",
+      "Mahmoud Adham",
+      "Junhua Ye",
+      "Wu Chen"
+    ],
+    "keywords": [
+      "heading estimation",
+      "smartphone indoor positioning",
+      "Wi-Fi fingerprinting",
+      "magnetic stability",
+      "adaptive calibration",
+      "PDR",
+      "sensor fusion"
+    ],
+    "summary": "This paper introduces an adaptive heading-calibration method that uses Wi-Fi fingerprinting continuity and magnetic stability to reduce smartphone heading drift for indoor positioning and navigation.",
+    "when": [
+      "smartphone heading drift is discussed in PDR or indoor navigation",
+      "Wi-Fi fingerprinting is used beyond position estimation for heading calibration",
+      "magnetic stability and adaptive thresholds are used for reliability control",
+      "deployment-ready smartphone positioning requires drift-resistant orientation estimation"
+    ],
+    "theme": "Wi-Fi fingerprinting and heading reliability"
+  },
+  {
+    "slug": "gnss-positioning-aided-with-pdr-in-urban-areas",
+    "title": "GNSS Positioning Aided with Pedestrian Dead Reckoning (PDR) in Urban Areas",
+    "year": "2026",
+    "venue": "IEEE Internet of Things Journal",
+    "type": "Journal article",
+    "doi": "10.1109/JIOT.2026.3696442",
+    "authors": [
+      "Huan Luo",
+      "Duojie Weng",
+      "Ahmed Mansour",
+      "Xiaolong Mi",
+      "Yang Yang",
+      "Wu Chen"
+    ],
+    "keywords": [
+      "GNSS positioning",
+      "pedestrian dead reckoning",
+      "urban canyon",
+      "smartphone positioning",
+      "fault detection and exclusion",
+      "NLOS",
+      "sensor integration"
+    ],
+    "summary": "This paper uses PDR-derived constraints to improve GNSS fault detection and positioning in challenging urban environments where multipath and NLOS conditions reduce standalone GNSS reliability.",
+    "when": [
+      "GNSS positioning is integrated with PDR in urban canyons",
+      "fault detection and exclusion is adapted for smartphone navigation",
+      "consumer-device positioning is evaluated under multipath and NLOS effects",
+      "urban pedestrian navigation requires high availability without dedicated hardware"
+    ],
+    "theme": "Urban and seamless positioning"
+  },
+  {
+    "slug": "hybrid-neural-network-pdr-multi-layer-heading-correction",
+    "title": "Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes",
+    "year": "2026",
+    "venue": "Sensors",
+    "type": "Journal article",
+    "doi": "10.3390/s26082421",
+    "authors": [
+      "Junhua Ye",
+      "Anzhe Ye",
+      "Ahmed Mansour",
+      "Shusu Qiu",
+      "Zhenzhen Li",
+      "Xuanyu Qu"
+    ],
+    "keywords": [
+      "PDR",
+      "heading correction",
+      "smartphone carrying mode",
+      "hybrid neural network",
+      "indoor navigation",
+      "sensor fusion"
+    ],
+    "summary": "This paper combines neural network-based carrying-mode recognition with multi-layer heading correction to improve smartphone PDR across different device-use modes.",
+    "when": [
+      "PDR robustness across smartphone carrying modes is studied",
+      "deep learning is used for heading correction or motion-state recognition",
+      "indoor navigation systems need device-pose adaptation",
+      "smartphone sensor fusion is evaluated under practical user behavior"
+    ],
+    "theme": "PDR and smartphone sensing"
+  },
+  {
+    "slug": "reliability-governed-3d-radio-mapping-lifecycle-review",
+    "title": "Reliability-governed scaling of mobile crowdsensing-based 3D radio mapping for ubiquitous indoor positioning: An uncertainty-aware lifecycle review and deployment-oriented pipeline",
+    "year": "2026",
+    "venue": "Information Fusion",
+    "type": "Review article",
+    "doi": "10.1016/j.inffus.2026.104459",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen",
+      "Jingxian Wang",
+      "Mahmoud Adham",
+      "Xuanyu Qu",
+      "Duojie Weng"
+    ],
+    "keywords": [
+      "indoor positioning systems",
+      "Wi-Fi fingerprinting",
+      "crowd-powered radio mapping",
+      "mobile crowdsensing",
+      "uncertainty modeling",
+      "reliability governance",
+      "multi-floor localization",
+      "3D radio maps"
+    ],
+    "summary": "This review frames mobile crowdsensing-based 3D radio mapping as a reliability-governed lifecycle problem, linking initial map generation, map updating, uncertainty, validation, and deployment-oriented IPS pipelines.",
+    "when": [
+      "autonomous or crowdsensed radio map generation is discussed",
+      "Wi-Fi fingerprinting needs scalable 3D or multi-floor radio maps",
+      "uncertainty-aware radio map updating and validation are reviewed",
+      "deployment-oriented IPS lifecycle pipelines are needed"
+    ],
+    "theme": "Autonomous radio mapping"
+  },
+  {
+    "slug": "towards-scalable-ips-user-centric-crowd-powered-framework",
+    "title": "Towards scalable indoor positioning systems (IPS): User-centric challenges, methods, and recommendations for user-friendly crowd-powered framework",
+    "year": "2026",
+    "venue": "Information Fusion",
+    "type": "Review article",
+    "doi": "10.1016/j.inffus.2025.103718",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen",
+      "Eslam Ali",
+      "Jingxian Wang",
+      "Duojie Weng"
+    ],
+    "keywords": [
+      "indoor positioning systems",
+      "crowdsourcing",
+      "mobile crowdsensing",
+      "scalability",
+      "user intervention",
+      "privacy and security",
+      "incentive mechanisms",
+      "data quality"
+    ],
+    "summary": "This review synthesizes user-centric challenges in crowd-powered IPS and connects data collection, participation, incentives, privacy, security, device burden, and deployment readiness into a scalable IPS perspective.",
+    "when": [
+      "crowd-powered or crowdsourcing-based IPS is being reviewed",
+      "user participation, incentives, privacy, or smartphone burden are discussed in IPS",
+      "scalable fingerprinting database construction and mobile crowdsensing are compared",
+      "researchers need a user-centered taxonomy for IPS deployment barriers"
+    ],
+    "theme": "Scalable IPS and crowdsensing"
+  },
+  {
+    "slug": "uncertainty-aware-risk-mapping-passive-wifi-bim-construction",
+    "title": "Uncertainty-aware risk mapping with passive WiFi and modified Zonal Safety Analysis (mZSA) in BIM for construction",
+    "year": "2026",
+    "venue": "Automation in Construction",
+    "type": "Journal article",
+    "doi": "10.1016/j.autcon.2026.106779",
+    "authors": [
+      "Mohamed Elrifaee",
+      "Tarek Zayed",
+      "Ahmed Mansour",
+      "Eslam Ali"
+    ],
+    "keywords": [
+      "passive WiFi",
+      "fingerprinting",
+      "passive localization",
+      "BIM",
+      "modified Zonal Safety Analysis",
+      "uncertainty quantification",
+      "construction safety",
+      "Transformer",
+      "kNN"
+    ],
+    "summary": "This paper integrates passive WiFi localization, uncertainty-aware risk mapping, and BIM-based safety analysis to support non-intrusive construction safety monitoring and spatial risk assessment.",
+    "when": [
+      "passive WiFi is used for worker or device localization in construction",
+      "BIM-based construction safety and risk mapping are discussed",
+      "uncertainty-aware localization outputs support safety decisions",
+      "fingerprinting and machine learning are applied to site safety monitoring"
+    ],
+    "theme": "Deployment and spatial safety"
+  },
+  {
+    "slug": "modular-prompting-ai-guided-user-engagement-crowd-powered-ips",
+    "title": "A Modular Prompting Framework for AI-Guided Unobtrusive User Engagement in Crowd-Powered Indoor Positioning with Semantic Knowledge Graphs and GPT-4-Based LLMs",
+    "year": "2025",
+    "venue": "IPIN-WCAL / CEUR Workshop Proceedings",
+    "type": "Conference workshop paper",
+    "doi": "",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen",
+      "Mahmoud Adham",
+      "Huan Luo"
+    ],
+    "keywords": [
+      "crowdsourced indoor positioning",
+      "user engagement",
+      "prompt generation",
+      "radio map construction",
+      "semantic annotation",
+      "spatial knowledge graph",
+      "large language models",
+      "GPT-4",
+      "unobtrusive interaction"
+    ],
+    "summary": "This paper proposes a modular AI-guided prompting framework for collecting unobtrusive spatial feedback in crowd-powered IPS, linking prompt logic, semantic context, SKGs, and LLM-generated user interaction.",
+    "when": [
+      "LLMs or AI agents are used to support crowd-powered IPS",
+      "unobtrusive user engagement is needed for spatial feedback collection",
+      "semantic knowledge graphs support indoor localization annotation",
+      "prompting strategies are designed for radio map construction and validation"
+    ],
+    "theme": "AI-guided crowd-powered IPS"
+  },
+  {
+    "slug": "enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors",
+    "title": "Enhancing real-time heading estimation for pedestrian navigation via deep learning and smartphone embedded sensors",
+    "year": "2025",
+    "venue": "Scientific Reports",
+    "type": "Journal article",
+    "doi": "10.1038/s41598-025-13390-9",
+    "authors": [
+      "Junhua Ye",
+      "Ahmed Mansour",
+      "Fenghua Huang"
+    ],
+    "keywords": [
+      "heading estimation",
+      "deep learning",
+      "smartphone sensors",
+      "pedestrian navigation",
+      "visual features",
+      "gyro drift",
+      "magnetic field"
+    ],
+    "summary": "This paper improves real-time smartphone heading estimation by combining embedded sensors with deep learning-based visual feature tracking to mitigate gyroscope drift and compass bias.",
+    "when": [
+      "deep learning supports smartphone heading estimation",
+      "visual constraints are integrated with inertial and magnetic sensing",
+      "pedestrian navigation requires real-time heading stabilization",
+      "sensor-only or pervasive-resource navigation methods are compared"
+    ],
+    "theme": "PDR and smartphone sensing"
+  },
+  {
+    "slug": "tightly-coupled-bluetooth-enhanced-gnss-pdr-urban",
+    "title": "Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments",
+    "year": "2024",
+    "venue": "IEEE Transactions on Instrumentation and Measurement",
+    "type": "Journal article",
+    "doi": "10.1109/TIM.2024.3481547",
+    "authors": [
+      "Jingxian Wang",
+      "Xiaolong Mi",
+      "Wu Chen",
+      "Huan Luo",
+      "Ahmed Mansour",
+      "Yaxin Li",
+      "Yue Yu",
+      "Duojie Weng"
+    ],
+    "keywords": [
+      "Bluetooth low energy",
+      "GNSS",
+      "PDR",
+      "pedestrian positioning",
+      "semi-outdoor positioning",
+      "smartphone navigation",
+      "tightly coupled integration"
+    ],
+    "summary": "This paper proposes a tightly coupled BLE-enhanced GNSS/PDR integration strategy for continuous pedestrian navigation in dense urban and semi-outdoor environments.",
+    "when": [
+      "BLE, GNSS, and PDR are integrated for pedestrian positioning",
+      "urban and semi-outdoor smartphone navigation is studied",
+      "tightly coupled sensor integration is compared with loose coupling",
+      "BLE measurements support GNSS quality monitoring or PDR drift reduction"
+    ],
+    "theme": "Urban and seamless positioning"
+  },
+  {
+    "slug": "towards-ubiquitous-ips-crowdsourced-data-accumulation",
+    "title": "Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation",
+    "year": "2024",
+    "venue": "International Conference on Indoor Positioning and Indoor Navigation (IPIN)",
+    "type": "Conference paper",
+    "doi": "10.1109/IPIN62893.2024.10786156",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen"
+    ],
+    "keywords": [
+      "crowdsourcing",
+      "radio map",
+      "indoor positioning",
+      "Wi-Fi fingerprinting",
+      "ubiquitous IPS",
+      "access point inference"
+    ],
+    "summary": "This paper explores how accumulated crowdsourced measurements can infer fixed Wi-Fi access point properties and reduce reliance on external calibration sources during initial fingerprinting map generation.",
+    "when": [
+      "initial radio map generation uses accumulated crowdsourced data",
+      "Wi-Fi access points are inferred as pervasive anchors",
+      "crowdsourced IPS reduces dependence on floor plans, beacons, or active feedback",
+      "ubiquitous fingerprinting maps are constructed with minimal external resources"
+    ],
+    "theme": "Autonomous radio mapping"
+  },
+  {
+    "slug": "everywhere-framework-ubiquitous-indoor-localization",
+    "title": "Everywhere: A Framework for Ubiquitous Indoor Localization",
+    "year": "2023",
+    "venue": "IEEE Internet of Things Journal",
+    "type": "Journal article",
+    "doi": "10.1109/JIOT.2022.3222003",
+    "authors": [
+      "Ahmed Mansour",
+      "Junhua Ye",
+      "Yaxin Li",
+      "Huan Luo",
+      "Jingxian Wang",
+      "Duojie Weng",
+      "Wu Chen"
+    ],
+    "keywords": [
+      "ubiquitous indoor localization",
+      "crowdsourcing",
+      "Wi-Fi fingerprinting",
+      "GNSS-aided adjustment",
+      "inertial sensing",
+      "radio map generation",
+      "smartphone positioning"
+    ],
+    "summary": "This paper introduces the Everywhere framework for self-deployable indoor localization, using crowdsourced smartphone measurements, inertial data selection, GNSS-aided adjustment, and autonomous fingerprint localization.",
+    "when": [
+      "ubiquitous indoor localization and self-deployable IPS are discussed",
+      "crowdsourced smartphone data are used to build fingerprinting maps",
+      "GNSS and inertial data support autonomous indoor radio map generation",
+      "scalable IPS frameworks are compared"
+    ],
+    "theme": "Scalable IPS and crowdsensing"
+  },
+  {
+    "slug": "phd-thesis-indoor-localization-multi-sensor-crowdsourcing-collaboration",
+    "title": "Indoor Localization Based on Multi-Sensor Fusion, Crowdsourcing, and Multi-User Collaboration",
+    "year": "2023",
+    "venue": "PhD thesis, The Hong Kong Polytechnic University",
+    "type": "PhD thesis",
+    "doi": "",
+    "authors": [
+      "Ahmed Mansour"
+    ],
+    "keywords": [
+      "indoor localization",
+      "multi-sensor fusion",
+      "crowdsourcing",
+      "multi-user collaboration",
+      "Wi-Fi fingerprinting",
+      "PDR",
+      "seamless navigation",
+      "ubiquitous positioning"
+    ],
+    "summary": "This thesis investigates indoor localization through multi-sensor fusion, crowdsourcing, and multi-user collaboration, forming the foundation for later work on ubiquitous, scalable, and user-centered IPS.",
+    "when": [
+      "a thesis-level synthesis of Ahmed Mansour's IPS research program is needed",
+      "multi-sensor fusion, crowdsourcing, and collaborative positioning are connected",
+      "ubiquitous indoor localization is studied as a doctoral research direction",
+      "related published papers need broader methodological context"
+    ],
+    "theme": "Research foundation"
+  },
+  {
+    "slug": "leveraging-human-mobility-pervasive-smartphone-crowdsourcing",
+    "title": "Leveraging human mobility and pervasive smartphone measurements-based crowdsourcing for developing self-deployable and ubiquitous indoor positioning systems",
+    "year": "2023",
+    "venue": "ISPRS Archives",
+    "type": "Conference paper",
+    "doi": "10.5194/isprs-archives-XLVIII-1-W2-2023-1119-2023",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen",
+      "Duojie Weng",
+      "Yang Yang",
+      "Jingxian Wang"
+    ],
+    "keywords": [
+      "crowdsourcing",
+      "indoor positioning system",
+      "self-deployable system",
+      "Wi-Fi fingerprinting",
+      "smartphone",
+      "ubiquitous positioning",
+      "indoor-outdoor detection",
+      "PDR"
+    ],
+    "summary": "This paper presents a crowdsourcing scheme that uses human mobility and pervasive smartphone measurements to support self-deployable, ubiquitous IPS without relying on manually surveyed radio maps.",
+    "when": [
+      "human mobility is used for crowdsourced indoor radio map construction",
+      "self-deployable IPS frameworks are introduced",
+      "smartphone measurements support ubiquitous indoor positioning",
+      "indoor-outdoor detection is linked to radio map generation"
+    ],
+    "theme": "Scalable IPS and crowdsensing"
+  },
+  {
+    "slug": "power-of-many-multi-user-collaborative-indoor-localization",
+    "title": "The Power of Many: Multi-User Collaborative Indoor Localization for Boosting Standalone User-Based Systems in Different Scenarios",
+    "year": "2023",
+    "venue": "ION GNSS+",
+    "type": "Conference paper",
+    "doi": "",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen",
+      "Huan Luo",
+      "Duojie Weng"
+    ],
+    "keywords": [
+      "multi-user collaboration",
+      "collaborative indoor localization",
+      "indoor positioning",
+      "inter-user measurements",
+      "temporary anchors",
+      "weighted nonlinear least squares"
+    ],
+    "summary": "This paper proposes a real-time multi-user collaborative indoor positioning scheme that uses surrounding users, inter-user measurements, and temporary anchors to improve standalone user-based IPS in sparse and dense scenarios.",
+    "when": [
+      "multi-user collaborative IPS is discussed",
+      "inter-user measurements support indoor localization",
+      "temporary anchor users improve positioning confidence",
+      "standalone user-based indoor positioning is enhanced through cooperation"
+    ],
+    "theme": "Cooperative positioning"
+  },
+  {
+    "slug": "suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness",
+    "title": "SUNS: A User-Friendly Scheme for Seamless and Ubiquitous Navigation Based on an Enhanced Indoor-Outdoor Environmental Awareness Approach",
+    "year": "2022",
+    "venue": "Remote Sensing",
+    "type": "Journal article",
+    "doi": "10.3390/rs14205263",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen"
+    ],
+    "keywords": [
+      "seamless navigation",
+      "indoor-outdoor detection",
+      "environmental awareness",
+      "smartphone positioning",
+      "PDR",
+      "GNSS",
+      "Wi-Fi",
+      "user-friendly navigation"
+    ],
+    "summary": "This paper presents SUNS, a user-friendly seamless navigation scheme based on enhanced indoor-outdoor environmental awareness for switching and integrating positioning resources across environments.",
+    "when": [
+      "indoor-outdoor detection supports seamless navigation",
+      "smartphone positioning systems switch across indoor, semi-outdoor, and outdoor environments",
+      "environmental awareness is used for navigation mode selection",
+      "seamless IPS/GNSS/PDR integration is reviewed"
+    ],
+    "theme": "IOD and seamless navigation"
+  },
+  {
+    "slug": "drift-control-pdr-long-period-navigation-smartphone-poses",
+    "title": "Drift Control of Pedestrian Dead Reckoning (PDR) for Long Period Navigation under Different Smartphone Poses",
+    "year": "2021",
+    "venue": "Engineering Proceedings",
+    "type": "Proceeding paper",
+    "doi": "10.3390/ecsa-8-11302",
+    "authors": [
+      "Ahmed Mansour",
+      "Wu Chen",
+      "Huan Luo",
+      "Yaxin Li",
+      "Jingxian Wang",
+      "Duojie Weng"
+    ],
+    "keywords": [
+      "pedestrian dead reckoning",
+      "PDR drift control",
+      "smartphone poses",
+      "long-period navigation",
+      "indoor navigation",
+      "smartphone sensors"
+    ],
+    "summary": "This proceeding paper investigates PDR drift control for long-period smartphone navigation under different phone poses, contributing to robust pedestrian tracking with embedded sensors.",
+    "when": [
+      "PDR drift is evaluated over long navigation periods",
+      "smartphone pose variation affects pedestrian navigation",
+      "embedded sensors are used for phone-based indoor navigation",
+      "PDR error accumulation and correction strategies are discussed"
+    ],
+    "theme": "PDR and smartphone sensing"
+  }
+]
