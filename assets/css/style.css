@@ -281,3 +281,57 @@
 @media (max-width: 650px) {
   .combined-theme-grid { grid-template-columns: 1fr; }
 }
+
+/* Atlas paper-link blocks, added by scripts/add_atlas_paper_links.py */
+.atlas-related-papers {
+  margin-top: 0.95rem;
+  padding: 0.95rem 1.05rem;
+  border: 1px solid rgba(14, 116, 144, 0.16);
+  border-left: 4px solid rgba(14, 116, 144, 0.72);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(240, 249, 255, 0.72), rgba(255, 255, 255, 0.94));
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035);
+}
+.atlas-related-papers .related-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+.atlas-related-papers ul {
+  margin: 0.35rem 0 0 1.1rem;
+  padding: 0;
+}
+.atlas-related-papers li {
+  margin: 0.42rem 0;
+  line-height: 1.52;
+  color: #0f172a;
+}
+.atlas-related-papers a {
+  color: #075985;
+  font-weight: 650;
+  text-decoration: none;
+}
+.atlas-related-papers a:hover,
+.atlas-related-papers a:focus {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.atlas-related-papers .paper-year {
+  color: #64748b;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .atlas-related-papers {
+    padding: 0.85rem 0.9rem;
+  }
+  .atlas-related-papers li {
+    margin: 0.55rem 0;
+  }
+}
+
