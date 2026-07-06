@@ -96,6 +96,31 @@
     <img src="../assets/previews/drift-resistant-heading-estimation-wifi-magnetic-stability.png" alt="First-page preview of Drift-Resistant Heading Estimation for Smartphone-Based Indoor Positioning via Adaptive Calibration Using Wi-Fi Fingerprinting and Magnetic Stability">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Heading drift</span>
+    <span class="arrow">→</span>
+    <span class="node">Wi-Fi continuity</span>
+    <span class="arrow">→</span>
+    <span class="node">Magnetic stability</span>
+    <span class="arrow">→</span>
+    <span class="node">Adaptive calibration</span>
+    <span class="arrow">→</span>
+    <span class="node">Robust PDR</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper addresses a central weakness of smartphone-based pedestrian navigation: heading drift. PDR depends strongly on heading, because even small direction errors can accumulate into large position errors over time. Smartphones make this problem difficult because their gyroscopes drift, compasses can be biased by magnetic disturbance, and users carry devices in unconstrained ways. Many methods improve heading by using external infrastructure or carefully controlled conditions, but those assumptions conflict with scalable IPS deployment. This paper therefore asks whether heading can be calibrated using resources that are already pervasive in indoor environments.</p>
+<p>The key insight is that Wi-Fi fingerprinting provides more than position estimates. When fingerprint positions evolve over time, their spatial continuity can reveal whether the user’s motion direction is plausible. Magnetic measurements can also provide stability cues, although they must be handled carefully because indoor magnetic fields may be disturbed. The proposed approach combines these two forms of information to evaluate when fingerprint-derived positions are suitable for heading calibration. In this way, Wi-Fi and magnetic stability become a reliability layer for heading correction.</p>
+<p>The story can be visualized as <strong>inertial heading → drift risk → Wi-Fi trajectory evidence + magnetic stability → adaptive calibration → improved navigation</strong>. This flow is important because it shows how the paper transforms positioning information into a heading-quality resource. Rather than separating localization and heading estimation, the paper links them through temporal alignment and motion-state consistency.</p>
+<p>The method uses adaptive qualification rather than a fixed rule. This is important because indoor environments are not uniform. Some areas provide stable fingerprints and useful displacement information; others may be ambiguous or noisy. By learning and refining qualification thresholds, the system can decide when calibration is trustworthy. A multilayer validation process further protects the heading estimate by checking consistency among displacement, steps, compass-derived direction, and fingerprint movement.</p>
+<p>The paper matters because it improves the deployment realism of smartphone PDR. It does not require dense new infrastructure and does not assume that the phone is always held in a fixed pose. It uses existing Wi-Fi and magnetic information to reduce heading drift in a way that is aligned with practical IPS operation. For readers, the paper provides a useful example of how fingerprinting can support navigation beyond direct coordinate estimation.</p>
+<p>This work should be cited when discussing smartphone heading estimation, PDR drift mitigation, Wi-Fi-aided inertial navigation, adaptive heading calibration, magnetic stability analysis, and robust indoor pedestrian navigation under realistic smartphone use.</p>
+</section>
 
 
 

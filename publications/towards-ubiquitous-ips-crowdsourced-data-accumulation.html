@@ -71,6 +71,31 @@
     <img src="../assets/previews/towards-ubiquitous-ips-crowdsourced-data-accumulation.png" alt="First-page preview of Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Initial map problem</span>
+    <span class="arrow">→</span>
+    <span class="node">Crowdsourced accumulation</span>
+    <span class="arrow">→</span>
+    <span class="node">AP inference</span>
+    <span class="arrow">→</span>
+    <span class="node">Reduced external dependence</span>
+    <span class="arrow">→</span>
+    <span class="node">Ubiquitous IPS</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper addresses a specific but important stage in the IPS lifecycle: the initial generation of a fingerprinting map. Many Wi-Fi fingerprinting systems require an offline map before localization can begin. In practice, this often means using manual surveys, floor plans, external anchors, or user feedback. These sources can be useful, but they limit ubiquity because they are not always available and may require effort that does not scale to many buildings. The paper asks whether accumulated crowdsourced data can reduce this dependence over time.</p>
+<p>The idea is that an IPS does not need to become fully mature on the first day. As users move through an environment and contribute measurements, the system can progressively learn more about fixed signal sources and spatial structure. The paper therefore treats time as a deployment resource. Instead of assuming that a complete radio map must exist before operation, it studies how repeated crowdsourced observations can help infer useful information and support the growth of the fingerprinting map.</p>
+<p>The visual story is <strong>few initial measurements → repeated user traces → accumulated signal evidence → inferred anchors/map structure → improved IPS</strong>. This is a valuable way to think about scalable IPS because it shifts attention from one-time calibration to continuous accumulation. The more the environment is used, the richer the data become. This supports a practical pathway toward ubiquitous IPS in which the system improves as it is used.</p>
+<p>The paper is particularly relevant to Wi-Fi fingerprinting because APs are usually fixed and pervasive. If their positions or propagation characteristics can be inferred from accumulated measurements, they can act as useful spatial references without requiring dedicated infrastructure. This makes the work relevant to autonomous radio-map generation, weakly labeled crowdsensing, and reduced reliance on external calibration aids.</p>
+<p>The contribution is not only technical but also conceptual. It explains how IPS deployment can be staged: early data may be incomplete, but progressive accumulation can improve map quality and reduce uncertainty. This lifecycle view aligns with later research on self-healing radio maps and reliability-governed crowd-powered IPS.</p>
+<p>This paper should be cited when discussing initial radio-map generation, crowdsourced data accumulation, Wi-Fi AP inference, self-deployable fingerprinting systems, and methods that aim to reduce dependence on floor plans, deployed anchors, or manual calibration during IPS startup.</p>
+</section>
 
 
 

@@ -82,6 +82,31 @@
     <img src="../assets/previews/power-of-many-multi-user-collaborative-indoor-localization.png" alt="First-page preview of The Power of Many: Multi-User Collaborative Indoor Localization for Boosting Standalone User-Based Systems in Different Scenarios">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Standalone user limits</span>
+    <span class="arrow">→</span>
+    <span class="node">Multiple users</span>
+    <span class="arrow">→</span>
+    <span class="node">Shared constraints</span>
+    <span class="arrow">→</span>
+    <span class="node">Collaborative correction</span>
+    <span class="arrow">→</span>
+    <span class="node">Robust localization</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper tells a collaboration story. Many smartphone-based IPS solutions treat each user as an isolated positioning unit. A user walks, the device senses Wi-Fi and motion, and the algorithm estimates that user’s location independently. This is simple, but it wastes an important resource: the presence of other users moving through the same environment. When several users are present, their measurements, relative encounters, and shared spatial context can provide extra constraints that a standalone system does not have. <em>The Power of Many</em> asks how indoor localization can improve when users are no longer treated as separate islands.</p>
+<p>The main idea is that multiple users can help each other indirectly. If one user has a stronger localization condition, or if two users are spatially related through proximity or shared observations, the system can use that information to strengthen the positioning solution. The paper therefore shifts the perspective from single-user localization to cooperative and crowd-enhanced localization. This is important because indoor environments are often difficult: Wi-Fi signals fluctuate, inertial sensors drift, and standalone estimates can become unreliable. Collaboration creates an additional layer of information that can reduce ambiguity.</p>
+<p>The contribution can be read through the flow <strong>single-user uncertainty → multi-user encounter/context → shared correction → stronger positioning</strong>. This flow is useful because it shows how collaboration works as a reliability resource. The paper is not only about adding more data; it is about using relationships among users to improve localization. This includes the broader idea that human mobility in indoor spaces is not random noise but can be used as a structural source of information.</p>
+<p>The paper is also relevant to deployment because real buildings are social environments. Shopping malls, campuses, stations, offices, hospitals, and public venues usually contain many users. If an IPS can use their collective presence, the system may become more robust than one that depends only on each device individually. This is closely related to crowd-powered IPS, cooperative positioning, and multi-agent localization.</p>
+<p>For a fast visual understanding, the paper can be represented as <strong>user A + user B + user C → shared spatial evidence → improved localization</strong>. Each user contributes partial information; the system combines these partial views into a stronger estimate. This makes the work useful for authors discussing cooperative localization, collaborative smartphone positioning, multi-user constraints, and the benefits of crowd-level information in IPS.</p>
+<p>This paper should be cited when the argument requires a reference for the idea that indoor localization can be improved by exploiting multiple users jointly rather than positioning each user independently. It is particularly suitable for discussions of cooperative IPS, crowd-enhanced localization, multi-user PDR/fingerprinting systems, and real-world scenarios where the presence of many users can become a positioning advantage.</p>
+</section>
 
 
 

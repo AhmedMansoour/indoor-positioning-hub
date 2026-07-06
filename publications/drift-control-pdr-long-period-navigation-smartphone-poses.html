@@ -95,6 +95,31 @@
     <img src="../assets/previews/drift-control-pdr-long-period-navigation-smartphone-poses.png" alt="First-page preview of Drift Control of Pedestrian Dead Reckoning (PDR) for Long Period Navigation under Different Smartphone Poses">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Low-cost IMU drift</span>
+    <span class="arrow">→</span>
+    <span class="node">Phone pose variation</span>
+    <span class="arrow">→</span>
+    <span class="node">PDR correction</span>
+    <span class="arrow">→</span>
+    <span class="node">Long-period navigation</span>
+    <span class="arrow">→</span>
+    <span class="node">Pose-aware robustness</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper studies drift control in PDR under different smartphone poses. PDR is attractive because it can estimate pedestrian movement without requiring external infrastructure, making it useful for indoor and GNSS-denied environments. However, low-cost inertial sensors accumulate error, and heading drift becomes increasingly serious during long-period navigation. Smartphone pose variation makes the problem harder because the relationship between device orientation and walking direction changes when the phone is held, placed in a pocket, or carried differently.</p>
+<p>The paper addresses this practical issue by examining how PDR behaves under multiple smartphone poses and by focusing on drift control over longer navigation periods. The core idea is that a realistic PDR system should not assume a perfectly horizontal or fixed device. It should account for the fact that users naturally change how they carry their phones. The paper therefore contributes to the movement from controlled inertial navigation experiments toward more practical smartphone-based positioning.</p>
+<p>The visual story is <strong>sensor drift + pose change → heading/trajectory error → drift-control strategy → longer navigation stability</strong>. This flow is important because PDR errors are cumulative. A small heading or step error may seem minor at the beginning, but over time it can create a large trajectory deviation. Drift control is therefore essential for any PDR system that aims to support continuous navigation.</p>
+<p>The paper is useful as an early reference for pose-aware PDR. It highlights that smartphone navigation must consider human-device interaction, not only sensor mathematics. The same walking path can produce different sensor patterns depending on how the device is carried. This insight connects the paper to later work on carrying-mode recognition, heading correction, and learning-assisted smartphone navigation.</p>
+<p>For readers, the paper can be understood as a warning and a design guide. The warning is that fixed-pose assumptions can make PDR appear more reliable than it will be in practice. The design guide is that pose variation and long-term drift should be handled explicitly. This makes the work relevant to smartphone IPS, inertial navigation, and user-friendly pedestrian positioning.</p>
+<p>This paper should be cited when discussing PDR drift control, smartphone pose effects, long-period pedestrian navigation, inertial sensor error accumulation, and the practical limitations of fixed-pose assumptions in smartphone-based indoor positioning.</p>
+</section>
 
 
 

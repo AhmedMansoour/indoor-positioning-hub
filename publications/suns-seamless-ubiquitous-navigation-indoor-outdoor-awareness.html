@@ -73,6 +73,31 @@
     <img src="../assets/previews/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness.png" alt="First-page preview of SUNS: A User-Friendly Scheme for Seamless and Ubiquitous Navigation Based on an Enhanced Indoor-Outdoor Environmental Awareness Approach">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Indoor/outdoor discontinuity</span>
+    <span class="arrow">→</span>
+    <span class="node">Environmental awareness</span>
+    <span class="arrow">→</span>
+    <span class="node">Sensor context</span>
+    <span class="arrow">→</span>
+    <span class="node">Seamless switching</span>
+    <span class="arrow">→</span>
+    <span class="node">User-friendly navigation</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>SUNS addresses a very practical navigation problem: people do not move only inside or only outside. They move through entrances, corridors, lobbies, streets, semi-open zones, elevators, and transitional spaces. A navigation system that works well in only one environment can still fail as a user crosses a door or moves from GNSS-friendly outdoor space into an indoor area where GNSS becomes weak or unavailable. The paper therefore places indoor-outdoor awareness at the center of seamless navigation. Rather than treating IOD as a small classification module, SUNS frames it as a core requirement for maintaining continuity in LBS.</p>
+<p>The motivation is strongly user-oriented. A regular user may not know which positioning source is active, which sensors are consuming energy, or why the navigation solution suddenly becomes unstable near building entrances. A useful navigation scheme should hide this complexity and make the transition between environments as smooth as possible. SUNS responds by using environmental awareness to support positioning-mode selection and sensor activation. The system aims to identify whether the user is indoors, outdoors, or in a transition-relevant context, then use this knowledge to support a more seamless navigation experience.</p>
+<p>The technical story can be summarized as <strong>environment recognition → context-aware positioning choice → reduced user burden → continuous navigation</strong>. This flow is important because it connects sensing decisions to service quality. If the system knows the environmental state, it can avoid blindly activating all possible sensors or relying on a single positioning source that may not be suitable. This contributes to both usability and resource awareness, which are essential for smartphone-based navigation.</p>
+<p>The paper also helps clarify why IOD is different from ordinary activity recognition. The decision is not only a label; it affects which localization subsystem should be trusted, how the system should manage energy, and how quickly it should respond to transition events. A delayed or wrong IOD decision can break navigation continuity even if the underlying indoor and outdoor localization methods are individually strong. SUNS therefore provides an early and useful reference for IOD as a decision layer in seamless positioning.</p>
+<p>For readers, the paper is easy to interpret through the symbol chain <strong>outside ↔ transition ↔ inside</strong>. The contribution is to make this chain operational by sensing the environment and guiding navigation behavior. This makes the paper relevant to indoor navigation, seamless localization, smartphone sensing, context awareness, and transition-aware LBS.</p>
+<p>This paper should be cited when discussing indoor-outdoor detection, seamless indoor-outdoor navigation, environmental awareness, smartphone-based context sensing, user-friendly positioning, and the design of navigation systems that must operate across changing environments without requiring users to manage the positioning mode manually.</p>
+</section>
 
 
 

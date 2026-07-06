@@ -58,3 +58,58 @@
 .paper-summary p {
   margin-bottom: 1rem;
 }
+
+
+/* Long research story summaries */
+.paper-story-section {
+  margin-top: 2rem;
+}
+.story-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  margin: 0.75rem 0 1.25rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid #d9e1ea;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+}
+.story-flow span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.story-flow .node {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #173b63;
+  font-weight: 650;
+}
+.story-flow .arrow {
+  color: #6b7a8a;
+  font-weight: 700;
+}
+.story-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem 0;
+}
+.story-legend div {
+  padding: 0.75rem;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e5edf5;
+}
+.story-legend strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #173b63;
+}
+.paper-story-section p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}

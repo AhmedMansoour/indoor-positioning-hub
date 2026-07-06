@@ -102,6 +102,30 @@
     <img src="../assets/previews/everywhere-framework-ubiquitous-indoor-localization.png" alt="First-page preview of Everywhere: A Framework for Ubiquitous Indoor Localization">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Manual radio-map burden</span>
+    <span class="arrow">→</span>
+    <span class="node">Crowdsourced signatures</span>
+    <span class="arrow">→</span>
+    <span class="node">Autonomous localization</span>
+    <span class="arrow">→</span>
+    <span class="node">Ubiquitous IPS</span>
+    <span class="arrow">→</span>
+    <span class="node">Scalable deployment</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper can be read as the starting point of a deployment story: how can an IPS become available everywhere without asking experts to survey every corridor, room, and floor by hand? Conventional fingerprinting-based IPS depends on an offline radio map, and that map is usually expensive to create. A survey team must walk through the building, collect Wi-Fi or other signal measurements at known reference points, and repeat the work when the environment changes. This model can be accurate in a limited testbed, but it does not scale naturally to large buildings, multi-floor spaces, or long-term operation. <em>Everywhere</em> responds to this bottleneck by shifting the focus from site-surveyed radio maps to pervasive smartphone-based crowdsourced signatures.</p>
+<p>The core idea is simple but powerful: smartphones already move with people through indoor spaces, and their sensors continuously observe signal, motion, and environmental patterns. Instead of treating these observations as noisy by-products, the framework treats them as building blocks for a self-deployable IPS. The paper therefore connects three layers that are often studied separately. The first layer is sensing, where user devices provide Wi-Fi fingerprints and motion-related information. The second layer is autonomous localization of these crowdsourced signatures, where the system tries to infer where the collected measurements belong without requiring manual labeling for every point. The third layer is radio-map construction, where localized signatures become part of an indoor positioning infrastructure that can grow over time.</p>
+<p>The paper is valuable because it explains why ubiquitous indoor localization is not only an algorithmic problem. It is also an engineering problem of data generation, data qualification, and deployment. A practical crowd-powered system must handle irregular user trajectories, heterogeneous devices, uncertain labels, and incomplete spatial coverage. The framework turns these issues into a pipeline rather than treating them as isolated errors. This makes the paper useful for readers who want to understand how crowdsourcing can move from a concept to an operational IPS mechanism.</p>
+<p>For a quick visual interpretation, the paper follows the chain <strong>human mobility → smartphone measurements → autonomous signature localization → radio-map growth → ubiquitous IPS</strong>. This chain is important because it converts passive daily movement into positioning infrastructure. In that sense, the paper does not merely propose another localization method; it proposes a scalable way of thinking about how indoor positioning data can be produced, organized, and reused.</p>
+<p>This work should be cited when discussing scalable IPS, crowdsourced fingerprinting, self-deployable indoor localization, smartphone-based radio-map generation, or the transition from controlled indoor positioning experiments to real deployment. It is especially relevant when authors need a reference for the idea that crowd-powered data accumulation can reduce dependence on labor-intensive site surveys and external calibration sources.</p>
+</section>
 
 
 

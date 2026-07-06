@@ -108,6 +108,31 @@
     <img src="../assets/previews/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.png" alt="First-page preview of Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Dense urban degradation</span>
+    <span class="arrow">→</span>
+    <span class="node">GNSS + PDR + BLE</span>
+    <span class="arrow">→</span>
+    <span class="node">Tightly coupled fusion</span>
+    <span class="arrow">→</span>
+    <span class="node">Continuity and correction</span>
+    <span class="arrow">→</span>
+    <span class="node">Robust pedestrian navigation</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper develops a tightly coupled positioning system for pedestrian navigation in dense urban environments by combining GNSS, PDR, and BLE. Each source has a different strength. GNSS provides global positioning but can fail or degrade in urban canyons. PDR provides short-term movement continuity but accumulates drift. BLE signals can provide local environmental constraints, but they may be spatially limited. The paper’s contribution is to integrate these sources so that the system can remain more reliable than any single source alone.</p>
+<p>The research story is <strong>GNSS absolute reference + PDR relative motion + BLE local constraint → tightly coupled fusion → robust urban trajectory</strong>. This flow is valuable because dense urban navigation is not a single-sensor problem. A pedestrian may move through open streets, covered areas, near tall buildings, and around signal-reflective surfaces. The best available source changes over time. A tightly coupled system can use partial information from multiple sources instead of switching between complete standalone solutions.</p>
+<p>The paper is important because it reflects a deployment-oriented philosophy: robustness comes from integration. GNSS helps limit long-term drift, PDR fills gaps when GNSS is weak, and BLE adds contextual spatial evidence. In a tightly coupled framework, these measurements can support each other at the estimation level, improving continuity and reducing the risk of abrupt positioning failures.</p>
+<p>A simple visualization is <strong>global anchor ↔ local motion ↔ environmental beacon</strong>. GNSS anchors the user to the world, PDR preserves motion continuity between observations, and BLE provides additional local cues in places where it is available. The final trajectory emerges from the agreement among these sources. This makes the paper useful for researchers working on multi-source positioning, urban pedestrian navigation, and hybrid smartphone localization.</p>
+<p>The paper also has relevance beyond outdoor urban positioning. Many real navigation services require continuity across outdoor, semi-outdoor, and indoor zones. The integration of absolute, relative, and local signal sources is therefore closely connected to seamless positioning and transition-aware navigation.</p>
+<p>This paper should be cited when discussing BLE-enhanced GNSS/PDR integration, tightly coupled pedestrian navigation, dense urban localization, multi-source smartphone positioning, and hybrid systems that combine absolute references, inertial continuity, and local signal constraints.</p>
+</section>
 
 
 

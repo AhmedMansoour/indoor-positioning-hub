@@ -78,6 +78,31 @@
     <img src="../assets/previews/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors.png" alt="First-page preview of Enhancing real-time heading estimation for pedestrian navigation via deep learning and smartphone embedded sensors">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Heading instability</span>
+    <span class="arrow">→</span>
+    <span class="node">Pervasive visual/geometric cues</span>
+    <span class="arrow">→</span>
+    <span class="node">Deep learning</span>
+    <span class="arrow">→</span>
+    <span class="node">Real-time correction</span>
+    <span class="arrow">→</span>
+    <span class="node">Pedestrian navigation</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper focuses on real-time heading estimation, one of the most important components of pedestrian navigation. A smartphone can estimate motion using inertial sensors, but heading is vulnerable to gyroscope drift, magnetic disturbance, thermal effects, and carrying-mode changes. If heading becomes unstable, the entire trajectory can rotate or drift away from the correct path. The paper therefore targets a central question: how can heading be improved in real time using resources that are already available on smartphones and in everyday environments?</p>
+<p>The work uses deep learning and smartphone embedded sensing to strengthen heading estimation. The broader idea is that pervasive cues in the environment, such as visual straight-line features and other sensor-derived orientation information, can help correct drift that inertial sensors alone cannot manage. Deep learning provides a way to recognize and track useful patterns that are difficult to model with simple rules. This makes the method relevant to practical navigation where the system must operate continuously rather than only in a controlled test.</p>
+<p>The visual story is <strong>raw smartphone sensors → environmental/visual cues → learned heading support → drift reduction → real-time navigation</strong>. This flow is useful because it shows that the system does not depend on special infrastructure. Instead, it uses cues that may already exist in indoor and outdoor scenes. The method is therefore aligned with the goal of ubiquitous navigation.</p>
+<p>The paper is important because it links AI-assisted perception with PDR-style navigation. Heading estimation is usually treated as an inertial fusion problem, but this work expands the evidence base by incorporating learned information from smartphone measurements. It demonstrates how deep learning can support a specific navigation function rather than being used only as a general end-to-end estimator. This makes the contribution easier to interpret and reuse.</p>
+<p>For readers, the paper can be understood as a stabilizer for the direction arrow. The user’s phone senses motion, the algorithm interprets stable cues, and the heading estimate becomes less vulnerable to drift. Better heading then improves the downstream navigation path. This is especially relevant in applications where users need intuitive guidance, such as walking to a destination inside a building, moving through a campus, or navigating complex urban spaces.</p>
+<p>This paper should be cited when discussing real-time heading estimation, deep learning for pedestrian navigation, smartphone embedded sensors, visual/inertial heading correction, PDR drift mitigation, and AI-supported navigation under realistic mobile-device conditions.</p>
+</section>
 
 
 

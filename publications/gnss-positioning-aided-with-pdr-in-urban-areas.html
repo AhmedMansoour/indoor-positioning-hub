@@ -96,6 +96,31 @@
     <img src="../assets/previews/gnss-positioning-aided-with-pdr-in-urban-areas.png" alt="First-page preview of GNSS Positioning Aided with Pedestrian Dead Reckoning (PDR) in Urban Areas">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Urban GNSS errors</span>
+    <span class="arrow">→</span>
+    <span class="node">PDR motion constraint</span>
+    <span class="arrow">→</span>
+    <span class="node">Measurement screening</span>
+    <span class="arrow">→</span>
+    <span class="node">Integrated positioning</span>
+    <span class="arrow">→</span>
+    <span class="node">More reliable urban navigation</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper addresses the difficulty of pedestrian GNSS positioning in urban areas. In open-sky environments, GNSS can provide useful absolute positioning, but dense cities introduce multipath, non-line-of-sight signals, and frequent satellite blockage. These errors can be large and difficult to detect using GNSS observations alone. PDR, on the other hand, can provide relative motion information from smartphone inertial sensors, but it drifts over time. The paper explores how PDR can aid GNSS so that the strengths of one source compensate for the weaknesses of the other.</p>
+<p>The conceptual chain is <strong>GNSS absolute position + PDR relative motion → consistency checking → improved measurement selection → robust pedestrian positioning</strong>. This chain is important because it shows that PDR is not only a backup when GNSS fails. It can also help evaluate whether GNSS measurements are plausible. If the GNSS solution or satellite measurements conflict with the motion implied by PDR, the system can identify and reduce the influence of unreliable information.</p>
+<p>The paper is valuable for urban positioning because it focuses on realistic pedestrian conditions. In dense streets, a user may move through open areas, narrow streets, semi-covered spaces, and urban corridors. The quality of GNSS changes quickly, and a robust system must adapt. PDR provides continuity across these changes, while GNSS prevents unbounded drift when reliable observations are available. The integration is therefore a practical example of multi-source pedestrian navigation.</p>
+<p>For indoor positioning researchers, the paper is also relevant because urban navigation shares several challenges with indoor localization: weak absolute references, strong environmental constraints, sensor drift, and the need for context-aware fusion. The method contributes to the broader theme of using motion constraints to improve positioning reliability under degraded signal conditions.</p>
+<p>A simple visual reading is <strong>satellites provide global anchors; steps and heading provide local continuity</strong>. The system becomes stronger when these two views are checked against each other. GNSS says where the user might be in the global frame; PDR says how the user has moved since the previous state. Their agreement increases trust; their disagreement signals risk.</p>
+<p>This paper should be cited when discussing GNSS/PDR integration, urban pedestrian navigation, NLOS and multipath mitigation, PDR-aided GNSS quality control, smartphone-based urban localization, and robust positioning in dense built environments.</p>
+</section>
 
 
 

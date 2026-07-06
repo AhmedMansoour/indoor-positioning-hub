@@ -96,6 +96,31 @@
     <img src="../assets/previews/ac-hmm-azimuth-constrained-map-matching-urban-canyons.png" alt="First-page preview of AC-HMM: azimuth-constrained hidden Markov model-based map matching for robust pedestrian positioning in urban canyons">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Urban GNSS degradation</span>
+    <span class="arrow">→</span>
+    <span class="node">Azimuth information</span>
+    <span class="arrow">→</span>
+    <span class="node">HMM map matching</span>
+    <span class="arrow">→</span>
+    <span class="node">Trajectory constraint</span>
+    <span class="arrow">→</span>
+    <span class="node">Robust pedestrian positioning</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper addresses pedestrian positioning in urban canyons, where tall buildings, blocked sky visibility, and reflected signals often degrade GNSS. A pedestrian may be physically constrained by roads, sidewalks, crossings, and building geometry, but a raw positioning solution can jump across impossible paths or drift away from the actual route. Map matching helps by constraining positions to a road or walkway network, but conventional matching can still be ambiguous when several candidate paths are close. AC-HMM strengthens this process by incorporating azimuth constraints into an HMM-based map-matching framework.</p>
+<p>The paper’s idea can be read as <strong>GNSS uncertainty → candidate paths → azimuth consistency → HMM trajectory decision → robust route estimate</strong>. The HMM provides a probabilistic framework for selecting a sequence of likely path states over time. The azimuth constraint adds directional evidence, helping the model prefer path transitions that agree with the pedestrian’s movement orientation. This is especially useful in dense urban areas where location observations alone may not distinguish between nearby parallel streets or connected segments.</p>
+<p>The contribution is important because it combines motion direction and map structure in a way that directly addresses urban pedestrian navigation. Instead of treating heading or azimuth as a secondary measurement, the method uses it to guide the map-matching process. This improves the interpretability of the trajectory decision: a matched path should not only be close to observed positions, but should also be consistent with how the pedestrian is moving.</p>
+<p>The paper is relevant to both outdoor and transition-aware positioning research. Many indoor positioning researchers also deal with constrained pedestrian movement and graph-based spatial structures. AC-HMM provides a useful reference for the broader idea that path feasibility and direction consistency can improve localization reliability when raw measurements are noisy. Its urban-canyon context makes the problem especially clear because GNSS errors are strong and the environment imposes visible movement constraints.</p>
+<p>For readers, the key visual is a path graph overlaid with uncertain observations and direction arrows. The HMM chooses the most likely sequence through the graph, while the azimuth term helps reject path transitions that do not align with movement. This makes the approach easy to explain and cite in discussions of map matching, GNSS-challenged navigation, and direction-aware trajectory estimation.</p>
+<p>This paper should be cited when discussing HMM-based map matching, azimuth-constrained pedestrian positioning, urban canyon localization, GNSS degradation, map-aided trajectory estimation, and robust navigation under strong multipath and spatial ambiguity.</p>
+</section>
 
 
 

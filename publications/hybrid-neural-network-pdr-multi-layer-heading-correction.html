@@ -95,6 +95,31 @@
     <img src="../assets/previews/hybrid-neural-network-pdr-multi-layer-heading-correction.png" alt="First-page preview of Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes">
   </a>
 </section>
+<section class="paper-story-section card">
+  <h2>Research story and quick reading guide</h2>
+  <div class="story-flow"><span class="node">Changing phone carrying modes</span>
+    <span class="arrow">→</span>
+    <span class="node">Sensor pattern learning</span>
+    <span class="arrow">→</span>
+    <span class="node">Heading correction layers</span>
+    <span class="arrow">→</span>
+    <span class="node">PDR integration</span>
+    <span class="arrow">→</span>
+    <span class="node">Robust smartphone navigation</span></div>
+  
+  <div class="story-legend">
+    <div><strong>Problem</strong>The paper starts from a practical barrier that limits reliable positioning or deployment.</div>
+    <div><strong>Mechanism</strong>The method or framework converts signals, sensors, users, or maps into useful positioning knowledge.</div>
+    <div><strong>Value</strong>The contribution helps readers understand where the work fits and when it should be cited.</div>
+  </div>
+
+  <p>This paper addresses a very practical weakness of smartphone PDR: people do not carry phones in one fixed way. A device may be held while texting, placed in a pocket, used during a call, or swung in the hand. Each carrying mode changes the relationship between the phone’s sensor axes and the pedestrian’s true walking direction. Traditional PDR often assumes a stable orientation or a controlled carrying condition, but real users change modes naturally. The paper responds by proposing a hybrid neural-network-based PDR framework with multi-layer heading correction across carrying modes.</p>
+<p>The research story is <strong>carrying-mode variability → learned mode recognition → heading correction → step/PDR integration → improved trajectory</strong>. This flow is important because heading is the core vulnerability of PDR. Step detection may estimate how far the user moves, but heading determines where that movement goes. If heading is wrong, the trajectory drifts even when step length is reasonable. By recognizing carrying modes and correcting heading in multiple layers, the system aims to make PDR more robust in realistic smartphone use.</p>
+<p>The paper is valuable because it connects deep learning with classical pedestrian navigation. The neural-network component helps interpret sensor patterns associated with different carrying modes, while the PDR component uses corrected heading and motion information to estimate movement. This hybrid structure is useful because it does not replace PDR with a black-box model; instead, it uses learning to support the parts of PDR that are most sensitive to real user behavior.</p>
+<p>A useful visualization is <strong>phone behavior → mode label → heading correction → trajectory correction</strong>. The mode label acts like a switch that informs the navigation engine how to interpret sensor data. Multi-layer correction then reduces heading error before it accumulates into large position drift. This makes the method relevant to both indoor positioning and wearable/mobile sensing.</p>
+<p>The paper matters for deployment because controlled carrying assumptions are one reason laboratory PDR results can fail in daily use. A practical navigation system must tolerate natural phone handling. By focusing on carrying-mode-aware heading correction, the work supports more user-friendly and less intrusive smartphone positioning.</p>
+<p>This paper should be cited when discussing smartphone PDR, carrying-mode recognition, deep learning for inertial navigation, heading correction, multi-sensor pedestrian navigation, and robust PDR under changing phone poses and real user behavior.</p>
+</section>
 
   <section class="paper-box"><h2>Extended summary</h2><p>This paper combines neural network-based carrying-mode recognition with multi-layer heading correction to improve smartphone PDR across different device-use modes.</p></section>
   <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>PDR robustness across smartphone carrying modes is studied</li><li>deep learning is used for heading correction or motion-state recognition</li><li>indoor navigation systems need device-pose adaptation</li><li>smartphone sensor fusion is evaluated under practical user behavior</li></ul></section>
