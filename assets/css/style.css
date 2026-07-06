@@ -282,56 +282,49 @@
   .combined-theme-grid { grid-template-columns: 1fr; }
 }
 
-/* Atlas paper-link blocks, added by scripts/add_atlas_paper_links.py */
-.atlas-related-papers {
-  margin-top: 0.95rem;
-  padding: 0.95rem 1.05rem;
-  border: 1px solid rgba(14, 116, 144, 0.16);
-  border-left: 4px solid rgba(14, 116, 144, 0.72);
-  border-radius: 14px;
-  background: linear-gradient(180deg, rgba(240, 249, 255, 0.72), rgba(255, 255, 255, 0.94));
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035);
-}
-.atlas-related-papers .related-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-bottom: 0.25rem;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.075em;
-  text-transform: uppercase;
-  color: #0f766e;
-}
-.atlas-related-papers ul {
-  margin: 0.35rem 0 0 1.1rem;
+/* ============================================================
+   Plain atlas paper-title links under each visual figure
+   Added by scripts/make_atlas_links_like_screenshot.py
+   ============================================================ */
+.atlas-paper-title-links {
+  margin: 1.05rem 0 0;
   padding: 0;
 }
-.atlas-related-papers li {
-  margin: 0.42rem 0;
-  line-height: 1.52;
-  color: #0f172a;
+.atlas-paper-title-links ul {
+  margin: 0.25rem 0 0 1.25rem;
+  padding: 0;
 }
-.atlas-related-papers a {
-  color: #075985;
+.atlas-paper-title-links li {
+  margin: 0.55rem 0;
+  padding-left: 0.15rem;
+  color: #0f172a;
+  line-height: 1.65;
+}
+.atlas-paper-title-links a {
+  color: #075083;
   font-weight: 650;
   text-decoration: none;
 }
-.atlas-related-papers a:hover,
-.atlas-related-papers a:focus {
+.atlas-paper-title-links a:hover,
+.atlas-paper-title-links a:focus {
+  color: #003f66;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
-.atlas-related-papers .paper-year {
+.atlas-paper-title-links .paper-year {
   color: #64748b;
   white-space: nowrap;
 }
+.visual-atlas-card .atlas-paper-title-links {
+  font-size: clamp(1.02rem, 1.45vw, 1.28rem);
+}
 @media (max-width: 760px) {
-  .atlas-related-papers {
-    padding: 0.85rem 0.9rem;
+  .visual-atlas-card .atlas-paper-title-links {
+    font-size: 1rem;
   }
-  .atlas-related-papers li {
-    margin: 0.55rem 0;
+  .atlas-paper-title-links li {
+    margin: 0.48rem 0;
+    line-height: 1.55;
   }
 }
 
