@@ -275,8 +275,8 @@ CSS_BLOCK = r"""
 .pub-visual-frame img {
   width: 100%;
   height: 100%;
-  max-height: 260px;
-  object-fit: contain;
+  max-height: none;
+  object-fit: cover;
   display: block;
 }
 .pub-visual-caption {
@@ -447,7 +447,6 @@ def card(pub: dict, display: dict) -> str:
   </div>
   <aside class="pub-visual-panel" aria-label="Publication visual preview">
     <div class="pub-visual-frame"><img src="{h(image)}" alt="{h(image_alt)}" loading="lazy"></div>
-    <p class="pub-visual-caption">Visual anchor for the paper: method, data, deployment context, or first-page preview.</p>
   </aside>
 </article>"""
 
