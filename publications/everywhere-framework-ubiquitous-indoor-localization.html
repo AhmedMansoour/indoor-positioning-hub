@@ -86,7 +86,8 @@
   <nav class="nav container">
     <a class="brand" href="../index.html">Indoor Positioning Hub</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a></div>
+    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a>
+        <a href="../../cv.html">CV</a></div>
   </nav>
 </header>
 <main class="container page publication-page">
@@ -130,7 +131,28 @@
 
 
   <section class="paper-box"><h2>Extended summary</h2><p>This paper introduces the Everywhere framework for self-deployable indoor localization, using crowdsourced smartphone measurements, inertial data selection, GNSS-aided adjustment, and autonomous fingerprint localization.</p></section>
-  <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>ubiquitous indoor localization and self-deployable IPS are discussed</li><li>crowdsourced smartphone data are used to build fingerprinting maps</li><li>GNSS and inertial data support autonomous indoor radio map generation</li><li>scalable IPS frameworks are compared</li></ul></section>
+  <!-- BEGIN paper visual explanation -->
+<section id="paper-visuals" class="paper-visuals-section card">
+      <h2>Key visual explanation</h2>
+      <p>These selected visuals help readers understand the method quickly before reading the full paper.</p>
+      <div class="paper-visual-grid">
+        <figure class="paper-visual-card">
+          <img src="../assets/figures/everywhere-framework-ubiquitous-indoor-localization/fig_03_page_6.webp" alt="Crowdsourced database generation workflow" loading="lazy">
+          <figcaption><strong>Crowdsourced database generation workflow.</strong> Crowdsourced inertial and Wi-Fi measurements are filtered, segmented, aligned, and transformed into anchor-node localization and database generation, turning ordinary user traces into deployment material.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/everywhere-framework-ubiquitous-indoor-localization/fig_04_page_2.webp" alt="Everywhere offline and online engines" loading="lazy">
+          <figcaption><strong>Everywhere offline and online engines.</strong> The architecture separates offline database construction from online positioning, where inertial sensing, Wi-Fi, step detection, and weighted fusion support ubiquitous indoor localization.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/everywhere-framework-ubiquitous-indoor-localization/scaling-ips-principles.webp" alt="Scaling principles behind Everywhere" loading="lazy">
+          <figcaption><strong>Scaling principles behind Everywhere.</strong> The conceptual map connects Everywhere to the broader goal of generic, self-healing, user-centered indoor positioning that works beyond a single building or device.</figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- END paper visual explanation -->
+
+<section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>ubiquitous indoor localization and self-deployable IPS are discussed</li><li>crowdsourced smartphone data are used to build fingerprinting maps</li><li>GNSS and inertial data support autonomous indoor radio map generation</li><li>scalable IPS frameworks are compared</li></ul></section>
   <section class="paper-box"><h2>Keywords</h2><p class="keywords"><span>ubiquitous indoor localization</span><span>crowdsourcing</span><span>Wi-Fi fingerprinting</span><span>GNSS-aided adjustment</span><span>inertial sensing</span><span>radio map generation</span><span>smartphone positioning</span></p></section>
   <section class="paper-box"><h2>Official link</h2><p><a href="https://doi.org/10.1109/JIOT.2022.3222003">https://doi.org/10.1109/JIOT.2022.3222003</a></p><p class="note">For publisher-restricted articles, link to the DOI or an allowed accepted manuscript rather than uploading a restricted PDF.</p></section>
   <section id="bibtex" class="paper-box"><h2>BibTeX</h2><pre><code>@article{Mansour2023everywhere,

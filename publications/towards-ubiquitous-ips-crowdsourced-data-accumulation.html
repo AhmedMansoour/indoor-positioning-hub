@@ -55,7 +55,8 @@
   <nav class="nav container">
     <a class="brand" href="../index.html">Indoor Positioning Hub</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a></div>
+    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a>
+        <a href="../../cv.html">CV</a></div>
   </nav>
 </header>
 <main class="container page publication-page">
@@ -100,7 +101,28 @@
 
 
   <section class="paper-box"><h2>Extended summary</h2><p>This paper explores how accumulated crowdsourced measurements can infer fixed Wi-Fi access point properties and reduce reliance on external calibration sources during initial fingerprinting map generation.</p></section>
-  <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>initial radio map generation uses accumulated crowdsourced data</li><li>Wi-Fi access points are inferred as pervasive anchors</li><li>crowdsourced IPS reduces dependence on floor plans, beacons, or active feedback</li><li>ubiquitous fingerprinting maps are constructed with minimal external resources</li></ul></section>
+  <!-- BEGIN paper visual explanation -->
+<section id="paper-visuals" class="paper-visuals-section card">
+      <h2>Key visual explanation</h2>
+      <p>These selected visuals help readers understand the method quickly before reading the full paper.</p>
+      <div class="paper-visual-grid">
+        <figure class="paper-visual-card">
+          <img src="../assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/fig_03_page_5.webp" alt="Crowdsourced accumulation for initial radio maps" loading="lazy">
+          <figcaption><strong>Crowdsourced accumulation for initial radio maps.</strong> Accumulated trajectories and grid-level signatures show how repeated visits can reduce dependence on manual survey or external sources when initializing a fingerprinting map.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/fig_04_page_6.webp" alt="RSS field examples from automatic initialization" loading="lazy">
+          <figcaption><strong>RSS field examples from automatic initialization.</strong> The signal-strength maps illustrate how automatic fingerprints are formed from user traces and later used as an initial radio map for localization.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/skeleton-assembly-refinement.webp" alt="Autonomous spatial assembly from user traces" loading="lazy">
+          <figcaption><strong>Autonomous spatial assembly from user traces.</strong> The staged skeleton-assembly-refinement view supports the idea that ordinary mobility traces can gradually construct stronger map and radio-map structure.</figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- END paper visual explanation -->
+
+<section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>initial radio map generation uses accumulated crowdsourced data</li><li>Wi-Fi access points are inferred as pervasive anchors</li><li>crowdsourced IPS reduces dependence on floor plans, beacons, or active feedback</li><li>ubiquitous fingerprinting maps are constructed with minimal external resources</li></ul></section>
   <section class="paper-box"><h2>Keywords</h2><p class="keywords"><span>crowdsourcing</span><span>radio map</span><span>indoor positioning</span><span>Wi-Fi fingerprinting</span><span>ubiquitous IPS</span><span>access point inference</span></p></section>
   <section class="paper-box"><h2>Official link</h2><p><a href="https://doi.org/10.1109/IPIN62893.2024.10786156">https://doi.org/10.1109/IPIN62893.2024.10786156</a></p><p class="note">For publisher-restricted articles, link to the DOI or an allowed accepted manuscript rather than uploading a restricted PDF.</p></section>
   <section id="bibtex" class="paper-box"><h2>BibTeX</h2><pre><code>@inproceedings{Mansour2024towards,

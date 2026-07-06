@@ -75,7 +75,8 @@
   <nav class="nav container">
     <a class="brand" href="../index.html">Indoor Positioning Hub</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a></div>
+    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a>
+        <a href="../../cv.html">CV</a></div>
   </nav>
 </header>
 <main class="container page publication-page">
@@ -120,7 +121,32 @@
 
 
   <section class="paper-box"><h2>Extended summary</h2><p>This paper presents a crowdsourcing scheme that uses human mobility and pervasive smartphone measurements to support self-deployable, ubiquitous IPS without relying on manually surveyed radio maps.</p></section>
-  <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>human mobility is used for crowdsourced indoor radio map construction</li><li>self-deployable IPS frameworks are introduced</li><li>smartphone measurements support ubiquitous indoor positioning</li><li>indoor-outdoor detection is linked to radio map generation</li></ul></section>
+  <!-- BEGIN paper visual explanation -->
+<section id="paper-visuals" class="paper-visuals-section card">
+      <h2>Key visual explanation</h2>
+      <p>These selected visuals help readers understand the method quickly before reading the full paper.</p>
+      <div class="paper-visual-grid">
+        <figure class="paper-visual-card">
+          <img src="../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_01_page_3.webp" alt="Crowd trajectory accumulation" loading="lazy">
+          <figcaption><strong>Crowd trajectory accumulation.</strong> The figure shows dense human mobility traces collected across time, making visible how repeated ordinary movement can become the raw material for self-deployable indoor positioning.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_03_page_3.webp" alt="Eight-step self-deployable IPS process" loading="lazy">
+          <figcaption><strong>Eight-step self-deployable IPS process.</strong> The scheme moves from data collection to inertial selection, track generation, anchor-node detection, consistency checking, database generation, and internal-node inference.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_04_page_5.webp" alt="Generated traces and radio signatures" loading="lazy">
+          <figcaption><strong>Generated traces and radio signatures.</strong> Example outputs show how crowdsourced tracks and wireless measurements can be converted into spatial signatures that support later localization.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_05_page_5.webp" alt="Trajectory alignment with anchors and access points" loading="lazy">
+          <figcaption><strong>Trajectory alignment with anchors and access points.</strong> The visual compares reference traces with alignment results before and after using anchor nodes and Wi-Fi access-node information, showing the value of structural correction.</figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- END paper visual explanation -->
+
+<section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>human mobility is used for crowdsourced indoor radio map construction</li><li>self-deployable IPS frameworks are introduced</li><li>smartphone measurements support ubiquitous indoor positioning</li><li>indoor-outdoor detection is linked to radio map generation</li></ul></section>
   <section class="paper-box"><h2>Keywords</h2><p class="keywords"><span>crowdsourcing</span><span>indoor positioning system</span><span>self-deployable system</span><span>Wi-Fi fingerprinting</span><span>smartphone</span><span>ubiquitous positioning</span><span>indoor-outdoor detection</span><span>PDR</span></p></section>
   <section class="paper-box"><h2>Official link</h2><p><a href="https://doi.org/10.5194/isprs-archives-XLVIII-1-W2-2023-1119-2023">https://doi.org/10.5194/isprs-archives-XLVIII-1-W2-2023-1119-2023</a></p><p class="note">For publisher-restricted articles, link to the DOI or an allowed accepted manuscript rather than uploading a restricted PDF.</p></section>
   <section id="bibtex" class="paper-box"><h2>BibTeX</h2><pre><code>@inproceedings{Mansour2023leveraging,

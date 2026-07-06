@@ -80,7 +80,8 @@
   <nav class="nav container">
     <a class="brand" href="../index.html">Indoor Positioning Hub</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a></div>
+    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a>
+        <a href="../../cv.html">CV</a></div>
   </nav>
 </header>
 <main class="container page publication-page">
@@ -125,7 +126,28 @@
 
 
   <section class="paper-box"><h2>Extended summary</h2><p>This paper introduces an adaptive heading-calibration method that uses Wi-Fi fingerprinting continuity and magnetic stability to reduce smartphone heading drift for indoor positioning and navigation.</p></section>
-  <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>smartphone heading drift is discussed in PDR or indoor navigation</li><li>Wi-Fi fingerprinting is used beyond position estimation for heading calibration</li><li>magnetic stability and adaptive thresholds are used for reliability control</li><li>deployment-ready smartphone positioning requires drift-resistant orientation estimation</li></ul></section>
+  <!-- BEGIN paper visual explanation -->
+<section id="paper-visuals" class="paper-visuals-section card">
+      <h2>Key visual explanation</h2>
+      <p>These selected visuals help readers understand the method quickly before reading the full paper.</p>
+      <div class="paper-visual-grid">
+        <figure class="paper-visual-card">
+          <img src="../assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/fig_01_page_9.webp" alt="Drift-resistant heading fusion architecture" loading="lazy">
+          <figcaption><strong>Drift-resistant heading fusion architecture.</strong> The figure shows the layered estimator: Wi-Fi fingerprinting, magnetic processing, PDR step detection, quality gates, gyroscope consistency, and EKF fusion jointly support qualified heading updates.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/fig_02_page_5.webp" alt="Qualified and unqualified Wi-Fi heading intervals" loading="lazy">
+          <figcaption><strong>Qualified and unqualified Wi-Fi heading intervals.</strong> The visual separates stable fingerprinting segments from unreliable ones, illustrating why heading correction should be activated only when the Wi-Fi and magnetic evidence is trustworthy.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/smartphone-poses-trajectories.webp" alt="Pose-dependent heading behavior" loading="lazy">
+          <figcaption><strong>Pose-dependent heading behavior.</strong> The trajectory view explains why heading correction cannot be independent of carrying mode, since swinging, calling, handheld, mixed, and pocket conditions reshape the inertial signal pattern.</figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- END paper visual explanation -->
+
+<section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>smartphone heading drift is discussed in PDR or indoor navigation</li><li>Wi-Fi fingerprinting is used beyond position estimation for heading calibration</li><li>magnetic stability and adaptive thresholds are used for reliability control</li><li>deployment-ready smartphone positioning requires drift-resistant orientation estimation</li></ul></section>
   <section class="paper-box"><h2>Keywords</h2><p class="keywords"><span>heading estimation</span><span>smartphone indoor positioning</span><span>Wi-Fi fingerprinting</span><span>magnetic stability</span><span>adaptive calibration</span><span>PDR</span><span>sensor fusion</span></p></section>
   <section class="paper-box"><h2>Official link</h2><p><a href="https://doi.org/10.1109/TIM.2026.3661693">https://doi.org/10.1109/TIM.2026.3661693</a></p><p class="note">For publisher-restricted articles, link to the DOI or an allowed accepted manuscript rather than uploading a restricted PDF.</p></section>
   <section id="bibtex" class="paper-box"><h2>BibTeX</h2><pre><code>@article{Mansour2026driftresistant,

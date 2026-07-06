@@ -113,3 +113,118 @@
   margin-bottom: 1rem;
   line-height: 1.75;
 }
+
+/* ============================================================
+   Resume, CV, visual research atlas, and publication figures
+   Added by scripts/apply_resume_visual_upgrade.py
+   ============================================================ */
+.resume-hero,
+.home-visual-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 2rem;
+  align-items: center;
+}
+.resume-hero { padding-top: 3rem; padding-bottom: 2rem; }
+.resume-photo-card,
+.home-visual-figure {
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #dfe7ea);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(13, 45, 55, 0.10);
+}
+.resume-photo-card img { width: 100%; max-height: 420px; object-fit: cover; object-position: top center; display: block; }
+.home-visual-figure img { width: 100%; display: block; }
+.resume-photo-card figcaption,
+.home-visual-figure figcaption,
+.paper-visual-card figcaption,
+.visual-atlas-caption p {
+  color: var(--muted-foreground, #56646b);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+.resume-photo-card figcaption,
+.home-visual-figure figcaption { padding: 1rem 1.1rem; }
+.resume-grid,
+.two-column-cv {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.68fr);
+  gap: 1.25rem;
+}
+.resume-card.wide { min-height: 100%; }
+.resume-section { padding-top: 1.4rem; padding-bottom: 1.4rem; }
+.timeline-list { display: grid; gap: 0.9rem; }
+.timeline-item {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #dfe7ea);
+  border-radius: 16px;
+}
+.timeline-item span { font-weight: 700; color: var(--primary, #0d6f7e); font-size: 0.9rem; }
+.timeline-item h3 { margin: 0 0 0.35rem; }
+.timeline-item p { margin: 0; color: var(--muted-foreground, #56646b); }
+.tag-cloud-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.55rem; }
+.tag-cloud-list li {
+  padding: 0.46rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(13, 111, 126, 0.08);
+  border: 1px solid rgba(13, 111, 126, 0.15);
+  color: var(--primary, #0d6f7e);
+  font-weight: 650;
+  font-size: 0.88rem;
+}
+.link-list.compact { padding-left: 1.1rem; }
+.compact-actions { gap: 0.6rem; flex-wrap: wrap; }
+.cv-profile-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+}
+.cv-profile-card img { width: 150px; height: 150px; object-fit: cover; object-position: top center; border-radius: 18px; }
+.visual-atlas-section { padding-top: 2rem; padding-bottom: 2.5rem; }
+.section-lead { max-width: 850px; color: var(--muted-foreground, #56646b); font-size: 1.05rem; line-height: 1.7; }
+.visual-atlas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.visual-atlas-card {
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #dfe7ea);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 34px rgba(13, 45, 55, 0.08);
+}
+.visual-atlas-card img { width: 100%; display: block; background: #fff; }
+.visual-atlas-caption { padding: 1rem 1.1rem 1.15rem; }
+.visual-atlas-caption h3 { margin: 0 0 0.45rem; }
+.home-visual-entry { padding-top: 2rem; padding-bottom: 2rem; }
+.paper-visuals-section { margin-top: 1.25rem; }
+.paper-visual-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
+.paper-visual-card {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--border, #dfe7ea);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.paper-visual-card img { width: 100%; display: block; background: #fff; }
+.paper-visual-card figcaption { padding: 0.9rem 1rem 1rem; }
+.mini-card h3 { margin-top: 0; }
+@media (max-width: 850px) {
+  .resume-hero,
+  .home-visual-entry,
+  .resume-grid,
+  .two-column-cv,
+  .visual-atlas-grid,
+  .paper-visual-grid,
+  .cv-profile-card { grid-template-columns: 1fr; }
+  .timeline-item { grid-template-columns: 1fr; }
+  .cv-profile-card img { width: 120px; height: 120px; }
+}

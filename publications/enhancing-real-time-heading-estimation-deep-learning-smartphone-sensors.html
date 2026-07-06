@@ -62,7 +62,8 @@
   <nav class="nav container">
     <a class="brand" href="../index.html">Indoor Positioning Hub</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a></div>
+    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a>
+        <a href="../../cv.html">CV</a></div>
   </nav>
 </header>
 <main class="container page publication-page">
@@ -107,7 +108,20 @@
 
 
   <section class="paper-box"><h2>Extended summary</h2><p>This paper improves real-time smartphone heading estimation by combining embedded sensors with deep learning-based visual feature tracking to mitigate gyroscope drift and compass bias.</p></section>
-  <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>deep learning supports smartphone heading estimation</li><li>visual constraints are integrated with inertial and magnetic sensing</li><li>pedestrian navigation requires real-time heading stabilization</li><li>sensor-only or pervasive-resource navigation methods are compared</li></ul></section>
+  <!-- BEGIN paper visual explanation -->
+<section id="paper-visuals" class="paper-visuals-section card">
+      <h2>Key visual explanation</h2>
+      <p>These selected visuals help readers understand the method quickly before reading the full paper.</p>
+      <div class="paper-visual-grid">
+        <figure class="paper-visual-card">
+          <img src="../assets/figures/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors/smartphone-poses-trajectories.webp" alt="Deep learning for phone-pose variability" loading="lazy">
+          <figcaption><strong>Deep learning for phone-pose variability.</strong> The illustrated trajectories show why embedded-sensor heading estimation benefits from learning pose-dependent patterns rather than assuming a fixed phone orientation.</figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- END paper visual explanation -->
+
+<section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>deep learning supports smartphone heading estimation</li><li>visual constraints are integrated with inertial and magnetic sensing</li><li>pedestrian navigation requires real-time heading stabilization</li><li>sensor-only or pervasive-resource navigation methods are compared</li></ul></section>
   <section class="paper-box"><h2>Keywords</h2><p class="keywords"><span>heading estimation</span><span>deep learning</span><span>smartphone sensors</span><span>pedestrian navigation</span><span>visual features</span><span>gyro drift</span><span>magnetic field</span></p></section>
   <section class="paper-box"><h2>Official link</h2><p><a href="https://doi.org/10.1038/s41598-025-13390-9">https://doi.org/10.1038/s41598-025-13390-9</a></p><p class="note">For publisher-restricted articles, link to the DOI or an allowed accepted manuscript rather than uploading a restricted PDF.</p></section>
   <section id="bibtex" class="paper-box"><h2>BibTeX</h2><pre><code>@article{Ye2025enhancing,

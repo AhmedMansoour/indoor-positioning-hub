@@ -81,7 +81,8 @@
   <nav class="nav container">
     <a class="brand" href="../index.html">Indoor Positioning Hub</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a></div>
+    <div class="nav-links"><a class="active" href="../publications.html">Publications</a> <a href="../research-themes.html">Research Themes</a> <a href="../resources.html">Datasets & Code</a> <a href="../citation-resources.html">Citation Resources</a> <a href="../about.html">About</a>
+        <a href="../../cv.html">CV</a></div>
   </nav>
 </header>
 <main class="container page publication-page">
@@ -126,7 +127,24 @@
 
 
   <section class="paper-box"><h2>Extended summary</h2><p>This review frames mobile crowdsensing-based 3D radio mapping as a reliability-governed lifecycle problem, linking initial map generation, map updating, uncertainty, validation, and deployment-oriented IPS pipelines.</p></section>
-  <section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>autonomous or crowdsensed radio map generation is discussed</li><li>Wi-Fi fingerprinting needs scalable 3D or multi-floor radio maps</li><li>uncertainty-aware radio map updating and validation are reviewed</li><li>deployment-oriented IPS lifecycle pipelines are needed</li></ul></section>
+  <!-- BEGIN paper visual explanation -->
+<section id="paper-visuals" class="paper-visuals-section card">
+      <h2>Key visual explanation</h2>
+      <p>These selected visuals help readers understand the method quickly before reading the full paper.</p>
+      <div class="paper-visual-grid">
+        <figure class="paper-visual-card">
+          <img src="../assets/figures/reliability-governed-3d-radio-mapping-lifecycle-review/radio-map-reliability-write-back.webp" alt="Reliability gate before radio-map update" loading="lazy">
+          <figcaption><strong>Reliability gate before radio-map update.</strong> This visual summarizes the paper narrative: a candidate fingerprint should not overwrite a radio map until it passes reliability checks for location, feature stability, confidence, and structure.</figcaption>
+        </figure>
+<figure class="paper-visual-card">
+          <img src="../assets/figures/reliability-governed-3d-radio-mapping-lifecycle-review/skeleton-assembly-refinement.webp" alt="From local skeletons to 3D radio-map structure" loading="lazy">
+          <figcaption><strong>From local skeletons to 3D radio-map structure.</strong> The three-stage visual explains how floor-local traces can become a building-level spatial model and then be globally refined using anchors and structural constraints.</figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- END paper visual explanation -->
+
+<section id="when-to-cite" class="paper-box"><h2>When to cite this paper</h2><ul><li>autonomous or crowdsensed radio map generation is discussed</li><li>Wi-Fi fingerprinting needs scalable 3D or multi-floor radio maps</li><li>uncertainty-aware radio map updating and validation are reviewed</li><li>deployment-oriented IPS lifecycle pipelines are needed</li></ul></section>
   <section class="paper-box"><h2>Keywords</h2><p class="keywords"><span>indoor positioning systems</span><span>Wi-Fi fingerprinting</span><span>crowd-powered radio mapping</span><span>mobile crowdsensing</span><span>uncertainty modeling</span><span>reliability governance</span><span>multi-floor localization</span><span>3D radio maps</span></p></section>
   <section class="paper-box"><h2>Official link</h2><p><a href="https://doi.org/10.1016/j.inffus.2026.104459">https://doi.org/10.1016/j.inffus.2026.104459</a></p><p class="note">For publisher-restricted articles, link to the DOI or an allowed accepted manuscript rather than uploading a restricted PDF.</p></section>
   <section id="bibtex" class="paper-box"><h2>BibTeX</h2><pre><code>@article{Mansour2026reliabilitygoverned,

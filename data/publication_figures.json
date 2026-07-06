@@ -1,0 +1,161 @@
+{
+  "drift-control-pdr-long-period-navigation-smartphone-poses": [
+    {
+      "file": "../assets/figures/drift-control-pdr-long-period-navigation-smartphone-poses/fig_01_page_3.webp",
+      "title": "PDR drift-control workflow",
+      "caption": "The workflow connects raw accelerometer, gyroscope, and magnetometer streams to pose detection, step counting, heading estimation, and outer filtering, explaining how the paper manages long-period PDR drift under different phone poses."
+    }
+  ],
+  "drift-resistant-heading-estimation-wifi-magnetic-stability": [
+    {
+      "file": "../assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/fig_01_page_9.webp",
+      "title": "Drift-resistant heading fusion architecture",
+      "caption": "The figure shows the layered estimator: Wi-Fi fingerprinting, magnetic processing, PDR step detection, quality gates, gyroscope consistency, and EKF fusion jointly support qualified heading updates."
+    },
+    {
+      "file": "../assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/fig_02_page_5.webp",
+      "title": "Qualified and unqualified Wi-Fi heading intervals",
+      "caption": "The visual separates stable fingerprinting segments from unreliable ones, illustrating why heading correction should be activated only when the Wi-Fi and magnetic evidence is trustworthy."
+    },
+    {
+      "file": "../assets/figures/drift-resistant-heading-estimation-wifi-magnetic-stability/smartphone-poses-trajectories.webp",
+      "title": "Pose-dependent heading behavior",
+      "caption": "The trajectory view explains why heading correction cannot be independent of carrying mode, since swinging, calling, handheld, mixed, and pocket conditions reshape the inertial signal pattern."
+    }
+  ],
+  "everywhere-framework-ubiquitous-indoor-localization": [
+    {
+      "file": "../assets/figures/everywhere-framework-ubiquitous-indoor-localization/fig_03_page_6.webp",
+      "title": "Crowdsourced database generation workflow",
+      "caption": "Crowdsourced inertial and Wi-Fi measurements are filtered, segmented, aligned, and transformed into anchor-node localization and database generation, turning ordinary user traces into deployment material."
+    },
+    {
+      "file": "../assets/figures/everywhere-framework-ubiquitous-indoor-localization/fig_04_page_2.webp",
+      "title": "Everywhere offline and online engines",
+      "caption": "The architecture separates offline database construction from online positioning, where inertial sensing, Wi-Fi, step detection, and weighted fusion support ubiquitous indoor localization."
+    },
+    {
+      "file": "../assets/figures/everywhere-framework-ubiquitous-indoor-localization/scaling-ips-principles.webp",
+      "title": "Scaling principles behind Everywhere",
+      "caption": "The conceptual map connects Everywhere to the broader goal of generic, self-healing, user-centered indoor positioning that works beyond a single building or device."
+    }
+  ],
+  "leveraging-human-mobility-pervasive-smartphone-crowdsourcing": [
+    {
+      "file": "../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_01_page_3.webp",
+      "title": "Crowd trajectory accumulation",
+      "caption": "The figure shows dense human mobility traces collected across time, making visible how repeated ordinary movement can become the raw material for self-deployable indoor positioning."
+    },
+    {
+      "file": "../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_03_page_3.webp",
+      "title": "Eight-step self-deployable IPS process",
+      "caption": "The scheme moves from data collection to inertial selection, track generation, anchor-node detection, consistency checking, database generation, and internal-node inference."
+    },
+    {
+      "file": "../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_04_page_5.webp",
+      "title": "Generated traces and radio signatures",
+      "caption": "Example outputs show how crowdsourced tracks and wireless measurements can be converted into spatial signatures that support later localization."
+    },
+    {
+      "file": "../assets/figures/leveraging-human-mobility-pervasive-smartphone-crowdsourcing/fig_05_page_5.webp",
+      "title": "Trajectory alignment with anchors and access points",
+      "caption": "The visual compares reference traces with alignment results before and after using anchor nodes and Wi-Fi access-node information, showing the value of structural correction."
+    }
+  ],
+  "power-of-many-multi-user-collaborative-indoor-localization": [
+    {
+      "file": "../assets/figures/power-of-many-multi-user-collaborative-indoor-localization/fig_01_page_4.webp",
+      "title": "Multi-user collaborative localization flow",
+      "caption": "The decision process uses user history, proximity, and collaborative constraints to decide when neighboring users can help correct an individual trajectory."
+    }
+  ],
+  "suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness": [
+    {
+      "file": "../assets/figures/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness/fig_02_page_8.webp",
+      "title": "Handover mechanism-based IOD service",
+      "caption": "GNSS, inertial data, Wi-Fi, EXIF/PDR cues, and handover logic are combined to switch among outdoor positioning, pedestrian dead reckoning, and indoor positioning modes."
+    },
+    {
+      "file": "../assets/figures/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness/fig_03_page_7.webp",
+      "title": "SUNS application and real-time state display",
+      "caption": "The mobile interface links seamless navigation, map injection, automated rendered IOD, and sensor-state diagnostics to show how the method can operate in a user-facing service."
+    },
+    {
+      "file": "../assets/figures/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness/context-descriptor-atlas.webp",
+      "title": "Context-aware IOD descriptor",
+      "caption": "The descriptor links motion, phone pose, transition events, gates, vertical movement, and session integrity, helping readers understand SUNS as a context-aware handover service."
+    }
+  ],
+  "towards-scalable-ips-user-centric-crowd-powered-framework": [
+    {
+      "file": "../assets/figures/towards-scalable-ips-user-centric-crowd-powered-framework/fig_01_page_7.webp",
+      "title": "User-centric challenge structure",
+      "caption": "The review organizes crowd-powered IPS around user intervention, motivation, privacy/security, device burden, and participation, making scalability a human and technical problem at the same time."
+    },
+    {
+      "file": "../assets/figures/towards-scalable-ips-user-centric-crowd-powered-framework/fig_04_page_8.webp",
+      "title": "Smartphone sensing and communication layer",
+      "caption": "The figure summarizes embedded sensors and communication interfaces available for crowd-powered IPS, including inertial sensors, magnetometer, GNSS, Wi-Fi, BLE, cellular, NFC, and related mobile signals."
+    },
+    {
+      "file": "../assets/figures/towards-scalable-ips-user-centric-crowd-powered-framework/deployment-realities.webp",
+      "title": "User and phone realities in crowd-powered IPS",
+      "caption": "The figure translates the review into a deployment scene: privacy permissions, battery state, missing data, pose changes, and cross-building use govern whether a crowdsensing scheme can scale."
+    },
+    {
+      "file": "../assets/figures/towards-scalable-ips-user-centric-crowd-powered-framework/scaling-ips-principles.webp",
+      "title": "Principles for scaling IPS",
+      "caption": "The conceptual map distills the review message into five design principles: low user dependency, user-centered design, self-healing behavior, generic infrastructure, and global applicability."
+    }
+  ],
+  "towards-ubiquitous-ips-crowdsourced-data-accumulation": [
+    {
+      "file": "../assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/fig_03_page_5.webp",
+      "title": "Crowdsourced accumulation for initial radio maps",
+      "caption": "Accumulated trajectories and grid-level signatures show how repeated visits can reduce dependence on manual survey or external sources when initializing a fingerprinting map."
+    },
+    {
+      "file": "../assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/fig_04_page_6.webp",
+      "title": "RSS field examples from automatic initialization",
+      "caption": "The signal-strength maps illustrate how automatic fingerprints are formed from user traces and later used as an initial radio map for localization."
+    },
+    {
+      "file": "../assets/figures/towards-ubiquitous-ips-crowdsourced-data-accumulation/skeleton-assembly-refinement.webp",
+      "title": "Autonomous spatial assembly from user traces",
+      "caption": "The staged skeleton-assembly-refinement view supports the idea that ordinary mobility traces can gradually construct stronger map and radio-map structure."
+    }
+  ],
+  "hybrid-neural-network-pdr-multi-layer-heading-correction": [
+    {
+      "file": "../assets/figures/hybrid-neural-network-pdr-multi-layer-heading-correction/smartphone-poses-trajectories.webp",
+      "title": "Carrying-mode-aware PDR",
+      "caption": "The figure makes the central motivation clear: multi-layer heading correction must remain stable when the phone moves among everyday carrying modes."
+    }
+  ],
+  "enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors": [
+    {
+      "file": "../assets/figures/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors/smartphone-poses-trajectories.webp",
+      "title": "Deep learning for phone-pose variability",
+      "caption": "The illustrated trajectories show why embedded-sensor heading estimation benefits from learning pose-dependent patterns rather than assuming a fixed phone orientation."
+    }
+  ],
+  "reliability-governed-3d-radio-mapping-lifecycle-review": [
+    {
+      "file": "../assets/figures/reliability-governed-3d-radio-mapping-lifecycle-review/radio-map-reliability-write-back.webp",
+      "title": "Reliability gate before radio-map update",
+      "caption": "This visual summarizes the paper narrative: a candidate fingerprint should not overwrite a radio map until it passes reliability checks for location, feature stability, confidence, and structure."
+    },
+    {
+      "file": "../assets/figures/reliability-governed-3d-radio-mapping-lifecycle-review/skeleton-assembly-refinement.webp",
+      "title": "From local skeletons to 3D radio-map structure",
+      "caption": "The three-stage visual explains how floor-local traces can become a building-level spatial model and then be globally refined using anchors and structural constraints."
+    }
+  ],
+  "modular-prompting-ai-guided-user-engagement-crowd-powered-ips": [
+    {
+      "file": "../assets/figures/modular-prompting-ai-guided-user-engagement-crowd-powered-ips/context-descriptor-atlas.webp",
+      "title": "Semantic context for unobtrusive prompting",
+      "caption": "The context atlas shows the type of motion, pose, transition, and integrity signals that can guide when an AI assistant should ask for user input and when it should stay silent."
+    }
+  ]
+}

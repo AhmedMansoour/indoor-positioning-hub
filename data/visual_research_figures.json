@@ -1,0 +1,42 @@
+[
+  {
+    "file": "smart-building-positioning-system.webp",
+    "title": "Smart building positioning system",
+    "caption": "A high-level view of the hub: wireless signals, indoor floor geometry, smartphones, and route traces become one positioning service for smart buildings and academic research visualization."
+  },
+  {
+    "file": "context-descriptor-atlas.webp",
+    "title": "Context descriptor c(t)",
+    "caption": "This visual groups motion state, carrying mode, turns, stops, vertical transitions, indoor-outdoor gates, and data-quality events into a compact context layer for adaptive positioning."
+  },
+  {
+    "file": "smartphone-poses-trajectories.webp",
+    "title": "Phone pose and trajectory behavior",
+    "caption": "The same pedestrian route can look different under swinging, handheld, calling, mixed, and pocket use. The figure explains why pose-aware correction is central to smartphone PDR."
+  },
+  {
+    "file": "radio-map-reliability-write-back.webp",
+    "title": "Reliability-governed radio-map write-back",
+    "caption": "Candidate fingerprints pass through spatial, feature, denoising, confidence, and structural gates before they are allowed to update the radio map."
+  },
+  {
+    "file": "scalable-crowd-powered-ips-user-realities.webp",
+    "title": "Crowd-powered IPS deployment realities",
+    "caption": "Scalable indoor positioning must handle battery limits, privacy permissions, missing scans, carrying mode changes, cross-building differences, and real user behavior."
+  },
+  {
+    "file": "multisensor-session-log-stream.webp",
+    "title": "Multisensor session log stream",
+    "caption": "A mobile session y(t) can aggregate Wi-Fi, IMU, barometer, magnetometer, GNSS, and application events, turning raw sensing into a time-ordered spatial evidence stream."
+  },
+  {
+    "file": "skeleton-assembly-refinement.webp",
+    "title": "Skeleton, assembly, and refinement",
+    "caption": "Floor-local route skeletons are assembled into a building-local 3D structure and refined using access-point anchors, gate constraints, and global geometric adjustment."
+  },
+  {
+    "file": "scaling-ips-principles.webp",
+    "title": "Principles for scaling IPS",
+    "caption": "The conceptual goal is a generic, self-healing, user-centered IPS that learns from ordinary user data while reducing dependency on skilled surveyors and device-specific calibration."
+  }
+]

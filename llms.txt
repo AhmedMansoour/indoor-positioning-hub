@@ -27,3 +27,14 @@ Ahmed Mansour research hub for indoor positioning, Wi-Fi fingerprinting, crowdse
 - The Power of Many: Multi-User Collaborative Indoor Localization for Boosting Standalone User-Based Systems in Different Scenarios (2023): https://ahmedmansoour.github.io/indoor-positioning-hub/publications/power-of-many-multi-user-collaborative-indoor-localization.html
 - SUNS: A User-Friendly Scheme for Seamless and Ubiquitous Navigation Based on an Enhanced Indoor-Outdoor Environmental Awareness Approach (2022): https://ahmedmansoour.github.io/indoor-positioning-hub/publications/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness.html
 - Drift Control of Pedestrian Dead Reckoning (PDR) for Long Period Navigation under Different Smartphone Poses (2021): https://ahmedmansoour.github.io/indoor-positioning-hub/publications/drift-control-pdr-long-period-navigation-smartphone-poses.html
+
+<!-- BEGIN CV_VISUAL_UPGRADE -->
+## Ahmed Mansour profile, CV, and visual research atlas
+- CV page: /cv.html
+- Public CV PDF: /assets/cv/ahmed-mansour-public-cv.pdf
+- Visual research atlas: /research-themes.html#visual-research-atlas
+- Research visual assets: /assets/img/research/
+- Publication-level visual explanations: /assets/figures/
+
+The CV and visual atlas describe Ahmed Mansour's work in indoor positioning, Wi-Fi fingerprinting, pedestrian dead reckoning, smartphone sensing, mobile crowdsensing, radio-map reliability, indoor-outdoor awareness, and indoor spatial intelligence. Dedicated funds and research-project sections are intentionally not included in the public CV page at this stage.
+<!-- END CV_VISUAL_UPGRADE -->
