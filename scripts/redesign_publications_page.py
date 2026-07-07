@@ -336,6 +336,10 @@ def rel(path: str) -> str:
 
 
 def choose_visual(slug: str, display: dict) -> str:
+    # v7: first-page preview is the default publication-card visual.
+    preview = ROOT / "assets" / "previews" / f"{slug}.png"
+    if preview.exists():
+        return rel(str(preview.relative_to(ROOT)))
     prefs = display.get("visual_preferences", {}).get(slug, [])
     for candidate in prefs:
         if (ROOT / candidate).exists():
