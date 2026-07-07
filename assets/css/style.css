@@ -1009,88 +1009,102 @@ img.pub-visual-image {
 }
 /* === Publications first-page preview whitespace fix v9 END === */
 
-/* === Publications A4 first-page preview ratio v11 START === */
+
+/* === Publications compact A4 thumbnail ratio v12 START === */
 /*
-   Final publication-card preview behavior:
-   - the right-side figure box is a real A4 portrait thumbnail, 210:297;
-   - the box height is determined by its width, not by the full card height;
-   - the first page fills the box without the stretched white panel underneath;
-   - the image is not zoomed out by a tall frame.
+   Senior layout fix:
+   The right-side preview is a compact paper thumbnail, not a full-size A4 page.
+   The container preserves the A4 portrait ratio (210:297), but its width is
+   intentionally capped so the publication card remains balanced.
 */
+
 .pub-visual-card,
-.pub-card.pub-visual-card {
+.publication-visual-card,
+.pub-card {
   align-items: start !important;
-  grid-template-columns: minmax(0, 1fr) clamp(245px, 24vw, 330px) !important;
-  column-gap: clamp(1.2rem, 2.2vw, 2.1rem) !important;
 }
 
-.pub-visual-side,
-.pub-card-visual,
-.pub-card-media,
-.pub-figure-panel,
-.pub-preview-side {
-  align-self: start !important;
-  min-height: 0 !important;
-  height: auto !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: flex-start !important;
+/* Main two-column publication card layout */
+.pub-visual-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) clamp(190px, 18vw, 255px) !important;
+  gap: clamp(1.25rem, 2vw, 2.25rem) !important;
 }
 
-.pub-a4-page-frame,
-.pub-visual-frame,
-.pub-firstpage-crop-frame {
-  width: 100% !important;
-  max-width: 330px !important;
+/* Right-side A4 thumbnail frame */
+.pub-visual-frame.pub-compact-a4-frame,
+.pub-compact-a4-frame {
+  width: clamp(190px, 18vw, 255px) !important;
+  max-width: 255px !important;
   aspect-ratio: 210 / 297 !important;
   height: auto !important;
   min-height: 0 !important;
   max-height: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
+  align-self: start !important;
+  justify-self: end !important;
   display: block !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(37, 99, 235, 0.16) !important;
-  border-radius: 18px !important;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12) !important;
+  box-sizing: border-box !important;
+  padding: 10px !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+  background: linear-gradient(145deg, rgba(255,255,255,0.96), rgba(236,246,251,0.78)) !important;
+  border: 1px solid rgba(124, 166, 190, 0.26) !important;
+  box-shadow: 0 18px 45px rgba(15, 45, 70, 0.10) !important;
 }
 
-.pub-a4-page-frame img,
-.pub-visual-frame img,
-.pub-firstpage-crop-frame img {
+/* The image fills the compact A4 frame without becoming a huge column */
+.pub-visual-frame.pub-compact-a4-frame img,
+.pub-compact-a4-frame img {
+  display: block !important;
   width: 100% !important;
   height: 100% !important;
-  display: block !important;
+  max-width: none !important;
+  max-height: none !important;
   object-fit: cover !important;
   object-position: top center !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: inherit !important;
-  background: #ffffff !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+  box-shadow: 0 8px 24px rgba(10, 33, 55, 0.10) !important;
 }
 
-/* Neutralize older preview-frame stretching rules. */
-.pub-visual-frame::before,
-.pub-firstpage-crop-frame::before,
-.pub-a4-page-frame::before,
+/* Prevent older preview wrappers from stretching the card height */
+.pub-visual-side,
+.pub-preview-side,
+.pub-card-visual,
+.pub-visual-col {
+  align-self: start !important;
+  justify-self: end !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+
+/* Remove any caption space left by earlier versions */
 .pub-visual-caption,
 .pub-preview-caption {
   display: none !important;
 }
 
+/* Mobile layout: keep the A4 ratio but let the thumbnail sit under the text */
 @media (max-width: 900px) {
-  .pub-visual-card,
-  .pub-card.pub-visual-card {
+  .pub-visual-card {
     grid-template-columns: 1fr !important;
   }
 
-  .pub-a4-page-frame,
-  .pub-visual-frame,
-  .pub-firstpage-crop-frame {
-    width: min(100%, 330px) !important;
-    margin: 0 auto !important;
+  .pub-visual-frame.pub-compact-a4-frame,
+  .pub-compact-a4-frame {
+    width: min(72vw, 260px) !important;
+    max-width: 260px !important;
+    justify-self: start !important;
+    margin-top: 1rem !important;
+  }
+
+  .pub-visual-side,
+  .pub-preview-side,
+  .pub-card-visual,
+  .pub-visual-col {
+    justify-self: start !important;
   }
 }
-/* === Publications A4 first-page preview ratio v11 END === */
+/* === Publications compact A4 thumbnail ratio v12 END === */
+
