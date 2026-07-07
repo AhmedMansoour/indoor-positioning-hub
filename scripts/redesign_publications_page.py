@@ -276,7 +276,7 @@ CSS_BLOCK = r"""
   width: 100%;
   height: 100%;
   max-height: none;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 .pub-visual-caption {
@@ -336,6 +336,10 @@ def rel(path: str) -> str:
 
 
 def choose_visual(slug: str, display: dict) -> str:
+    # v8: first-page preview must be the publication-card visual.
+    preview = ROOT / "assets" / "previews" / f"{slug}.png"
+    if preview.exists():
+        return rel(str(preview.relative_to(ROOT)))
     # v7: first-page preview is the default publication-card visual.
     preview = ROOT / "assets" / "previews" / f"{slug}.png"
     if preview.exists():

@@ -831,10 +831,11 @@ body {
   }
 }
 
-/* === Publications first-page preview and reading text v7 === */
-/* Use the first page of each paper as the visual anchor in the publications portfolio. */
+/* === Publications first-page cards v8 === */
+/* Force every publication-card visual to use the paper first-page preview. */
 .hero.compact {
   max-width: 980px;
+  padding-top: 3.1rem;
 }
 .hero.compact .lead {
   color: #5e6d80;
@@ -864,7 +865,7 @@ body {
   color: #0a3b5b;
 }
 .pub-visual-card {
-  grid-template-columns: minmax(0, 1.34fr) minmax(245px, 0.52fr) !important;
+  grid-template-columns: minmax(0, 1.34fr) minmax(250px, 0.52fr) !important;
 }
 .pub-visual-panel {
   padding: 0.62rem !important;
@@ -873,11 +874,13 @@ body {
     linear-gradient(135deg, rgba(244, 250, 253, 0.98), rgba(247, 247, 255, 0.98)) !important;
   border: 1px solid rgba(55, 110, 148, 0.14) !important;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.68), 0 16px 38px rgba(14, 54, 84, 0.075) !important;
+  align-self: stretch;
+  display: flex;
 }
 .pub-visual-frame {
   width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
+  height: 100% !important;
+  min-height: 340px !important;
   aspect-ratio: 210 / 297 !important;
   border-radius: 22px !important;
   overflow: hidden !important;
@@ -889,7 +892,7 @@ body {
   height: 100% !important;
   max-width: none !important;
   max-height: none !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   object-position: top center !important;
   display: block !important;
   background: #fff !important;
@@ -897,7 +900,8 @@ body {
 .pub-visual-caption {
   display: none !important;
 }
-.pub-paper-lens {
+.pub-paper-lens,
+.pub-insight-box {
   color: #626f7f;
   font-size: 0.96rem;
   line-height: 1.76;
@@ -907,13 +911,16 @@ body {
     grid-template-columns: 1fr !important;
   }
   .pub-visual-panel {
-    max-width: 360px;
+    max-width: 380px;
     margin-inline: auto;
     order: -1;
+  }
+  .pub-visual-frame {
+    min-height: 0 !important;
   }
 }
 @media (max-width: 560px) {
   .pub-visual-panel {
-    max-width: 280px;
+    max-width: 290px;
   }
 }
