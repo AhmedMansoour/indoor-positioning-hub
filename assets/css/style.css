@@ -924,3 +924,87 @@ body {
     max-width: 290px;
   }
 }
+
+/* === Publications first-page preview whitespace fix v9 START === */
+/*
+   Makes each publication-card preview behave like a paper-page thumbnail,
+   not a stretched decorative panel. The right visual column now hugs the
+   image height, and the image starts at the top of its rounded frame.
+*/
+.publications-visual-page .pub-visual-card,
+.pub-visual-card,
+.publication-visual-card {
+  align-items: start !important;
+}
+
+.publications-visual-page .pub-visual-media,
+.publications-visual-page .pub-visual-panel,
+.publications-visual-page .pub-card-visual,
+.publications-visual-page .pub-preview-panel,
+.publications-visual-page .pub-visual-right,
+.pub-visual-media,
+.pub-visual-panel,
+.pub-card-visual,
+.pub-preview-panel,
+.pub-visual-right {
+  align-self: start !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+
+.publications-visual-page .pub-visual-frame,
+.publications-visual-page .pub-preview-frame,
+.publications-visual-page .pub-card-preview,
+.publications-visual-page .pub-figure-frame,
+.pub-visual-frame,
+.pub-preview-frame,
+.pub-card-preview,
+.pub-figure-frame {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding: clamp(10px, 1.15vw, 18px) !important;
+  overflow: hidden !important;
+}
+
+.publications-visual-page .pub-visual-frame img,
+.publications-visual-page .pub-preview-frame img,
+.publications-visual-page .pub-card-preview img,
+.publications-visual-page .pub-figure-frame img,
+.publications-visual-page .pub-visual-media img,
+.publications-visual-page img.pub-visual-image,
+.pub-visual-frame img,
+.pub-preview-frame img,
+.pub-card-preview img,
+.pub-figure-frame img,
+.pub-visual-media img,
+img.pub-visual-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: top center !important;
+  margin: 0 !important;
+  border-radius: 16px !important;
+}
+
+.publications-visual-page .pub-visual-caption,
+.publications-visual-page .pub-preview-caption,
+.pub-visual-caption,
+.pub-preview-caption {
+  display: none !important;
+}
+
+@media (min-width: 980px) {
+  .publications-visual-page .pub-visual-card,
+  .pub-visual-card,
+  .publication-visual-card {
+    grid-template-columns: minmax(0, 1fr) minmax(270px, 0.34fr) !important;
+  }
+}
+/* === Publications first-page preview whitespace fix v9 END === */
