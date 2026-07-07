@@ -1,91 +1,37 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Indoor Positioning Hub | Ahmed Mansour</title>
-  <meta name="description" content="Indoor Positioning Hub by Ahmed Mansour, Ph.D., with publications, PDFs, citation resources, datasets, code links, visual research atlas, and definitions of indoor positioning, indoor localization, and indoor navigation.">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="home-v23-page">
-  <header class="site-header v23-site-header">
-    <a class="site-brand" href="index.html" aria-label="Indoor Positioning Hub home">
-      <span class="brand-mark">IP</span>
-      <span class="brand-text">Indoor Positioning Hub</span>
-    </a>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html" class="active">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="research-themes.html">Research Themes</a>
-      <a href="resources.html">Datasets &amp; Code</a>
-      <a href="citation-resources.html">Citation Resources</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+from pathlib import Path
+import re
+import shutil
 
-  <main class="v23-home" id="home">
-    <section class="v23-hero" aria-label="Ahmed Mansour academic homepage">
-      <div class="v23-hero-bg" aria-hidden="true"></div>
-      <div class="v23-hero-grid">
-        <div class="v23-hero-copy">
-          <p class="v23-eyebrow">Indoor Positioning Hub</p>
-          <h1>Ahmed Mansour, Ph.D.</h1>
-          <p class="v23-titleline">Indoor positioning, localization, navigation, and spatial intelligence for smart built environments.</p>
-          <p class="v23-lead">This website brings together my academic profile, publication portfolio, downloadable papers, citation resources, datasets, code links, and visual research maps. The research connects smartphone sensing, Wi-Fi fingerprinting, pedestrian dead reckoning, mobile crowdsensing, autonomous radio mapping, indoor-outdoor awareness, and deployment-ready indoor spatial intelligence.</p>
-          <div class="v23-actions" aria-label="Homepage shortcuts">
-            <a class="v23-btn v23-btn-main" href="publications.html">Explore publications</a>
-            <a class="v23-btn" href="#research-atlas">Research atlas</a>
-            <a class="v23-btn" href="assets/cv/ahmed-mansour-public-cv.pdf">Download CV</a>
-            <a class="v23-btn" href="citation-resources.html">Citation resources</a>
-          </div>
-          <div class="v23-tag-row" aria-label="Research keywords">
-            <span>Wi-Fi fingerprinting</span><span>PDR</span><span>GNSS/PDR integration</span><span>Mobile crowdsensing</span><span>Radio maps</span><span>Indoor-outdoor awareness</span>
-          </div>
-        </div>
+ROOT = Path('.')
+INDEX = ROOT / 'index.html'
+CSS = ROOT / 'assets' / 'css' / 'style.css'
+ASSET_DST = ROOT / 'assets' / 'home' / 'problem-tree-v25'
+BUNDLE_SRC = Path(__file__).resolve().parent.parent / 'bundle_assets' / 'problem-tree'
 
-        <aside class="v23-profile" aria-label="Ahmed Mansour profile card">
-          <div class="v23-photo-frame">
-            <img src="assets/img/profile/ahmed-mansour-photo.webp" alt="Ahmed Mansour academic profile photo" loading="eager" decoding="async">
-          </div>
-          <div class="v23-profile-body">
-            <h2>Indoor positioning researcher</h2>
-            <p>Researcher in geomatics, indoor localization, smartphone sensing, crowdsensing-based IPS, PDR, radio-map maintenance, and smart built-environment positioning.</p>
-            <div class="v23-mini-stats"><span><strong>17+</strong> outputs</span><span><strong>IPS</strong> methods and deployment</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
+if not INDEX.exists():
+    raise SystemExit('index.html not found. Run this script from the repository root.')
+if not CSS.exists():
+    raise SystemExit('assets/css/style.css not found. Run this script from the repository root.')
+if not BUNDLE_SRC.exists():
+    raise SystemExit('bundle_assets/problem-tree not found. Extract the full zip into the repository root first.')
 
-    <section class="v23-logos" aria-label="Academic affiliations">
-      <article><img src="assets/home/polyu-logo.webp" alt="The Hong Kong Polytechnic University logo" loading="lazy" decoding="async"><div><strong>The Hong Kong Polytechnic University</strong><span>Ph.D. research training and postdoctoral work in geomatics, sensor fusion, indoor positioning, and smart built environments.</span></div></article>
-      <article><img src="assets/home/cairo-university-logo.webp" alt="Cairo University logo" loading="lazy" decoding="async"><div><strong>Cairo University</strong><span>Civil engineering, public works, geomatics, surveying, and foundational engineering background.</span></div></article>
-    </section>
+ASSET_DST.mkdir(parents=True, exist_ok=True)
+for item in BUNDLE_SRC.iterdir():
+    if item.is_file():
+        shutil.copy2(item, ASSET_DST / item.name)
 
-    <section class="v23-section v23-definitions" id="definitions" aria-label="Definitions of indoor positioning localization and navigation">
-      <div class="v23-section-head">
-        <p class="v23-eyebrow">Field guide</p><h2>What are indoor positioning, indoor localization, and indoor navigation?</h2>
-        <p>These terms are related, but each describes a different layer of the indoor spatial-information pipeline. The distinction helps readers move from measurements to estimated locations, routes, services, and operational decisions inside buildings where satellite positioning is weak or unavailable.</p>
-      </div>
-      <div class="v23-def-grid">
-        <article><img src="assets/home/positioning-icon.webp" alt="Indoor positioning icon" loading="lazy" decoding="async"><h3>Indoor positioning</h3><p>Indoor positioning estimates the position of a person, smartphone, robot, asset, or sensor inside a building using radio signals, inertial sensors, maps, vision, magnetic fields, barometers, or fused measurements.</p></article>
-        <article><img src="assets/home/building-pin-icon.webp" alt="Indoor localization icon" loading="lazy" decoding="async"><h3>Indoor localization</h3><p>Indoor localization determines where the user or object is within an indoor reference frame, such as a coordinate, floor, room, corridor, zone, landmark, or building-level map representation.</p></article>
-        <article><img src="assets/home/campus-pin-icon.webp" alt="Indoor navigation icon" loading="lazy" decoding="async"><h3>Indoor navigation</h3><p>Indoor navigation uses position, heading, motion state, route information, and spatial context to guide movement, support wayfinding, enable location-aware services, and connect positioning outputs to decisions.</p></article>
-      </div>
-    </section>
+index_html = INDEX.read_text(encoding='utf-8', errors='ignore')
+css = CSS.read_text(encoding='utf-8', errors='ignore')
 
-    <section class="v23-section v23-bridge" aria-label="Research profile overview"><div class="v23-bridge-card"><div><p class="v23-eyebrow">Academic profile</p><h2>From positioning measurements to indoor spatial intelligence</h2><p>The hub is organized to help readers move from a research question to the relevant paper, method, dataset, figure, or citation entry. The work connects smartphone sensing, radio signals, human mobility, map information, and deployment constraints into practical positioning systems for buildings, campuses, cities, and smart built environments.</p></div><div class="v23-focus-list"><span>Seamless indoor-outdoor positioning</span><span>User-friendly crowd-powered IPS</span><span>Autonomous 3D radio-map scaling</span><span>Robust PDR and heading correction</span><span>GNSS/PDR integration in urban areas</span><span>Deployment-aware spatial intelligence</span></div></div></section>
+patterns = [
+    r'\n\s*<!-- === Homepage key thematic extension v24 START === -->.*?<!-- === Homepage key thematic extension v24 END === -->\s*\n',
+    r'\n\s*<!-- === Homepage problem tree v25 START === -->.*?<!-- === Homepage problem tree v25 END === -->\s*\n',
+    r'\n\s*<section[^>]*id=["\']key-thematic-map["\'][^>]*>.*?<h2>\s*Key thematic pathways across the hub\s*</h2>.*?</section>\s*\n',
+]
+for pat in patterns:
+    index_html = re.sub(pat, '\n', index_html, flags=re.S | re.I)
 
-    <section class="v23-section v23-atlas" id="research-atlas" aria-label="Research themes and visual research atlas">
-      <div class="v23-section-head v23-centered"><p class="v23-eyebrow">Research Themes and Visual Research Atlas</p><h2>A thematic map of Ahmed Mansour's work across indoor positioning research, engineering, and deployment.</h2><p>The atlas links core papers, system concepts, and visual explanations across sensing, inference, mapping, crowdsensing, pedestrian navigation, and deployment readiness.</p></div>
-      <div class="v23-atlas-grid">
-        <article class="v23-atlas-card v23-atlas-wide"><img src="assets/home/indoor-navigation-office.webp" alt="Indoor navigation and positioning in a smart building" loading="lazy" decoding="async"><div><h3>Smart indoor positioning in real buildings</h3><p>Indoor positioning systems must work in complex spaces with changing signals, moving users, multiple floors, and limited user attention. This direction connects research outputs to operational indoor services.</p><a href="publications.html">Open publication portfolio</a></div></article>
-        <article class="v23-atlas-card"><img src="assets/home/layered-building-positioning.webp" alt="Layered indoor positioning and localization concept" loading="lazy" decoding="async"><div><h3>Signals, sensors, maps, and context</h3><p>Research themes include Wi-Fi fingerprinting, PDR, sensor fusion, indoor-outdoor detection, radio-map maintenance, and context-aware positioning pipelines.</p><a href="research-themes.html">Explore research themes</a></div></article>
-        <article class="v23-atlas-card v23-list-card"><h3>Core directions</h3><ul><li>Indoor positioning and localization</li><li>Wi-Fi fingerprinting and autonomous radio maps</li><li>Pedestrian dead reckoning and heading control</li><li>Mobile crowdsensing and user-centered IPS</li><li>Indoor-outdoor awareness and seamless positioning</li><li>Spatial intelligence for smart built environments</li></ul></article>
-      </div>
-    </section>
-
-    <section class="v23-section v23-access" aria-label="Publication and citation access"><div class="v23-section-head"><p class="v23-eyebrow">Publication access</p>
-
+section = '''
 <!-- === Homepage problem tree v25 START === -->
 <section class="home-problem-tree" id="key-thematic-map">
   <div class="home-section-heading problem-tree-heading">
@@ -286,9 +232,229 @@
   </div>
 </section>
 <!-- === Homepage problem tree v25 END === -->
+'''
 
-<h2>Find papers, PDFs, citation records, and visual explanations</h2><p>Each publication page is designed for fast reading and reuse, with first-page previews, PDF access where available, DOI metadata, BibTeX, when-to-cite guidance, long research-story summaries, and selected visual explanations.</p></div><div class="v23-access-grid"><a href="publications.html"><strong>Publication portfolio</strong><span>Visual paper cards with first-page previews, DOI links, venues, and topic cues.</span></a><a href="citation-resources.html"><strong>Citation resources</strong><span>BibTeX entries, citation-ready paper titles, and paper-use guidance.</span></a><a href="resources.html"><strong>Datasets and code</strong><span>Shared resources, reproducibility links, and supporting research materials.</span></a><a href="about.html"><strong>About Ahmed Mansour</strong><span>Academic background, research focus, and contact links.</span></a></div></section>
-  </main>
-  <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
-</body>
-</html>
+inserted = False
+for marker in ['<p class="eyebrow">Publication access</p>', '<h2>Find papers, PDFs, citation records, and visual explanations</h2>', '<footer']:
+    pos = index_html.find(marker)
+    if pos != -1:
+        index_html = index_html[:pos] + section + '\n' + index_html[pos:]
+        inserted = True
+        break
+if not inserted:
+    pos = index_html.rfind('</main>')
+    if pos != -1:
+        index_html = index_html[:pos] + section + '\n' + index_html[pos:]
+    else:
+        index_html = index_html.rstrip() + '\n' + section + '\n'
+
+INDEX.write_text(index_html, encoding='utf-8')
+
+css = re.sub(r'/\* === Homepage problem tree v25 START === \*/.*?/\* === Homepage problem tree v25 END === \*/', '', css, flags=re.S)
+css = re.sub(r'/\* === Homepage key thematic extension v24 START === \*/.*?/\* === Homepage key thematic extension v24 END === \*/', '', css, flags=re.S)
+
+css_block = '''
+/* === Homepage problem tree v25 START === */
+.home-problem-tree {
+  width: min(1220px, calc(100% - 32px));
+  margin: 56px auto 36px;
+}
+.problem-tree-heading {
+  max-width: 930px;
+  margin: 0 auto 26px;
+  text-align: center;
+}
+.problem-tree-heading h2 {
+  margin: 0.2rem 0 0.6rem;
+  font-size: clamp(1.75rem, 2.7vw, 2.7rem);
+  letter-spacing: -0.04em;
+}
+.problem-tree-heading p:not(.eyebrow) {
+  color: #5f7287;
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+.problem-tree-list {
+  display: grid;
+  gap: 22px;
+}
+.problem-tree-row {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+.problem-tree-index {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.problem-tree-index::after {
+  content: '';
+  position: absolute;
+  top: 72px;
+  bottom: -22px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(84, 194, 204, 0.35), rgba(131, 104, 243, 0.22));
+}
+.problem-tree-row:last-child .problem-tree-index::after {
+  display: none;
+}
+.problem-tree-index span {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #0b5175;
+  background: linear-gradient(135deg, rgba(104, 207, 216, 0.18), rgba(152, 109, 255, 0.14));
+  border: 1px solid rgba(111, 163, 202, 0.34);
+  box-shadow: 0 14px 28px rgba(29, 64, 95, 0.08);
+}
+.problem-tree-card {
+  border-radius: 28px;
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(249,252,255,0.96));
+  border: 1px solid rgba(135, 164, 191, 0.26);
+  box-shadow: 0 22px 50px rgba(17, 45, 74, 0.08);
+  overflow: hidden;
+}
+.problem-tree-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(340px, 0.95fr);
+  gap: 22px;
+  align-items: start;
+}
+.problem-tree-copy h3 {
+  margin: 0.25rem 0 0.65rem;
+  color: #083d63;
+  font-size: clamp(1.2rem, 1.8vw, 1.65rem);
+  line-height: 1.22;
+  letter-spacing: -0.028em;
+}
+.problem-tree-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.42rem 0.78rem;
+  border-radius: 999px;
+  background: rgba(119, 210, 218, 0.12);
+  color: #0a627f;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.problem-tree-symbol { font-size: 1rem; }
+.problem-tree-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.problem-tree-tags span {
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(232, 239, 245, 0.92);
+  border: 1px solid rgba(147, 171, 192, 0.22);
+  color: #51667a;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.problem-tree-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+  gap: 10px;
+  align-items: stretch;
+  margin-bottom: 16px;
+}
+.flow-box {
+  border-radius: 20px;
+  padding: 15px 16px;
+  border: 1px solid rgba(132, 160, 184, 0.22);
+  min-height: 100%;
+}
+.flow-problem { background: linear-gradient(180deg, rgba(235, 245, 251, 0.88), rgba(247, 250, 253, 0.95)); }
+.flow-response { background: linear-gradient(180deg, rgba(242, 239, 255, 0.86), rgba(250, 248, 255, 0.95)); }
+.flow-box h4, .problem-tree-papers h4 {
+  margin: 0 0 6px;
+  color: #0b4f74;
+  font-size: 0.89rem;
+  line-height: 1.25;
+}
+.flow-box p {
+  margin: 0;
+  color: #5d7084;
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+.flow-arrow {
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  color: #5d7fa0;
+  font-weight: 800;
+}
+.problem-tree-papers {
+  border-top: 1px dashed rgba(136, 163, 186, 0.42);
+  padding-top: 12px;
+}
+.problem-tree-papers ul {
+  margin: 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.32rem;
+}
+.problem-tree-papers li {
+  color: #1a3852;
+  font-size: 0.84rem;
+  line-height: 1.48;
+}
+.problem-tree-papers a, .problem-tree-papers a:visited {
+  color: #035083;
+  font-weight: 400 !important;
+  text-decoration: none;
+}
+.problem-tree-papers a:hover { color: #006c96; text-decoration: underline; }
+.problem-tree-papers span { color: #7a8a9d; }
+.problem-tree-figure, .problem-tree-figure.small-stack {
+  margin: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(134, 163, 188, 0.24);
+  background: #f4f8fb;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.82);
+}
+.problem-tree-figure img, .problem-tree-figure.small-stack img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.problem-tree-figure figcaption, .problem-tree-figure.small-stack figcaption {
+  padding: 10px 14px 12px;
+  color: #697d91;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  background: linear-gradient(180deg, rgba(251,253,255,0.86), rgba(245,249,252,0.96));
+}
+.problem-tree-figure-stack { display: grid; gap: 14px; }
+.problem-tree-figure-stack .secondary figcaption {
+  background: linear-gradient(180deg, rgba(252,250,255,0.92), rgba(247,245,255,0.96));
+}
+@media (max-width: 1080px) {
+  .problem-tree-top { grid-template-columns: 1fr; }
+  .problem-tree-figure, .problem-tree-figure.small-stack { max-width: 860px; }
+}
+@media (max-width: 820px) {
+  .problem-tree-row { grid-template-columns: 1fr; }
+  .problem-tree-index { justify-content: flex-start; }
+  .problem-tree-index::after { display: none; }
+  .problem-tree-card { padding: 18px; }
+  .problem-tree-flow { grid-template-columns: 1fr; }
+  .flow-arrow { transform: rotate(90deg); min-height: 24px; }
+}
+/* === Homepage problem tree v25 END === */
+'''
+
+CSS.write_text(css.rstrip() + '\n\n' + css_block.strip() + '\n', encoding='utf-8')
+print('Done: replaced the old homepage thematic block with a problem-tree style section on the homepage.')
