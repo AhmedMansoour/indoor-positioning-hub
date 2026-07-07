@@ -1009,85 +1009,88 @@ img.pub-visual-image {
 }
 /* === Publications first-page preview whitespace fix v9 END === */
 
-/* === Publications card preview height crop v10 START === */
+/* === Publications A4 first-page preview ratio v11 START === */
 /*
-  v10: The publication image column is a top-anchored paper-page preview,
-  not a stretched card-height panel. The frame uses a controlled preview
-  ratio and crops only the lower part of the page image, which removes the
-  visual blank area while preserving the paper identity/title at the top.
+   Final publication-card preview behavior:
+   - the right-side figure box is a real A4 portrait thumbnail, 210:297;
+   - the box height is determined by its width, not by the full card height;
+   - the first page fills the box without the stretched white panel underneath;
+   - the image is not zoomed out by a tall frame.
 */
 .pub-visual-card,
-.publication-visual-card,
-.publications-visual-page .pub-visual-card {
+.pub-card.pub-visual-card {
+  align-items: start !important;
+  grid-template-columns: minmax(0, 1fr) clamp(245px, 24vw, 330px) !important;
+  column-gap: clamp(1.2rem, 2.2vw, 2.1rem) !important;
+}
+
+.pub-visual-side,
+.pub-card-visual,
+.pub-card-media,
+.pub-figure-panel,
+.pub-preview-side {
+  align-self: start !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
   align-items: flex-start !important;
 }
 
-@media (min-width: 960px) {
-  .pub-visual-card,
-  .publication-visual-card,
-  .publications-visual-page .pub-visual-card {
-    grid-template-columns: minmax(0, 1fr) minmax(215px, 270px) !important;
-    gap: clamp(1.25rem, 2.1vw, 2.15rem) !important;
-  }
-}
-
-.pub-visual-card > .pub-firstpage-crop-frame,
-.publication-visual-card > .pub-firstpage-crop-frame,
-.pub-firstpage-crop-frame,
-.publications-visual-page .pub-firstpage-crop-frame {
-  align-self: flex-start !important;
-  justify-self: stretch !important;
-  display: block !important;
-  box-sizing: border-box !important;
+.pub-a4-page-frame,
+.pub-visual-frame,
+.pub-firstpage-crop-frame {
   width: 100% !important;
-  min-width: 0 !important;
+  max-width: 330px !important;
+  aspect-ratio: 210 / 297 !important;
   height: auto !important;
   min-height: 0 !important;
   max-height: none !important;
-  aspect-ratio: 0.82 / 1 !important;
-  padding: 8px !important;
-  line-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
   overflow: hidden !important;
-  border-radius: 22px !important;
-  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%) !important;
-  border: 1px solid rgba(78, 126, 184, 0.18) !important;
-  box-shadow: 0 14px 32px rgba(15, 42, 75, 0.10) !important;
+  display: block !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(37, 99, 235, 0.16) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12) !important;
 }
 
-.pub-firstpage-crop-frame > img,
-.pub-firstpage-crop-frame img.pub-firstpage-preview-img,
-.publications-visual-page .pub-firstpage-crop-frame > img {
-  display: block !important;
+.pub-a4-page-frame img,
+.pub-visual-frame img,
+.pub-firstpage-crop-frame img {
   width: 100% !important;
   height: 100% !important;
-  min-height: 0 !important;
-  max-height: none !important;
+  display: block !important;
   object-fit: cover !important;
   object-position: top center !important;
   margin: 0 !important;
   padding: 0 !important;
-  border-radius: 15px !important;
+  border: 0 !important;
+  border-radius: inherit !important;
   background: #ffffff !important;
 }
 
-.pub-firstpage-crop-frame .pub-visual-caption,
-.pub-firstpage-crop-frame .pub-preview-caption,
+/* Neutralize older preview-frame stretching rules. */
+.pub-visual-frame::before,
+.pub-firstpage-crop-frame::before,
+.pub-a4-page-frame::before,
 .pub-visual-caption,
 .pub-preview-caption {
   display: none !important;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 900px) {
   .pub-visual-card,
-  .publication-visual-card,
-  .publications-visual-page .pub-visual-card {
+  .pub-card.pub-visual-card {
     grid-template-columns: 1fr !important;
   }
-  .pub-firstpage-crop-frame,
-  .publications-visual-page .pub-firstpage-crop-frame {
+
+  .pub-a4-page-frame,
+  .pub-visual-frame,
+  .pub-firstpage-crop-frame {
     width: min(100%, 330px) !important;
-    justify-self: start !important;
-    aspect-ratio: 0.82 / 1 !important;
+    margin: 0 auto !important;
   }
 }
-/* === Publications card preview height crop v10 END === */
+/* === Publications A4 first-page preview ratio v11 END === */
