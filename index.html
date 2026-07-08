@@ -250,6 +250,59 @@
 <!-- === Homepage research area 3 seamless fusion v41 END === -->
 
 
+<!-- === Homepage research area 4 3d radio map v42 START === -->
+<section class="home-area4-v42" id="research-area-4">
+  <article class="area4-v42-card">
+    <div class="area4-v42-title">
+      <div class="area4-v42-labels">
+        <span class="area4-index">Research Area 4</span>
+        <span>3D radio-map generation</span>
+        <span>Vertical positioning</span>
+        <span>Floor recognition</span>
+        <span>Multi-level spatial context</span>
+      </div>
+      <h3>3D Radio-Map Generation from Mobile Crowdsensing</h3>
+    </div>
+
+    <div class="area4-v42-top">
+      <section class="area4-v42-box why-box">
+        <h4>Why it matters</h4>
+        <p>Indoor positioning becomes operational only when the system understands the building as a multi-level spatial structure. A correct horizontal estimate is not enough in a multi-floor environment, because the same x–y location may correspond to different rooms, corridors, activities, or services on different floors.</p>
+        <p>This research area addresses 3D radio-map generation from mobile crowdsensing. The aim is to convert ordinary walking sessions into floor-local map skeletons, assemble them into a building-level 3D representation, and refine the structure using reliable anchors such as gates, payment terminals, Wi-Fi access points, vertical transitions, and spatial constraints. The result is not only a set of fingerprints, but a 3D indoor spatial reference that supports floor recognition, vertical positioning, and deployment-ready localization.</p>
+      </section>
+
+      <figure class="area4-v42-figure">
+        <img src="assets/home/research-area4-v42/skeleton-assembly-refinement.webp" alt="Three-stage 3D radio-map generation process from floor-local map skeletons to building-local 3D assembly and global refinement" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <section class="area4-v42-box difficulties-box area4-v42-wide">
+      <h4>Core difficulties</h4>
+      <ul>
+        <li>Floor-local traces must be reconstructed from noisy mobile sessions before they can be used as reliable spatial skeletons.</li>
+        <li>Vertical positioning requires more than height-change detection; it must connect barometer trends, motion events, stairs, elevators, ramps, and building topology.</li>
+        <li>Floor recognition is difficult when Wi-Fi and BLE signals leak across floors, especially near atriums, stairwells, open shafts, and dense access-point layouts.</li>
+        <li>Building-level 3D assembly must align separate floor skeletons into one consistent spatial structure instead of treating each floor as an isolated map.</li>
+        <li>Anchor objects and stable signal landmarks are needed to reduce accumulated distortion and connect the generated structure to real building coordinates.</li>
+        <li>Global refinement must correct local errors while preserving floor connectivity, vertical transitions, and the physical constraints of the indoor environment.</li>
+      </ul>
+    </section>
+
+    <div class="area4-v42-works">
+      <h4>Representative works</h4>
+      <ul>
+        <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>(2026)</span></li>
+        <li><a href="publications/towards-ubiquitous-ips-crowdsourced-data-accumulation.html">Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation</a> <span>(2024)</span></li>
+        <li><a href="publications/leveraging-human-mobility-pervasive-smartphone-crowdsourcing.html">Leveraging Human Mobility and Pervasive Smartphone Measurements-Based Crowdsourcing for Developing Self-Deployable and Ubiquitous Indoor Positioning Systems</a> <span>(2023)</span></li>
+        <li><a href="publications/phd-thesis-indoor-localization-multi-sensor-crowdsourcing-collaboration.html">Indoor Localization Based on Multi-Sensor Fusion, Crowdsourcing, and Multi-User Collaboration</a> <span>(PhD thesis)</span></li>
+      </ul>
+    </div>
+  </article>
+</section>
+<!-- === Homepage research area 4 3d radio map v42 END === -->
+
+
+
 <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
 </body>
 </html>
