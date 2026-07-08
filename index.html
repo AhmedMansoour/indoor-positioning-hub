@@ -86,135 +86,68 @@
 
     <section class="v23-section v23-access" aria-label="Publication and citation access"><div class="v23-section-head"><p class="v23-eyebrow">Publication access</p>
 
-<!-- === Homepage visual-first rows v28 START === -->
-<section class="home-visual-problem-map" id="key-thematic-map">
-  <div class="home-section-heading visual-map-heading">
+<!-- === Homepage inertial pathway v29 START === -->
+<section class="home-inertial-pathway" id="key-thematic-map">
+  <div class="home-section-heading inertial-pathway-heading">
     <p class="eyebrow">Home · Key thematic pathways across the hub</p>
-    <h2>Structured pathway map</h2>
-    <p>Each row presents one indoor-positioning problem and links it to representative works. The layout is visual-first: figures occupy most of the row width so the technical message is easier to understand at a glance.</p>
+    <h2>1. Enhancing inertial positioning performance</h2>
+    <p>A focused pathway on infrastructure-free pedestrian navigation, inertial drift control, smartphone pose effects, and the role of PDR as a relative positioning layer when other technologies become intermittent.</p>
   </div>
 
-  <div class="visual-problem-list">
+  <article class="inertial-pathway-card">
+    <div class="inertial-pathway-text">
+      <div class="inertial-pathway-labels">
+        <span>Problem 01</span>
+        <span>Infrastructure-free positioning</span>
+        <span>PDR and smartphone sensing</span>
+      </div>
 
-    <article class="visual-problem-row">
-      <div class="visual-problem-text">
-        <div class="visual-problem-meta"><span>01</span><em>🧭 Motion stability</em></div>
-        <h3>Inertial positioning drift, heading instability, and multi-pose user behavior</h3>
-        <div class="problem-compact"><strong>Problem.</strong> Pedestrian trajectories drift when heading error accumulates and the phone changes across holding, calling, swinging, pocket, and mixed carrying behaviors.</div>
-        <div class="works-compact"><strong>Representative works</strong>
-          <ul>
-            <li><a href="publications/hybrid-neural-network-pdr-multi-layer-heading-correction.html">Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes</a> <span>(2026)</span></li>
-            <li><a href="publications/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors.html">Enhancing Real-Time Heading Estimation for Pedestrian Navigation Using Deep Learning and Smartphone Sensors</a> <span>(2025)</span></li>
-            <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long-Period Navigation Under Different Smartphone Poses</a> <span>(2021)</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="visual-problem-figures figure-pair motion-layout">
-        <figure class="visual-figure dominant"><img src="assets/home/pathways-v28/pose_route.webp" alt="Pose-dependent trajectories for holding, calling, swinging, and in-pocket smartphone usage" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure supporting wide-strip"><img src="assets/home/pathways-v28/pose_peaks.webp" alt="Step peaks and valleys across multiple smartphone poses" loading="lazy" decoding="async"></figure>
-      </div>
-    </article>
+      <h3>Enhancing inertial positioning performance</h3>
 
-    <article class="visual-problem-row">
-      <div class="visual-problem-text">
-        <div class="visual-problem-meta"><span>02</span><em>📶 Fingerprinting integrity</em></div>
-        <h3>Fingerprint uncertainty, heading calibration, and robust Wi-Fi plus inertial fusion</h3>
-        <div class="problem-compact"><strong>Problem.</strong> Fingerprint fixes are not equally reliable, and inertial heading must be calibrated carefully when Wi-Fi matches are unstable or intermittently trustworthy.</div>
-        <div class="works-compact"><strong>Representative works</strong>
-          <ul>
-            <li><a href="publications/drift-resistant-heading-estimation-wifi-magnetic-stability.html">Drift-Resistant Heading Estimation for Smartphone-Based Indoor Positioning via Adaptive Calibration Using Wi-Fi Fingerprinting and Magnetic Stability</a> <span>(2026)</span></li>
-            <li><a href="publications/everywhere-framework-ubiquitous-indoor-localization.html">Everywhere: A Framework for Ubiquitous Indoor Localization</a> <span>(2022)</span></li>
-            <li><a href="publications/power-of-many-multi-user-collaborative-indoor-localization.html">The Power of Many: Multi-User Collaborative Indoor Localization</a> <span>(2023)</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="visual-problem-figures figure-pair equal-diagrams">
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/heading_calibration.webp" alt="Conceptual diagram of heading calibration using qualified Wi-Fi fingerprinting positions" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/heading_framework.webp" alt="System framework combining motion analysis and Wi-Fi fingerprinting for heading calibration" loading="lazy" decoding="async"></figure>
-      </div>
-    </article>
+      <p class="inertial-lead">Inertial positioning is an infrastructure-free, off-the-shelf, and low-cost solution for pedestrian navigation. It is especially valuable as a relative positioning layer that can bridge outages and complement GNSS, Wi-Fi RSS, BLE, map matching, LiDAR, and image-based localization.</p>
 
-    <article class="visual-problem-row">
-      <div class="visual-problem-text">
-        <div class="visual-problem-meta"><span>03</span><em>🏢 3D scaling</em></div>
-        <h3>3D indoor positioning, multi-floor detection, and scalable radio-map generation</h3>
-        <div class="problem-compact"><strong>Problem.</strong> Building-scale IPS must connect floor-local tracks, infer vertical transitions, and generate usable radio maps without full manual surveys on every floor.</div>
-        <div class="works-compact"><strong>Representative works</strong>
-          <ul>
-            <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>(2026)</span></li>
-            <li><a href="publications/towards-ubiquitous-ips-crowdsourced-data-accumulation.html">Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation</a> <span>(2024)</span></li>
-            <li><a href="publications/leveraging-human-mobility-pervasive-smartphone-crowdsourcing.html">Leveraging Human Mobility and Pervasive Smartphone Measurements-Based Crowdsourcing for Developing Self-Deployable and Ubiquitous Indoor Positioning Systems</a> <span>(2023)</span></li>
-          </ul>
-        </div>
+      <div class="inertial-detail-box">
+        <h4>Why it is difficult</h4>
+        <p>Practical inertial positioning is limited by initialization sensitivity, body-frame to platform-frame inconsistency, step and motion variability, and accumulated heading drift. Long-term gyroscope errors gradually distort orientation, while short-term compass heading can be corrupted by magnetic disturbances, steel structures, elevators, electronics, and indoor environmental interference. These issues become more severe when the phone changes pose, such as holding, calling, swinging, mixed use, or in-pocket carrying.</p>
       </div>
-      <div class="visual-problem-figures three-figures map-layout">
-        <figure class="visual-figure big"><img src="assets/home/pathways-v28/layered_building.webp" alt="Layered building visualization for smart building positioning" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/radio_map_process.webp" alt="Illustration of crowdsourced radio-map generation processes" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/raw_crowd_radio_map.webp" alt="Raw crowdsourced data converted to a radio map" loading="lazy" decoding="async"></figure>
-      </div>
-    </article>
 
-    <article class="visual-problem-row">
-      <div class="visual-problem-text">
-        <div class="visual-problem-meta"><span>04</span><em>🔄 Seamless continuity</em></div>
-        <h3>Indoor-outdoor continuity, multisensor context, and seamless trajectory fusion</h3>
-        <div class="problem-compact"><strong>Problem.</strong> Navigation traces cross indoor areas, outdoor legs, vertical transitions, and sensor gaps, so the system must preserve continuity across changing context and coverage.</div>
-        <div class="works-compact"><strong>Representative works</strong>
-          <ul>
-            <li><a href="publications/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness.html">SUNS: Seamless Ubiquitous Navigation System Based on GNSS, Wi-Fi, and MEMS Sensors</a> <span>(2022)</span></li>
-            <li><a href="publications/gnss-positioning-aided-with-pdr-in-urban-areas.html">GNSS Positioning Aided with Pedestrian Dead Reckoning in Urban Areas</a> <span>(2026)</span></li>
-            <li><a href="publications/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.html">Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments</a> <span>(2024)</span></li>
-            <li><a href="publications/ac-hmm-azimuth-constrained-map-matching-urban-canyons.html">AC-HMM: Azimuth-Constrained Hidden Markov Model-Based Map Matching for Robust Pedestrian Positioning in Urban Canyons</a> <span>(2026)</span></li>
-          </ul>
-        </div>
+      <div class="inertial-chips" aria-label="Key challenges">
+        <span>initialization</span>
+        <span>body-to-platform frame</span>
+        <span>gyro drift</span>
+        <span>compass disturbance</span>
+        <span>pose changes</span>
+        <span>step variability</span>
+        <span>long-term drift</span>
+        <span>sensor fusion</span>
       </div>
-      <div class="visual-problem-figures figure-pair seamless-layout">
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/context_descriptor.webp" alt="Context descriptor and multisensor session log stream for seamless positioning" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/seamless_tracks.webp" alt="Seamless positioning performance across different tracks" loading="lazy" decoding="async"></figure>
-      </div>
-    </article>
 
-    <article class="visual-problem-row">
-      <div class="visual-problem-text">
-        <div class="visual-problem-meta"><span>05</span><em>🗺️ Geometric reconstruction</em></div>
-        <h3>Path ambiguity, site geometry, and reconstruction of difficult trajectories</h3>
-        <div class="problem-compact"><strong>Problem.</strong> Crowdsensed tracks are noisy and spatially ambiguous, especially in loops, intersections, and irregular corridors where map structure must be recovered from imperfect traces.</div>
-        <div class="works-compact"><strong>Representative works</strong>
-          <ul>
-            <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>(2026)</span></li>
-            <li><a href="publications/towards-ubiquitous-ips-crowdsourced-data-accumulation.html">Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation</a> <span>(2024)</span></li>
-            <li><a href="publications/leveraging-human-mobility-pervasive-smartphone-crowdsourcing.html">Leveraging Human Mobility and Pervasive Smartphone Measurements-Based Crowdsourcing for Developing Self-Deployable and Ubiquitous Indoor Positioning Systems</a> <span>(2023)</span></li>
-          </ul>
-        </div>
+      <div class="inertial-works">
+        <h4>Representative works</h4>
+        <ul>
+          <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long Period Navigation under Different Smartphone Poses</a> <span>(2021)</span></li>
+          <li><a href="publications/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors.html">Enhancing Real-Time Heading Estimation for Pedestrian Navigation via Deep Learning and Smartphone Embedded Sensors</a> <span>(2025)</span></li>
+          <li><a href="publications/hybrid-neural-network-pdr-multi-layer-heading-correction.html">Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes</a> <span>(2026)</span></li>
+          <li><a href="publications/gnss-positioning-aided-with-pdr-in-urban-areas.html">GNSS Positioning Aided with Pedestrian Dead Reckoning in Urban Areas</a> <span>(2026)</span></li>
+          <li><a href="publications/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.html">Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments</a> <span>(2024)</span></li>
+          <li><a href="publications/ac-hmm-azimuth-constrained-map-matching-urban-canyons.html">AC-HMM: Azimuth-Constrained Hidden Markov Model-Based Map Matching for Robust Pedestrian Positioning in Urban Canyons</a> <span>(2026)</span></li>
+        </ul>
       </div>
-      <div class="visual-problem-figures figure-pair geometry-layout">
-        <figure class="visual-figure tall"><img src="assets/home/pathways-v28/trajectory_floorplan.webp" alt="Noisy crowdsensed trajectories overlaid on a building floor plan" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/radio_map_process.webp" alt="Structured process for turning tracks into radio-map components" loading="lazy" decoding="async"></figure>
-      </div>
-    </article>
+    </div>
 
-    <article class="visual-problem-row">
-      <div class="visual-problem-text">
-        <div class="visual-problem-meta"><span>06</span><em>👥 Deployment scaling</em></div>
-        <h3>User-centered scaling, privacy, energy limits, and real deployment constraints</h3>
-        <div class="problem-compact"><strong>Problem.</strong> Large-scale IPS must remain usable under privacy preferences, battery constraints, sparse participation, and the variability of ordinary devices and user behavior.</div>
-        <div class="works-compact"><strong>Representative works</strong>
-          <ul>
-            <li><a href="publications/towards-scalable-ips-user-centric-crowd-powered-framework.html">Towards Scalable IPS: User-Centric Challenges, Methods, and Recommendations for User-Friendly Crowd-Powered Schemes</a> <span>(2026)</span></li>
-            <li><a href="publications/modular-prompting-ai-guided-user-engagement-crowd-powered-ips.html">A Modular Prompting Framework for AI-Guided Unobtrusive User Engagement in Crowd-Powered Indoor Positioning with Semantic Knowledge Graphs and GPT-4-Based LLMs</a> <span>(2025)</span></li>
-            <li><a href="publications/everywhere-framework-ubiquitous-indoor-localization.html">Everywhere: A Framework for Ubiquitous Indoor Localization</a> <span>(2022)</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="visual-problem-figures figure-pair deployment-layout">
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/deployment_realities.webp" alt="Deployment realities including energy use, privacy, and building differences" loading="lazy" decoding="async"></figure>
-        <figure class="visual-figure"><img src="assets/home/pathways-v28/scaling_principles.webp" alt="Principles for scaling indoor positioning systems" loading="lazy" decoding="async"></figure>
-      </div>
-    </article>
-
-  </div>
+    <div class="inertial-visual-mosaic" aria-label="Visual examples of inertial positioning performance">
+      <figure class="inertial-figure inertial-figure-main">
+        <img src="assets/home/inertial-v29/inertial-multipose-route.webp" alt="Inertial positioning trajectories under holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
+        <figcaption>Smartphone pose changes strongly affect PDR trajectory behavior and heading stability.</figcaption>
+      </figure>
+      <figure class="inertial-figure inertial-figure-side">
+        <img src="assets/home/inertial-v29/inertial-floorplan-drift.webp" alt="Noisy inertial trajectory over a floor plan showing drift and map inconsistency" loading="lazy" decoding="async">
+        <figcaption>Long trajectories show how inertial drift and map inconsistency accumulate without correction.</figcaption>
+      </figure>
+    </div>
+  </article>
 </section>
-<!-- === Homepage visual-first rows v28 END === -->
+<!-- === Homepage inertial pathway v29 END === -->
 
 <h2>Find papers, PDFs, citation records, and visual explanations</h2><p>Each publication page is designed for fast reading and reuse, with first-page previews, PDF access where available, DOI metadata, BibTeX, when-to-cite guidance, long research-story summaries, and selected visual explanations.</p></div><div class="v23-access-grid"><a href="publications.html"><strong>Publication portfolio</strong><span>Visual paper cards with first-page previews, DOI links, venues, and topic cues.</span></a><a href="citation-resources.html"><strong>Citation resources</strong><span>BibTeX entries, citation-ready paper titles, and paper-use guidance.</span></a><a href="resources.html"><strong>Datasets and code</strong><span>Shared resources, reproducibility links, and supporting research materials.</span></a><a href="about.html"><strong>About Ahmed Mansour</strong><span>Academic background, research focus, and contact links.</span></a></div></section>
   </main>
