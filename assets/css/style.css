@@ -2143,14 +2143,14 @@ img.pub-visual-image {
 }
 /* === Homepage research area 1 professor v38 END === */
 
-/* === Homepage research area 2 session radio v39 START === */
-.home-area2-v39{
+/* === Homepage research area 2 fullwidth difficulties v40 START === */
+.home-area2-v40{
   width:min(1180px,calc(100% - 56px));
   max-width:min(1180px,calc(100% - 56px));
   margin:28px auto 42px;
   box-sizing:border-box;
 }
-.area2-v39-card{
+.area2-v40-card{
   display:grid;
   gap:18px;
   padding:22px;
@@ -2159,14 +2159,14 @@ img.pub-visual-image {
   border:1px solid rgba(130,165,194,.25);
   box-shadow:0 20px 46px rgba(20,45,74,.08);
 }
-.area2-v39-labels{
+.area2-v40-labels{
   display:flex;
   flex-wrap:wrap;
   gap:8px;
   align-items:center;
   margin-bottom:.75rem;
 }
-.area2-v39-labels span{
+.area2-v40-labels span{
   display:inline-flex;
   align-items:center;
   min-height:30px;
@@ -2179,68 +2179,70 @@ img.pub-visual-image {
   font-weight:700;
   line-height:1;
 }
-.area2-v39-labels .area2-index{
+.area2-v40-labels .area2-index{
   background:linear-gradient(135deg,rgba(84,202,213,.20),rgba(149,118,246,.12));
   color:#084f72;
   font-weight:800;
 }
-.area2-v39-title h3{
+.area2-v40-title h3{
   margin:0;
   color:#073d63;
   font-size:clamp(1.52rem,2.28vw,2.08rem);
   line-height:1.12;
   letter-spacing:-.04em;
 }
-.area2-v39-main{
+.area2-v40-top{
   display:grid;
-  grid-template-columns:minmax(0,1.05fr) minmax(430px,.92fr);
+  grid-template-columns:minmax(0,.95fr) minmax(450px,1.05fr);
   gap:18px;
   align-items:start;
 }
-.area2-v39-copy{
-  display:grid;
-  gap:14px;
-}
-.area2-v39-box{
+.area2-v40-box{
   padding:16px 17px;
   border-radius:20px;
   border:1px solid rgba(127,160,186,.21);
 }
-.area2-v39-box h4,
-.area2-v39-works h4{
+.area2-v40-box h4,
+.area2-v40-works h4{
   margin:0 0 .55rem;
   color:#0b5074;
   font-size:.94rem;
   line-height:1.25;
 }
-.area2-v39-box p{
+.area2-v40-box p{
   margin:0 0 .65rem;
   color:#405b71;
   font-size:.92rem;
   line-height:1.58;
 }
-.area2-v39-box p:last-child{
+.area2-v40-box p:last-child{
   margin-bottom:0;
 }
-.area2-v39 .why-box{
+.area2-v40 .why-box{
   background:linear-gradient(180deg,rgba(239,247,251,.96),rgba(249,252,255,.98));
 }
-.area2-v39 .difficulties-box{
+.area2-v40 .difficulties-box{
   background:linear-gradient(180deg,rgba(245,242,255,.92),rgba(251,249,255,.98));
   border-color:rgba(148,132,200,.18);
 }
-.area2-v39 .difficulties-box ul{
+.area2-v40-wide{
+  width:100%;
+  box-sizing:border-box;
+}
+.area2-v40 .difficulties-box ul{
   margin:0;
   padding-left:1.08rem;
-  display:grid;
-  gap:.48rem;
+  columns:2;
+  column-gap:2.2rem;
 }
-.area2-v39 .difficulties-box li{
+.area2-v40 .difficulties-box li{
+  break-inside:avoid;
+  margin:0 0 .5rem;
   color:#405b71;
   font-size:.89rem;
   line-height:1.47;
 }
-.area2-v39-figure{
+.area2-v40-figure{
   margin:0;
   overflow:hidden;
   border-radius:24px;
@@ -2248,67 +2250,68 @@ img.pub-visual-image {
   border:1px solid rgba(126,159,186,.22);
   box-shadow:0 14px 30px rgba(19,45,74,.075);
 }
-.area2-v39-figure img{
+.area2-v40-figure img{
   display:block;
   width:100%;
   height:auto;
   background:#fff;
 }
-.area2-v39-works{
+.area2-v40-works{
   padding:15px 17px;
   border-radius:20px;
   background:linear-gradient(180deg,rgba(255,255,255,.86),rgba(247,250,253,.95));
   border:1px solid rgba(127,160,186,.18);
 }
-.area2-v39-works ul{
+.area2-v40-works ul{
   margin:0;
   padding-left:1.05rem;
   columns:2;
   column-gap:2rem;
 }
-.area2-v39-works li{
+.area2-v40-works li{
   break-inside:avoid;
   margin:0 0 .36rem;
   color:#607488;
   font-size:.82rem;
   line-height:1.42;
 }
-.area2-v39-works a,
-.area2-v39-works a:visited{
+.area2-v40-works a,
+.area2-v40-works a:visited{
   color:#035083;
   text-decoration:none;
   font-weight:400!important;
 }
-.area2-v39-works a:hover{
+.area2-v40-works a:hover{
   color:#00709c;
   text-decoration:underline;
 }
-.area2-v39-works span{
+.area2-v40-works span{
   color:#7f90a2;
 }
 @media(max-width:980px){
-  .home-area2-v39{
+  .home-area2-v40{
     width:min(100%,calc(100% - 22px));
     max-width:min(100%,calc(100% - 22px));
   }
-  .area2-v39-main{
+  .area2-v40-top{
     grid-template-columns:1fr;
   }
-  .area2-v39-works ul{
+  .area2-v40 .difficulties-box ul,
+  .area2-v40-works ul{
     columns:1;
   }
 }
 @media(max-width:640px){
-  .home-area2-v39{
+  .home-area2-v40{
     width:min(100%,calc(100% - 18px));
     margin:28px auto 30px;
   }
-  .area2-v39-card{
+  .area2-v40-card{
     padding:16px;
     border-radius:24px;
   }
-  .area2-v39-figure{
+  .area2-v40-figure{
     border-radius:18px;
   }
 }
-/* === Homepage research area 2 session radio v39 END === */
+/* === Homepage research area 2 fullwidth difficulties v40 END === */

@@ -148,11 +148,11 @@
 <!-- === Homepage research area 1 professor v38 END === -->
 
 
-<!-- === Homepage research area 2 session radio v39 START === -->
-<section class="home-area2-v39" id="research-area-2">
-  <article class="area2-v39-card">
-    <div class="area2-v39-title">
-      <div class="area2-v39-labels">
+<!-- === Homepage research area 2 fullwidth difficulties v40 START === -->
+<section class="home-area2-v40" id="research-area-2">
+  <article class="area2-v40-card">
+    <div class="area2-v40-title">
+      <div class="area2-v40-labels">
         <span class="area2-index">Research Area 2</span>
         <span>Wi-Fi fingerprinting</span>
         <span>Multisensor session logs</span>
@@ -161,33 +161,31 @@
       <h3>Scaling Wi-Fi Fingerprinting and Autonomous Radio-Map Generation</h3>
     </div>
 
-    <div class="area2-v39-main">
-      <div class="area2-v39-copy">
-        <section class="area2-v39-box why-box">
-          <h4>Why it matters</h4>
-          <p>Wi-Fi fingerprinting provides the absolute indoor reference that inertial positioning cannot maintain by itself. A fingerprint links a wireless observation to a physical indoor location, making it useful for correcting PDR drift, recognizing floors, initializing trajectories, and supporting building-scale indoor services where GNSS is unavailable.</p>
-          <p>The central challenge is no longer only how to match an RSS vector to a point. The harder deployment question is how to generate, update, and trust radio maps when the data arrive from ordinary mobile sessions rather than controlled survey campaigns.</p>
-        </section>
+    <div class="area2-v40-top">
+      <section class="area2-v40-box why-box">
+        <h4>Why it matters</h4>
+        <p>Wi-Fi fingerprinting provides the absolute indoor reference that inertial positioning cannot maintain by itself. A fingerprint links a wireless observation to a physical indoor location, making it useful for correcting PDR drift, recognizing floors, initializing trajectories, and supporting building-scale indoor services where GNSS is unavailable.</p>
+        <p>The central challenge is no longer only how to match an RSS vector to a point. The harder deployment question is how to generate, update, and trust radio maps when the data arrive from ordinary mobile sessions rather than controlled survey campaigns.</p>
+      </section>
 
-        <section class="area2-v39-box difficulties-box">
-          <h4>Core difficulties</h4>
-          <ul>
-            <li>Manual radio-map surveying is expensive and difficult to repeat when buildings, access points, or service requirements change.</li>
-            <li>Crowdsourced trajectories are uneven, because users move freely, pause, turn, change floors, and carry phones in different ways.</li>
-            <li>RSS measurements vary across devices, time, human blockage, furniture layout, access-point configuration, and environmental dynamics.</li>
-            <li>Multifloor radio mapping requires vertical interpretation from barometer, motion, building topology, and wireless evidence, not only horizontal fingerprint matching.</li>
-            <li>Session logs must synchronize Wi-Fi scans, IMU samples, magnetometer readings, barometer pressure, GNSS fixes, and app events into one coherent spatial record.</li>
-            <li>Radio-map updating needs reliability control, because writing back unreliable fingerprints can degrade the map instead of improving it.</li>
-          </ul>
-        </section>
-      </div>
-
-      <figure class="area2-v39-figure">
-        <img src="assets/home/research-area2-v39/multisensor-session-log-stream.webp" alt="Multisensor session log stream integrating Wi-Fi RSS, IMU, magnetometer, barometer, GNSS fixes, app events, and wireless fingerprints across buildings and floors" loading="lazy" decoding="async">
+      <figure class="area2-v40-figure">
+        <img src="assets/home/research-area2-v40/multisensor-session-log-stream.webp" alt="Multisensor session log stream integrating Wi-Fi RSS, IMU, magnetometer, barometer, GNSS fixes, app events, and wireless fingerprints across buildings and floors" loading="lazy" decoding="async">
       </figure>
     </div>
 
-    <div class="area2-v39-works">
+    <section class="area2-v40-box difficulties-box area2-v40-wide">
+      <h4>Core difficulties</h4>
+      <ul>
+        <li>Manual radio-map surveying is costly because each building, floor, corridor, and reference point requires repeated measurement when the site or wireless infrastructure changes.</li>
+        <li>Crowdsourced measurements are irregular because real users move freely, stop, turn, change floors, carry phones differently, and do not follow predefined survey paths.</li>
+        <li>RSS observations are unstable across devices, time, human blockage, furniture layout, access-point configuration, and routine environmental dynamics.</li>
+        <li>Multifloor positioning requires vertical interpretation from barometer, motion state, building topology, and wireless evidence rather than horizontal fingerprint matching alone.</li>
+        <li>Session logs must align Wi-Fi scans, IMU samples, magnetometer readings, barometer pressure, GNSS fixes, and app events into one coherent spatial record.</li>
+        <li>Radio-map updating must be reliability-governed, because blindly writing noisy or wrongly localized fingerprints can degrade the map instead of improving it.</li>
+      </ul>
+    </section>
+
+    <div class="area2-v40-works">
       <h4>Representative works</h4>
       <ul>
         <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>(2026)</span></li>
@@ -198,8 +196,7 @@
     </div>
   </article>
 </section>
-<!-- === Homepage research area 2 session radio v39 END === -->
-
+<!-- === Homepage research area 2 fullwidth difficulties v40 END === -->
 
 <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
 </body>
