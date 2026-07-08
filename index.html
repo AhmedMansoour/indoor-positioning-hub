@@ -86,50 +86,54 @@
 <section class="v23-section v23-access" aria-label="Publication and citation access"><div class="v23-section-head"><p class="v23-eyebrow">Publication access</p>
 <h2>Find papers, PDFs, citation records, and visual explanations</h2><p>Each publication page is designed for fast reading and reuse, with first-page previews, PDF access where available, DOI metadata, BibTeX, when-to-cite guidance, long research-story summaries, and selected visual explanations.</p></div><div class="v23-access-grid"><a href="publications.html"><strong>Publication portfolio</strong><span>Visual paper cards with first-page previews, DOI links, venues, and topic cues.</span></a><a href="citation-resources.html"><strong>Citation resources</strong><span>BibTeX entries, citation-ready paper titles, and paper-use guidance.</span></a><a href="resources.html"><strong>Datasets and code</strong><span>Shared resources, reproducibility links, and supporting research materials.</span></a><a href="about.html"><strong>About Ahmed Mansour</strong><span>Academic background, research focus, and contact links.</span></a></div></section>
   </main>
-  
-<!-- === Homepage research area 1 inertial v30 START === -->
-<section class="home-research-area-map" id="key-thematic-map">
-  <div class="home-section-heading research-area-map-heading">
+
+
+<!-- === Homepage research area 1 reorganized v37 START === -->
+<section class="home-area1-v37" id="key-thematic-map">
+  <div class="area1-v37-heading">
     <p class="eyebrow">Home · Key thematic pathways across the hub</p>
     <h2>Research areas across the hub</h2>
-    <p>This section is built step by step. Each research area is presented with compact explanation, linked representative works, and large figures that communicate the technical idea quickly.</p>
+    <p>Each research area connects a practical indoor-positioning challenge with representative works and a clear visual explanation.</p>
   </div>
 
-  <article class="research-area-one-card">
-    <div class="research-area-header">
-      <div class="research-area-label-row">
-        <span class="research-area-index">Research Area 1</span>
-        <span class="research-area-chip">Infrastructure-free positioning</span>
-        <span class="research-area-chip">PDR and smartphone sensing</span>
-      </div>
-      <h3>Enhancing Inertial Positioning Performance</h3>
-    </div>
-
-    <div class="research-area-text-grid">
-      <div class="research-area-text-box">
-        <h4>Why it matters</h4>
-        <p>Inertial positioning is infrastructure-free, low-cost, and available on commodity smartphones. It provides a relative navigation layer that can bridge outages in GNSS, Wi-Fi RSS, BLE, map matching, LiDAR, and image-based localization.</p>
-      </div>
-
-      <div class="research-area-text-box difficulty-box">
-        <h4>Core difficulties</h4>
-        <p>Initialization, body-to-platform frame inconsistency, heading drift, magnetic disturbance, pose changes, and long-term error accumulation.</p>
-        <div class="research-area-small-tags">
-          <span>initialization</span><span>heading drift</span><span>magnetic disturbance</span><span>pose changes</span><span>long-term error</span>
+  <article class="area1-v37-card">
+    <div class="area1-v37-top">
+      <div class="area1-v37-title">
+        <div class="area1-v37-labels">
+          <span class="area1-index">Research Area 1</span>
+          <span>Infrastructure-free positioning</span>
+          <span>PDR and smartphone sensing</span>
         </div>
+        <h3>Enhancing Inertial Positioning Performance</h3>
       </div>
     </div>
 
-    <div class="research-area-visual-grid">
-      <figure class="research-area-visual main-visual">
-        <img src="assets/home/research-area1-v30/inertial-multipose-route.webp" alt="Inertial positioning trajectories under holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
-      </figure>
-      <figure class="research-area-visual side-visual">
-        <img src="assets/home/research-area1-v30/inertial-floorplan-drift.webp" alt="Noisy inertial trajectory over a floor plan showing drift and map inconsistency" loading="lazy" decoding="async">
+    <div class="area1-v37-main">
+      <div class="area1-v37-copy">
+        <section class="area1-v37-box why-box">
+          <h4>Why it matters</h4>
+          <p>Inertial positioning is infrastructure-free, low-cost, and available on commodity smartphones. It provides a relative navigation layer that can bridge outages in GNSS, Wi-Fi RSS, BLE, map matching, LiDAR, and image-based localization.</p>
+        </section>
+
+        <section class="area1-v37-box difficulties-box">
+          <h4>Core difficulties</h4>
+          <ul>
+            <li>Initialization affects the starting position, heading, and early trajectory stability.</li>
+            <li>Body-to-platform frame inconsistency appears when the phone orientation does not match the pedestrian walking direction.</li>
+            <li>Heading drift accumulates over time because small gyroscope errors integrate into large orientation errors.</li>
+            <li>Magnetic disturbance can corrupt compass heading in buildings with steel structures, elevators, electronics, and local magnetic anomalies.</li>
+            <li>Pose changes such as holding, calling, swinging, and in-pocket use alter the motion pattern seen by the smartphone sensors.</li>
+            <li>Long-term error accumulation makes standalone PDR unreliable unless it is corrected by external cues or contextual constraints.</li>
+          </ul>
+        </section>
+      </div>
+
+      <figure class="area1-v37-figure">
+        <img src="assets/home/research-area1-v37/inertial-multipose-route.webp" alt="Inertial positioning trajectories under holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
       </figure>
     </div>
 
-    <div class="research-area-works-row">
+    <div class="area1-v37-works">
       <h4>Representative works</h4>
       <ul>
         <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long Period Navigation under Different Smartphone Poses</a> <span>(2021)</span></li>
@@ -142,7 +146,8 @@
     </div>
   </article>
 </section>
-<!-- === Homepage research area 1 inertial v30 END === -->
+<!-- === Homepage research area 1 reorganized v37 END === -->
+
 <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
 </body>
 </html>
