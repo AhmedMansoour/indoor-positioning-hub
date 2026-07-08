@@ -198,6 +198,58 @@
 </section>
 <!-- === Homepage research area 2 fullwidth difficulties v40 END === -->
 
+
+<!-- === Homepage research area 3 seamless fusion v41 START === -->
+<section class="home-area3-v41" id="research-area-3">
+  <article class="area3-v41-card">
+    <div class="area3-v41-title">
+      <div class="area3-v41-labels">
+        <span class="area3-index">Research Area 3</span>
+        <span>Indoor–outdoor transition</span>
+        <span>Multi-source fusion</span>
+        <span>Seamless positioning</span>
+      </div>
+      <h3>Seamless Indoor–Outdoor Positioning and Multi-Source Fusion</h3>
+    </div>
+
+    <div class="area3-v41-top">
+      <section class="area3-v41-box why-box">
+        <h4>Why it matters</h4>
+        <p>Indoor positioning should not break at the building entrance. Real users move through streets, entrances, semi-open spaces, corridors, elevators, staircases, lobbies, and indoor rooms, while the available positioning sources change continuously.</p>
+        <p>GNSS provides an outdoor absolute reference, but it degrades near dense buildings and often fails indoors. Inertial positioning preserves motion continuity during signal outages, while Wi-Fi, BLE, barometer readings, map constraints, and indoor–outdoor awareness provide correction and context. This research area connects the relative-motion layer from inertial positioning with the absolute indoor reference from radio mapping to maintain a continuous trajectory across outdoor, transition, and indoor spaces.</p>
+      </section>
+
+      <figure class="area3-v41-figure">
+        <img src="assets/home/research-area3-v41/seamless-indoor-outdoor-transition.webp" alt="Seamless outdoor, transition, and indoor positioning using GNSS, smartphone sensing, and indoor context across a building entrance" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <section class="area3-v41-box difficulties-box area3-v41-wide">
+      <h4>Core difficulties</h4>
+      <ul>
+        <li>GNSS degradation near buildings can introduce large position errors before the user reaches an indoor entrance.</li>
+        <li>Indoor–outdoor transition is gradual, because covered entrances, semi-open spaces, lobbies, and corridors create mixed signal conditions.</li>
+        <li>Sensor availability changes along the trajectory, since GNSS, Wi-Fi, BLE, IMU, barometer, and map constraints become useful at different moments.</li>
+        <li>Fusion must judge source reliability, because a strong measurement is not always a trustworthy positioning cue.</li>
+        <li>Vertical movement requires explicit handling when users pass through stairs, elevators, ramps, and multi-level indoor spaces.</li>
+        <li>Seamless navigation requires transition awareness and source switching logic, not only point-by-point localization accuracy.</li>
+      </ul>
+    </section>
+
+    <div class="area3-v41-works">
+      <h4>Representative works</h4>
+      <ul>
+        <li><a href="publications/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness.html">SUNS: Seamless Ubiquitous Navigation System Based on GNSS, Wi-Fi, and MEMS Sensors</a> <span>(2022)</span></li>
+        <li><a href="publications/gnss-positioning-aided-with-pdr-in-urban-areas.html">GNSS Positioning Aided with Pedestrian Dead Reckoning in Urban Areas</a> <span>(2026)</span></li>
+        <li><a href="publications/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.html">Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments</a> <span>(2024)</span></li>
+        <li><a href="publications/ac-hmm-azimuth-constrained-map-matching-urban-canyons.html">AC-HMM: Azimuth-Constrained Hidden Markov Model-Based Map Matching for Robust Pedestrian Positioning in Urban Canyons</a> <span>(2026)</span></li>
+      </ul>
+    </div>
+  </article>
+</section>
+<!-- === Homepage research area 3 seamless fusion v41 END === -->
+
+
 <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
 </body>
 </html>
