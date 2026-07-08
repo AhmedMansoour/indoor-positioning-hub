@@ -1952,13 +1952,16 @@ img.pub-visual-image {
 @media(max-width:980px){.home-v23-page .v23-hero-grid,.home-v23-page .v23-bridge-card,.home-v23-page .v23-atlas-grid{grid-template-columns:1fr}.home-v23-page .v23-logos,.home-v23-page .v23-def-grid,.home-v23-page .v23-access-grid{grid-template-columns:1fr}.home-v23-page .v23-profile{max-width:420px;margin:0 auto}.home-v23-page .v23-site-header{align-items:flex-start;flex-direction:column}.home-v23-page .site-nav{justify-content:flex-start}}
 /* === Homepage professional integrated redesign v23 END === */
 
-/* === Homepage research area 1 placement and width v33 START === */
-/* v33 fixes the real issue: Research Area 1 must be a standalone section,
-   not nested inside Publication Access. These widths then apply correctly. */
+/* === Homepage research area 1 fullbleed v34 START === */
+/* Keep the approved v30 design, remove v33 placement damage, and make the area visually match the wide upper homepage section. */
 .home-research-area-map{
-  width:min(1580px,calc(100% - 16px)) !important;
-  max-width:min(1580px,calc(100% - 16px)) !important;
-  margin:54px auto 44px !important;
+  width:min(1580px,calc(100vw - 16px)) !important;
+  max-width:min(1580px,calc(100vw - 16px)) !important;
+  margin-top:54px !important;
+  margin-bottom:44px !important;
+  margin-left:50% !important;
+  margin-right:0 !important;
+  transform:translateX(-50%) !important;
   box-sizing:border-box !important;
 }
 .research-area-map-heading{
@@ -1973,15 +1976,18 @@ img.pub-visual-image {
   grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr) !important;
 }
 .research-area-visual-grid{
-  grid-template-columns:minmax(0,1.85fr) minmax(320px,.72fr) !important;
+  grid-template-columns:minmax(0,1.82fr) minmax(300px,.72fr) !important;
 }
 .research-area-visual.side-visual{
-  max-width:460px !important;
+  max-width:440px !important;
 }
 @media(max-width:960px){
   .home-research-area-map{
     width:min(100%,calc(100% - 18px)) !important;
     max-width:min(100%,calc(100% - 18px)) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    transform:none !important;
   }
   .research-area-text-grid,
   .research-area-visual-grid{
@@ -1991,4 +1997,4 @@ img.pub-visual-image {
     max-width:100% !important;
   }
 }
-/* === Homepage research area 1 placement and width v33 END === */
+/* === Homepage research area 1 fullbleed v34 END === */
