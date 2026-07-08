@@ -86,68 +86,62 @@
 
     <section class="v23-section v23-access" aria-label="Publication and citation access"><div class="v23-section-head"><p class="v23-eyebrow">Publication access</p>
 
-<!-- === Homepage inertial pathway v29 START === -->
-<section class="home-inertial-pathway" id="key-thematic-map">
-  <div class="home-section-heading inertial-pathway-heading">
+<!-- === Homepage research area 1 inertial v30 START === -->
+<section class="home-research-area-map" id="key-thematic-map">
+  <div class="home-section-heading research-area-map-heading">
     <p class="eyebrow">Home · Key thematic pathways across the hub</p>
-    <h2>1. Enhancing inertial positioning performance</h2>
-    <p>A focused pathway on infrastructure-free pedestrian navigation, inertial drift control, smartphone pose effects, and the role of PDR as a relative positioning layer when other technologies become intermittent.</p>
+    <h2>Research areas across the hub</h2>
+    <p>This section is built step by step. Each research area is presented with compact explanation, linked representative works, and large figures that communicate the technical idea quickly.</p>
   </div>
 
-  <article class="inertial-pathway-card">
-    <div class="inertial-pathway-text">
-      <div class="inertial-pathway-labels">
-        <span>Problem 01</span>
-        <span>Infrastructure-free positioning</span>
-        <span>PDR and smartphone sensing</span>
+  <article class="research-area-one-card">
+    <div class="research-area-header">
+      <div class="research-area-label-row">
+        <span class="research-area-index">Research Area 1</span>
+        <span class="research-area-chip">Infrastructure-free positioning</span>
+        <span class="research-area-chip">PDR and smartphone sensing</span>
+      </div>
+      <h3>Enhancing Inertial Positioning Performance</h3>
+    </div>
+
+    <div class="research-area-text-grid">
+      <div class="research-area-text-box">
+        <h4>Why it matters</h4>
+        <p>Inertial positioning is infrastructure-free, low-cost, and available on commodity smartphones. It provides a relative navigation layer that can bridge outages in GNSS, Wi-Fi RSS, BLE, map matching, LiDAR, and image-based localization.</p>
       </div>
 
-      <h3>Enhancing inertial positioning performance</h3>
-
-      <p class="inertial-lead">Inertial positioning is an infrastructure-free, off-the-shelf, and low-cost solution for pedestrian navigation. It is especially valuable as a relative positioning layer that can bridge outages and complement GNSS, Wi-Fi RSS, BLE, map matching, LiDAR, and image-based localization.</p>
-
-      <div class="inertial-detail-box">
-        <h4>Why it is difficult</h4>
-        <p>Practical inertial positioning is limited by initialization sensitivity, body-frame to platform-frame inconsistency, step and motion variability, and accumulated heading drift. Long-term gyroscope errors gradually distort orientation, while short-term compass heading can be corrupted by magnetic disturbances, steel structures, elevators, electronics, and indoor environmental interference. These issues become more severe when the phone changes pose, such as holding, calling, swinging, mixed use, or in-pocket carrying.</p>
-      </div>
-
-      <div class="inertial-chips" aria-label="Key challenges">
-        <span>initialization</span>
-        <span>body-to-platform frame</span>
-        <span>gyro drift</span>
-        <span>compass disturbance</span>
-        <span>pose changes</span>
-        <span>step variability</span>
-        <span>long-term drift</span>
-        <span>sensor fusion</span>
-      </div>
-
-      <div class="inertial-works">
-        <h4>Representative works</h4>
-        <ul>
-          <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long Period Navigation under Different Smartphone Poses</a> <span>(2021)</span></li>
-          <li><a href="publications/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors.html">Enhancing Real-Time Heading Estimation for Pedestrian Navigation via Deep Learning and Smartphone Embedded Sensors</a> <span>(2025)</span></li>
-          <li><a href="publications/hybrid-neural-network-pdr-multi-layer-heading-correction.html">Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes</a> <span>(2026)</span></li>
-          <li><a href="publications/gnss-positioning-aided-with-pdr-in-urban-areas.html">GNSS Positioning Aided with Pedestrian Dead Reckoning in Urban Areas</a> <span>(2026)</span></li>
-          <li><a href="publications/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.html">Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments</a> <span>(2024)</span></li>
-          <li><a href="publications/ac-hmm-azimuth-constrained-map-matching-urban-canyons.html">AC-HMM: Azimuth-Constrained Hidden Markov Model-Based Map Matching for Robust Pedestrian Positioning in Urban Canyons</a> <span>(2026)</span></li>
-        </ul>
+      <div class="research-area-text-box difficulty-box">
+        <h4>Core difficulties</h4>
+        <p>Initialization, body-to-platform frame inconsistency, heading drift, magnetic disturbance, pose changes, and long-term error accumulation.</p>
+        <div class="research-area-small-tags">
+          <span>initialization</span><span>heading drift</span><span>magnetic disturbance</span><span>pose changes</span><span>long-term error</span>
+        </div>
       </div>
     </div>
 
-    <div class="inertial-visual-mosaic" aria-label="Visual examples of inertial positioning performance">
-      <figure class="inertial-figure inertial-figure-main">
-        <img src="assets/home/inertial-v29/inertial-multipose-route.webp" alt="Inertial positioning trajectories under holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
-        <figcaption>Smartphone pose changes strongly affect PDR trajectory behavior and heading stability.</figcaption>
+    <div class="research-area-visual-grid">
+      <figure class="research-area-visual main-visual">
+        <img src="assets/home/research-area1-v30/inertial-multipose-route.webp" alt="Inertial positioning trajectories under holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
       </figure>
-      <figure class="inertial-figure inertial-figure-side">
-        <img src="assets/home/inertial-v29/inertial-floorplan-drift.webp" alt="Noisy inertial trajectory over a floor plan showing drift and map inconsistency" loading="lazy" decoding="async">
-        <figcaption>Long trajectories show how inertial drift and map inconsistency accumulate without correction.</figcaption>
+      <figure class="research-area-visual side-visual">
+        <img src="assets/home/research-area1-v30/inertial-floorplan-drift.webp" alt="Noisy inertial trajectory over a floor plan showing drift and map inconsistency" loading="lazy" decoding="async">
       </figure>
+    </div>
+
+    <div class="research-area-works-row">
+      <h4>Representative works</h4>
+      <ul>
+        <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long Period Navigation under Different Smartphone Poses</a> <span>(2021)</span></li>
+        <li><a href="publications/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors.html">Enhancing Real-Time Heading Estimation for Pedestrian Navigation via Deep Learning and Smartphone Embedded Sensors</a> <span>(2025)</span></li>
+        <li><a href="publications/hybrid-neural-network-pdr-multi-layer-heading-correction.html">Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes</a> <span>(2026)</span></li>
+        <li><a href="publications/gnss-positioning-aided-with-pdr-in-urban-areas.html">GNSS Positioning Aided with Pedestrian Dead Reckoning in Urban Areas</a> <span>(2026)</span></li>
+        <li><a href="publications/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.html">Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments</a> <span>(2024)</span></li>
+        <li><a href="publications/ac-hmm-azimuth-constrained-map-matching-urban-canyons.html">AC-HMM: Azimuth-Constrained Hidden Markov Model-Based Map Matching for Robust Pedestrian Positioning in Urban Canyons</a> <span>(2026)</span></li>
+      </ul>
     </div>
   </article>
 </section>
-<!-- === Homepage inertial pathway v29 END === -->
+<!-- === Homepage research area 1 inertial v30 END === -->
 
 <h2>Find papers, PDFs, citation records, and visual explanations</h2><p>Each publication page is designed for fast reading and reuse, with first-page previews, PDF access where available, DOI metadata, BibTeX, when-to-cite guidance, long research-story summaries, and selected visual explanations.</p></div><div class="v23-access-grid"><a href="publications.html"><strong>Publication portfolio</strong><span>Visual paper cards with first-page previews, DOI links, venues, and topic cues.</span></a><a href="citation-resources.html"><strong>Citation resources</strong><span>BibTeX entries, citation-ready paper titles, and paper-use guidance.</span></a><a href="resources.html"><strong>Datasets and code</strong><span>Shared resources, reproducibility links, and supporting research materials.</span></a><a href="about.html"><strong>About Ahmed Mansour</strong><span>Academic background, research focus, and contact links.</span></a></div></section>
   </main>
