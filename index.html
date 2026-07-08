@@ -88,52 +88,51 @@
   </main>
 
 
-<!-- === Homepage research area 1 reorganized v37 START === -->
-<section class="home-area1-v37" id="key-thematic-map">
-  <div class="area1-v37-heading">
+<!-- === Homepage research area 1 professor v38 START === -->
+<section class="home-area1-v38" id="key-thematic-map">
+  <div class="area1-v38-heading">
     <p class="eyebrow">Home · Key thematic pathways across the hub</p>
     <h2>Research areas across the hub</h2>
-    <p>Each research area connects a practical indoor-positioning challenge with representative works and a clear visual explanation.</p>
+    <p>Indoor positioning is not a single sensing problem. It is a set of connected challenges: preserving motion continuity, controlling drift, handling user behavior, maintaining spatial references, and linking relative motion to absolute indoor location.</p>
   </div>
 
-  <article class="area1-v37-card">
-    <div class="area1-v37-top">
-      <div class="area1-v37-title">
-        <div class="area1-v37-labels">
-          <span class="area1-index">Research Area 1</span>
-          <span>Infrastructure-free positioning</span>
-          <span>PDR and smartphone sensing</span>
-        </div>
-        <h3>Enhancing Inertial Positioning Performance</h3>
+  <article class="area1-v38-card">
+    <div class="area1-v38-title">
+      <div class="area1-v38-labels">
+        <span class="area1-index">Research Area 1</span>
+        <span>Infrastructure-free positioning</span>
+        <span>PDR and smartphone sensing</span>
       </div>
+      <h3>Enhancing Inertial Positioning Performance</h3>
     </div>
 
-    <div class="area1-v37-main">
-      <div class="area1-v37-copy">
-        <section class="area1-v37-box why-box">
+    <div class="area1-v38-main">
+      <div class="area1-v38-copy">
+        <section class="area1-v38-box why-box">
           <h4>Why it matters</h4>
-          <p>Inertial positioning is infrastructure-free, low-cost, and available on commodity smartphones. It provides a relative navigation layer that can bridge outages in GNSS, Wi-Fi RSS, BLE, map matching, LiDAR, and image-based localization.</p>
+          <p>Smartphone inertial sensing is the most available motion source in pedestrian navigation. It requires no installed anchors, no prior radio visibility, and no dedicated infrastructure. Its value is strongest when other positioning cues become weak or unavailable: it can carry motion through GNSS outages, sparse Wi-Fi RSS or BLE coverage, temporary map-matching ambiguity, and interruptions in LiDAR or image-based localization.</p>
+          <p>In this role, inertial positioning is not only a standalone method. It is the relative-motion backbone that keeps the trajectory alive between absolute updates from external or environmental cues.</p>
         </section>
 
-        <section class="area1-v37-box difficulties-box">
+        <section class="area1-v38-box difficulties-box">
           <h4>Core difficulties</h4>
           <ul>
-            <li>Initialization affects the starting position, heading, and early trajectory stability.</li>
-            <li>Body-to-platform frame inconsistency appears when the phone orientation does not match the pedestrian walking direction.</li>
-            <li>Heading drift accumulates over time because small gyroscope errors integrate into large orientation errors.</li>
-            <li>Magnetic disturbance can corrupt compass heading in buildings with steel structures, elevators, electronics, and local magnetic anomalies.</li>
-            <li>Pose changes such as holding, calling, swinging, and in-pocket use alter the motion pattern seen by the smartphone sensors.</li>
-            <li>Long-term error accumulation makes standalone PDR unreliable unless it is corrected by external cues or contextual constraints.</li>
+            <li>Accurate position and heading initialization are required when PDR is expected to provide absolute positioning, because an initial offset shifts the whole trajectory.</li>
+            <li>The phone frame must be related to the pedestrian body frame; otherwise, a correct sensor measurement can point in the wrong walking direction.</li>
+            <li>Heading drift is the dominant long-term error source, as small gyroscope biases gradually integrate into large orientation errors.</li>
+            <li>Magnetometer heading can provide absolute direction, but it is easily disturbed by steel structures, elevators, electronics, reinforced concrete, and local magnetic anomalies.</li>
+            <li>Carrying modes such as holding, calling, swinging, and in-pocket use change the sensor pattern and weaken fixed assumptions about step events, stride length, and walking direction.</li>
+            <li>Standalone inertial propagation needs periodic correction from GNSS, Wi-Fi, BLE, map constraints, vision, or other trusted observations to prevent long-term divergence.</li>
           </ul>
         </section>
       </div>
 
-      <figure class="area1-v37-figure">
-        <img src="assets/home/research-area1-v37/inertial-multipose-route.webp" alt="Inertial positioning trajectories under holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
+      <figure class="area1-v38-figure">
+        <img src="assets/home/research-area1-v38/inertial-multipose-route-rotated.webp" alt="Rotated multi-pose inertial positioning trajectories showing holding, calling, swinging, mixed use, and in-pocket smartphone poses" loading="lazy" decoding="async">
       </figure>
     </div>
 
-    <div class="area1-v37-works">
+    <div class="area1-v38-works">
       <h4>Representative works</h4>
       <ul>
         <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long Period Navigation under Different Smartphone Poses</a> <span>(2021)</span></li>
@@ -146,7 +145,7 @@
     </div>
   </article>
 </section>
-<!-- === Homepage research area 1 reorganized v37 END === -->
+<!-- === Homepage research area 1 professor v38 END === -->
 
 <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
 </body>

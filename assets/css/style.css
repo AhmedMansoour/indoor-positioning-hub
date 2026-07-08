@@ -1952,31 +1952,31 @@ img.pub-visual-image {
 @media(max-width:980px){.home-v23-page .v23-hero-grid,.home-v23-page .v23-bridge-card,.home-v23-page .v23-atlas-grid{grid-template-columns:1fr}.home-v23-page .v23-logos,.home-v23-page .v23-def-grid,.home-v23-page .v23-access-grid{grid-template-columns:1fr}.home-v23-page .v23-profile{max-width:420px;margin:0 auto}.home-v23-page .v23-site-header{align-items:flex-start;flex-direction:column}.home-v23-page .site-nav{justify-content:flex-start}}
 /* === Homepage professional integrated redesign v23 END === */
 
-/* === Homepage research area 1 reorganized v37 START === */
-.home-area1-v37{
-  width:min(1280px,calc(100% - 56px));
-  max-width:min(1280px,calc(100% - 56px));
+/* === Homepage research area 1 professor v38 START === */
+.home-area1-v38{
+  width:min(1180px,calc(100% - 56px));
+  max-width:min(1180px,calc(100% - 56px));
   margin:52px auto 42px;
   box-sizing:border-box;
 }
-.area1-v37-heading{
-  max-width:930px;
+.area1-v38-heading{
+  max-width:900px;
   margin:0 auto 22px;
   text-align:center;
 }
-.area1-v37-heading h2{
+.area1-v38-heading h2{
   margin:.12rem 0 .5rem;
   color:#082d49;
-  font-size:clamp(1.8rem,2.6vw,2.45rem);
+  font-size:clamp(1.78rem,2.55vw,2.42rem);
   line-height:1.12;
   letter-spacing:-.04em;
 }
-.area1-v37-heading p:not(.eyebrow){
+.area1-v38-heading p:not(.eyebrow){
   color:#607589;
   font-size:.96rem;
   line-height:1.65;
 }
-.area1-v37-card{
+.area1-v38-card{
   display:grid;
   gap:18px;
   padding:22px;
@@ -1985,14 +1985,14 @@ img.pub-visual-image {
   border:1px solid rgba(130,165,194,.25);
   box-shadow:0 20px 46px rgba(20,45,74,.08);
 }
-.area1-v37-labels{
+.area1-v38-labels{
   display:flex;
   flex-wrap:wrap;
   gap:8px;
   align-items:center;
   margin-bottom:.75rem;
 }
-.area1-v37-labels span{
+.area1-v38-labels span{
   display:inline-flex;
   align-items:center;
   min-height:30px;
@@ -2005,45 +2005,48 @@ img.pub-visual-image {
   font-weight:700;
   line-height:1;
 }
-.area1-v37-labels .area1-index{
+.area1-v38-labels .area1-index{
   background:linear-gradient(135deg,rgba(84,202,213,.20),rgba(149,118,246,.12));
   color:#084f72;
   font-weight:800;
 }
-.area1-v37-title h3{
+.area1-v38-title h3{
   margin:0;
   color:#073d63;
-  font-size:clamp(1.55rem,2.35vw,2.18rem);
+  font-size:clamp(1.52rem,2.28vw,2.08rem);
   line-height:1.12;
   letter-spacing:-.04em;
 }
-.area1-v37-main{
+.area1-v38-main{
   display:grid;
-  grid-template-columns:minmax(360px,.92fr) minmax(520px,1.32fr);
+  grid-template-columns:minmax(0,1.12fr) minmax(300px,.62fr);
   gap:18px;
   align-items:start;
 }
-.area1-v37-copy{
+.area1-v38-copy{
   display:grid;
   gap:14px;
 }
-.area1-v37-box{
+.area1-v38-box{
   padding:16px 17px;
   border-radius:20px;
   border:1px solid rgba(127,160,186,.21);
 }
-.area1-v37-box h4,
-.area1-v37-works h4{
+.area1-v38-box h4,
+.area1-v38-works h4{
   margin:0 0 .55rem;
   color:#0b5074;
   font-size:.94rem;
   line-height:1.25;
 }
-.area1-v37-box p{
-  margin:0;
+.area1-v38-box p{
+  margin:0 0 .65rem;
   color:#405b71;
-  font-size:.93rem;
+  font-size:.92rem;
   line-height:1.58;
+}
+.area1-v38-box p:last-child{
+  margin-bottom:0;
 }
 .why-box{
   background:linear-gradient(180deg,rgba(239,247,251,.96),rgba(249,252,255,.98));
@@ -2054,16 +2057,16 @@ img.pub-visual-image {
 }
 .difficulties-box ul{
   margin:0;
-  padding-left:1.1rem;
+  padding-left:1.08rem;
   display:grid;
-  gap:.42rem;
+  gap:.48rem;
 }
 .difficulties-box li{
   color:#405b71;
-  font-size:.9rem;
-  line-height:1.48;
+  font-size:.89rem;
+  line-height:1.47;
 }
-.area1-v37-figure{
+.area1-v38-figure{
   margin:0;
   overflow:hidden;
   border-radius:24px;
@@ -2071,67 +2074,71 @@ img.pub-visual-image {
   border:1px solid rgba(126,159,186,.22);
   box-shadow:0 14px 30px rgba(19,45,74,.075);
 }
-.area1-v37-figure img{
+.area1-v38-figure img{
   display:block;
   width:100%;
-  height:auto;
+  max-height:720px;
+  object-fit:contain;
   background:#fff;
 }
-.area1-v37-works{
+.area1-v38-works{
   padding:15px 17px;
   border-radius:20px;
   background:linear-gradient(180deg,rgba(255,255,255,.86),rgba(247,250,253,.95));
   border:1px solid rgba(127,160,186,.18);
 }
-.area1-v37-works ul{
+.area1-v38-works ul{
   margin:0;
   padding-left:1.05rem;
   columns:2;
   column-gap:2rem;
 }
-.area1-v37-works li{
+.area1-v38-works li{
   break-inside:avoid;
   margin:0 0 .36rem;
   color:#607488;
   font-size:.82rem;
   line-height:1.42;
 }
-.area1-v37-works a,
-.area1-v37-works a:visited{
+.area1-v38-works a,
+.area1-v38-works a:visited{
   color:#035083;
   text-decoration:none;
   font-weight:400!important;
 }
-.area1-v37-works a:hover{
+.area1-v38-works a:hover{
   color:#00709c;
   text-decoration:underline;
 }
-.area1-v37-works span{
+.area1-v38-works span{
   color:#7f90a2;
 }
 @media(max-width:980px){
-  .home-area1-v37{
+  .home-area1-v38{
     width:min(100%,calc(100% - 22px));
     max-width:min(100%,calc(100% - 22px));
   }
-  .area1-v37-main{
+  .area1-v38-main{
     grid-template-columns:1fr;
   }
-  .area1-v37-works ul{
+  .area1-v38-figure img{
+    max-height:none;
+  }
+  .area1-v38-works ul{
     columns:1;
   }
 }
 @media(max-width:640px){
-  .home-area1-v37{
+  .home-area1-v38{
     width:min(100%,calc(100% - 18px));
     margin:40px auto 30px;
   }
-  .area1-v37-card{
+  .area1-v38-card{
     padding:16px;
     border-radius:24px;
   }
-  .area1-v37-figure{
+  .area1-v38-figure{
     border-radius:18px;
   }
 }
-/* === Homepage research area 1 reorganized v37 END === */
+/* === Homepage research area 1 professor v38 END === */
