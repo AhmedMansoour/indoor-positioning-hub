@@ -147,6 +147,60 @@
 </section>
 <!-- === Homepage research area 1 professor v38 END === -->
 
+
+<!-- === Homepage research area 2 session radio v39 START === -->
+<section class="home-area2-v39" id="research-area-2">
+  <article class="area2-v39-card">
+    <div class="area2-v39-title">
+      <div class="area2-v39-labels">
+        <span class="area2-index">Research Area 2</span>
+        <span>Wi-Fi fingerprinting</span>
+        <span>Multisensor session logs</span>
+        <span>Radio-map scaling</span>
+      </div>
+      <h3>Scaling Wi-Fi Fingerprinting and Autonomous Radio-Map Generation</h3>
+    </div>
+
+    <div class="area2-v39-main">
+      <div class="area2-v39-copy">
+        <section class="area2-v39-box why-box">
+          <h4>Why it matters</h4>
+          <p>Wi-Fi fingerprinting provides the absolute indoor reference that inertial positioning cannot maintain by itself. A fingerprint links a wireless observation to a physical indoor location, making it useful for correcting PDR drift, recognizing floors, initializing trajectories, and supporting building-scale indoor services where GNSS is unavailable.</p>
+          <p>The central challenge is no longer only how to match an RSS vector to a point. The harder deployment question is how to generate, update, and trust radio maps when the data arrive from ordinary mobile sessions rather than controlled survey campaigns.</p>
+        </section>
+
+        <section class="area2-v39-box difficulties-box">
+          <h4>Core difficulties</h4>
+          <ul>
+            <li>Manual radio-map surveying is expensive and difficult to repeat when buildings, access points, or service requirements change.</li>
+            <li>Crowdsourced trajectories are uneven, because users move freely, pause, turn, change floors, and carry phones in different ways.</li>
+            <li>RSS measurements vary across devices, time, human blockage, furniture layout, access-point configuration, and environmental dynamics.</li>
+            <li>Multifloor radio mapping requires vertical interpretation from barometer, motion, building topology, and wireless evidence, not only horizontal fingerprint matching.</li>
+            <li>Session logs must synchronize Wi-Fi scans, IMU samples, magnetometer readings, barometer pressure, GNSS fixes, and app events into one coherent spatial record.</li>
+            <li>Radio-map updating needs reliability control, because writing back unreliable fingerprints can degrade the map instead of improving it.</li>
+          </ul>
+        </section>
+      </div>
+
+      <figure class="area2-v39-figure">
+        <img src="assets/home/research-area2-v39/multisensor-session-log-stream.webp" alt="Multisensor session log stream integrating Wi-Fi RSS, IMU, magnetometer, barometer, GNSS fixes, app events, and wireless fingerprints across buildings and floors" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <div class="area2-v39-works">
+      <h4>Representative works</h4>
+      <ul>
+        <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>(2026)</span></li>
+        <li><a href="publications/towards-ubiquitous-ips-crowdsourced-data-accumulation.html">Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation</a> <span>(2024)</span></li>
+        <li><a href="publications/leveraging-human-mobility-pervasive-smartphone-crowdsourcing.html">Leveraging Human Mobility and Pervasive Smartphone Measurements-Based Crowdsourcing for Developing Self-Deployable and Ubiquitous Indoor Positioning Systems</a> <span>(2023)</span></li>
+        <li><a href="publications/everywhere-framework-ubiquitous-indoor-localization.html">Everywhere: A Framework for Ubiquitous Indoor Localization</a> <span>(2022)</span></li>
+      </ul>
+    </div>
+  </article>
+</section>
+<!-- === Homepage research area 2 session radio v39 END === -->
+
+
 <footer class="site-footer"><p>&copy; Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></footer>
 </body>
 </html>
