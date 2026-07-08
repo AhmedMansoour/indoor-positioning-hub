@@ -2147,3 +2147,34 @@ img.pub-visual-image {
   }
 }
 /* === Homepage research area 1 standalone wide v35 END === */
+
+/* === Homepage research area 1 balanced width v36 START === */
+/* v36 reduces the v35 wide layout so Research Area 1 aligns better with the upper homepage blocks. */
+.home-research-area-map{
+  width:min(1480px,calc(100% - 56px)) !important;
+  max-width:min(1480px,calc(100% - 56px)) !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+.research-area-map-heading{
+  max-width:1080px !important;
+}
+.research-area-visual-grid{
+  grid-template-columns:minmax(0,1.72fr) minmax(280px,.76fr) !important;
+}
+.research-area-visual.side-visual{
+  max-width:410px !important;
+}
+@media(max-width:960px){
+  .home-research-area-map{
+    width:min(100%,calc(100% - 18px)) !important;
+    max-width:min(100%,calc(100% - 18px)) !important;
+  }
+  .research-area-visual-grid{
+    grid-template-columns:1fr !important;
+  }
+  .research-area-visual.side-visual{
+    max-width:100% !important;
+  }
+}
+/* === Homepage research area 1 balanced width v36 END === */
