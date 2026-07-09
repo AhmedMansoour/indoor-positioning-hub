@@ -111,11 +111,14 @@ Representative works:
 - Purpose: a citation and discovery guide with author identifiers, research-area citation guidance, publication page links, DOI and PDF links, BibTeX, JSON metadata, AI-search prompts, and machine-readable resource links.
 
 
+
+
 ## Visual research gallery
 
 - Visual Research Gallery: https://ahmedmansoour.github.io/indoor-positioning-hub/index.html#visual-research-gallery
-- Purpose: a visual index for future spatial intelligence, 2D indoor navigation, multi-floor indoor positioning, autonomous radio-map generation, and indoor-outdoor transition-aware 3D positioning.
-- Related assets: assets/visual-gallery-v50/future-spatial-intelligence.webp, assets/visual-gallery-v50/indoor-navigation-2d-mall.webp, assets/visual-gallery-v50/indoor-navigation-3d-multilevel.webp, assets/visual-gallery-v50/everywhere-autonomous-radio-map.gif, assets/visual-gallery-v50/iod-3d-positioning-demo.gif
+- Purpose: a natural-ratio visual index for future spatial intelligence, 2D indoor navigation, multi-floor indoor positioning, autonomous radio-map generation, and indoor-outdoor transition-aware 3D positioning.
+- Figure dimensions used in layout: 1024 × 559 for the three scene figures, 1280 × 540 for the autonomous radio-map workflow, and 800 × 349 for the indoor-outdoor and 3D-positioning workflow.
+- Related assets: assets/visual-gallery-v51/future-spatial-intelligence.webp, assets/visual-gallery-v51/indoor-navigation-2d-mall.webp, assets/visual-gallery-v51/indoor-navigation-3d-multilevel.webp, assets/visual-gallery-v51/everywhere-autonomous-radio-map-animated.webp, assets/visual-gallery-v51/iod-3d-positioning-demo-animated.webp
 
 ## Resources and reproducibility page
 
