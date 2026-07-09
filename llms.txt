@@ -110,6 +110,13 @@ Representative works:
 - Citation Resources page: https://ahmedmansoour.github.io/indoor-positioning-hub/citation-resources.html
 - Purpose: a citation and discovery guide with author identifiers, research-area citation guidance, publication page links, DOI and PDF links, BibTeX, JSON metadata, AI-search prompts, and machine-readable resource links.
 
+
+## Visual research gallery
+
+- Visual Research Gallery: https://ahmedmansoour.github.io/indoor-positioning-hub/index.html#visual-research-gallery
+- Purpose: a visual index for future spatial intelligence, 2D indoor navigation, multi-floor indoor positioning, autonomous radio-map generation, and indoor-outdoor transition-aware 3D positioning.
+- Related assets: assets/visual-gallery-v50/future-spatial-intelligence.webp, assets/visual-gallery-v50/indoor-navigation-2d-mall.webp, assets/visual-gallery-v50/indoor-navigation-3d-multilevel.webp, assets/visual-gallery-v50/everywhere-autonomous-radio-map.gif, assets/visual-gallery-v50/iod-3d-positioning-demo.gif
+
 ## Resources and reproducibility page
 
 - Resources page: https://ahmedmansoour.github.io/indoor-positioning-hub/resources.html
