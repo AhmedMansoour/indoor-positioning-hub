@@ -122,7 +122,12 @@ Representative works:
 
 
 
-## Visual research gallery
+
+## Homepage copy refinement
+
+- Homepage: https://ahmedmansoour.github.io/indoor-positioning-hub/index.html
+- Update: homepage copy refined to remove process-oriented update wording, reduce repetitive mechanical phrasing, and present the research program in clearer academic website language.
+\n## Visual research gallery
 
 - Visual Research Gallery: https://ahmedmansoour.github.io/indoor-positioning-hub/index.html#visual-research-gallery
 - Purpose: a compact visual index centered on future spatial intelligence, enlarged 3D indoor positioning, autonomous radio-map generation, and indoor-outdoor seamless positioning.
