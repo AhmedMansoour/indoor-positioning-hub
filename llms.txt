@@ -113,12 +113,14 @@ Representative works:
 
 
 
+
+
 ## Visual research gallery
 
 - Visual Research Gallery: https://ahmedmansoour.github.io/indoor-positioning-hub/index.html#visual-research-gallery
-- Purpose: a natural-ratio visual index for future spatial intelligence, 2D indoor navigation, multi-floor indoor positioning, autonomous radio-map generation, and indoor-outdoor transition-aware 3D positioning.
-- Figure dimensions used in layout: 1024 × 559 for the three scene figures, 1280 × 540 for the autonomous radio-map workflow, and 800 × 349 for the indoor-outdoor and 3D-positioning workflow.
-- Related assets: assets/visual-gallery-v51/future-spatial-intelligence.webp, assets/visual-gallery-v51/indoor-navigation-2d-mall.webp, assets/visual-gallery-v51/indoor-navigation-3d-multilevel.webp, assets/visual-gallery-v51/everywhere-autonomous-radio-map-animated.webp, assets/visual-gallery-v51/iod-3d-positioning-demo-animated.webp
+- Purpose: a compact visual index centered on future spatial intelligence, enlarged 3D indoor positioning, autonomous radio-map generation, and indoor-outdoor seamless positioning.
+- Live GIF assets: assets/visual-gallery-v52/autonomous-map-generation-live.gif and assets/visual-gallery-v52/iod-seamless-live.gif
+- Static scene assets: assets/visual-gallery-v52/future-spatial-intelligence.webp and assets/visual-gallery-v52/indoor-navigation-3d-multilevel.webp
 
 ## Resources and reproducibility page
 
