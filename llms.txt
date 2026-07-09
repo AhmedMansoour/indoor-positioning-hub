@@ -103,6 +103,12 @@ Representative works:
 - SUNS: A User-Friendly Scheme for Seamless and Ubiquitous Navigation Based on an Enhanced Indoor-Outdoor Environmental Awareness Approach: https://ahmedmansoour.github.io/indoor-positioning-hub/paper-pdfs/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness.pdf
 - Drift Control of Pedestrian Dead Reckoning (PDR) for Long Period Navigation under Different Smartphone Poses: https://ahmedmansoour.github.io/indoor-positioning-hub/paper-pdfs/drift-control-pdr-long-period-navigation-smartphone-poses.pdf
 
+
+## Resources and reproducibility page
+
+- Resources page: https://ahmedmansoour.github.io/indoor-positioning-hub/resources.html
+- Purpose: a dedicated index for publication PDFs, BibTeX, JSON metadata, reproducibility notes, code and dataset status, responsible sharing policy, sitemap, robots.txt, and llms.txt.
+
 ## Citation and machine-readable resources
 
 - BibTeX file for publication citations: https://ahmedmansoour.github.io/indoor-positioning-hub/papers/publications.bib

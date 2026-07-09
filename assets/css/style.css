@@ -2609,3 +2609,35 @@ img.pub-visual-image {
 @media(max-width:980px){.research-areas-v46{width:min(100%,calc(100% - 22px))}.ra46-flow,.ra46-support-grid{grid-template-columns:1fr 1fr}.ra46-area-grid{grid-template-columns:1fr}.ra46-papers ul{columns:1}}
 @media(max-width:640px){.research-areas-v46{width:min(100%,calc(100% - 18px))}.ra46-hero,.ra46-area,.ra46-supporting{padding:17px;border-radius:24px}.ra46-flow,.ra46-support-grid{grid-template-columns:1fr}}
 /* === Research areas page v46 END === */
+
+/* === Resources page v47 START === */
+.resources-v47{width:min(1180px,calc(100% - 56px));margin:0 auto 48px}
+.res47-hero{margin:36px 0 22px;padding:32px;border-radius:32px;background:radial-gradient(circle at 82% 10%,rgba(79,196,211,.16),transparent 35%),linear-gradient(180deg,rgba(255,255,255,.98),rgba(246,251,255,.98));border:1px solid rgba(130,165,194,.25);box-shadow:0 22px 50px rgba(20,45,74,.08)}
+.res47-eyebrow{margin:0 0 .55rem;color:#0b6380;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:800}
+.res47-hero h1{margin:0 0 .85rem;color:#073d63;font-size:clamp(2rem,4vw,3.55rem);line-height:1.02;letter-spacing:-.055em}
+.res47-lead{max-width:980px;margin:0;color:#405b71;font-size:1.04rem;line-height:1.68}
+.res47-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.35rem}
+.res47-actions a,.res47-overview a,.res47-machine-grid a,.res47-area-grid a{color:#084f72;text-decoration:none}
+.res47-actions a{display:inline-flex;padding:.62rem .85rem;border-radius:999px;background:rgba(83,197,213,.10);border:1px solid rgba(79,159,187,.24);font-weight:700;font-size:.85rem}
+.res47-overview{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 24px}
+.res47-overview a,.res47-machine-grid a{display:block;padding:17px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(248,252,255,.98));border:1px solid rgba(127,160,186,.20);box-shadow:0 10px 24px rgba(20,45,74,.045)}
+.res47-overview strong,.res47-machine-grid strong{display:block;color:#073d63;margin-bottom:.35rem}
+.res47-overview span,.res47-machine-grid span{display:block;color:#607488;font-size:.88rem;line-height:1.45}
+.res47-section{margin:24px 0;padding:22px;border-radius:30px;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(248,252,255,.98));border:1px solid rgba(130,165,194,.23);box-shadow:0 16px 38px rgba(20,45,74,.065)}
+.res47-section-head h2{margin:0 0 .65rem;color:#073d63;font-size:clamp(1.45rem,2.5vw,2.2rem);line-height:1.1;letter-spacing:-.04em}
+.res47-section-head p:not(.res47-eyebrow){margin:0;max-width:980px;color:#405b71;font-size:.98rem;line-height:1.65}
+.res47-pdf-list{margin:18px 0 0;padding-left:1.08rem;columns:2;column-gap:2.2rem}
+.res47-pdf-list li{break-inside:avoid;margin:0 0 .7rem;color:#607488;font-size:.86rem;line-height:1.42}
+.res47-pdf-list a{color:#035083;text-decoration:none}.res47-pdf-list a:hover{text-decoration:underline}
+.res47-pdf-list span{color:#7f90a2}.res47-pdf-list em{display:block;color:#6b7d91;font-style:normal;font-size:.78rem;margin-top:.12rem}.res47-pdf-list small{display:block;margin-top:.1rem;color:#7f90a2}
+.res47-area-grid,.res47-status-grid,.res47-machine-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.res47-area-grid{grid-template-columns:repeat(4,1fr)}
+.res47-area-grid article,.res47-status-grid article{padding:17px;border-radius:22px;background:linear-gradient(180deg,rgba(239,247,251,.96),rgba(249,252,255,.98));border:1px solid rgba(79,159,187,.17)}
+.res47-status-grid article{background:linear-gradient(180deg,rgba(245,242,255,.92),rgba(251,249,255,.98));border-color:rgba(148,132,200,.18)}
+.res47-area-grid article>span{display:inline-flex;margin-bottom:.55rem;padding:.32rem .55rem;border-radius:999px;background:rgba(83,197,213,.12);color:#084f72;font-size:.72rem;font-weight:800}
+.res47-area-grid h3{margin:0 0 .45rem;color:#073d63;font-size:1rem}
+.res47-area-grid p{margin:0 0 .7rem;color:#607488;font-size:.86rem;line-height:1.5}
+.res47-area-grid a{font-weight:700;font-size:.84rem}.res47-status-grid strong{display:block;color:#073d63;margin-bottom:.55rem}.res47-status-grid ul{margin:0;padding-left:1.08rem}.res47-status-grid li{margin:0 0 .48rem;color:#405b71;font-size:.88rem;line-height:1.45}
+@media(max-width:980px){.resources-v47{width:min(100%,calc(100% - 22px))}.res47-overview,.res47-area-grid,.res47-status-grid,.res47-machine-grid{grid-template-columns:1fr 1fr}.res47-pdf-list{columns:1}}
+@media(max-width:640px){.resources-v47{width:min(100%,calc(100% - 18px))}.res47-hero,.res47-section{padding:17px;border-radius:24px}.res47-overview,.res47-area-grid,.res47-status-grid,.res47-machine-grid{grid-template-columns:1fr}}
+/* === Resources page v47 END === */
