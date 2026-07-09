@@ -104,6 +104,12 @@ Representative works:
 - Drift Control of Pedestrian Dead Reckoning (PDR) for Long Period Navigation under Different Smartphone Poses: https://ahmedmansoour.github.io/indoor-positioning-hub/paper-pdfs/drift-control-pdr-long-period-navigation-smartphone-poses.pdf
 
 
+
+## Citation resources and AI-search guide
+
+- Citation Resources page: https://ahmedmansoour.github.io/indoor-positioning-hub/citation-resources.html
+- Purpose: a citation and discovery guide with author identifiers, research-area citation guidance, publication page links, DOI and PDF links, BibTeX, JSON metadata, AI-search prompts, and machine-readable resource links.
+
 ## Resources and reproducibility page
 
 - Resources page: https://ahmedmansoour.github.io/indoor-positioning-hub/resources.html
