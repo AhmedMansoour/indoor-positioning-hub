@@ -2517,3 +2517,58 @@ img.pub-visual-image {
 @media(max-width:980px){.home-area4-v42{width:min(100%,calc(100% - 22px));max-width:min(100%,calc(100% - 22px))}.area4-v42-top{grid-template-columns:1fr}.area4-v42 .difficulties-box ul,.area4-v42-works ul{columns:1}}
 @media(max-width:640px){.home-area4-v42{width:min(100%,calc(100% - 18px));margin:28px auto 30px}.area4-v42-card{padding:16px;border-radius:24px}.area4-v42-figure{border-radius:18px}}
 /* === Homepage research area 4 3d radio map v42 END === */
+
+/* === Publication research-area index v45 START === */
+.paper-research-area-index{
+  margin:2rem 0 1.2rem;
+  padding:1.15rem;
+  border-radius:22px;
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(247,251,255,.97));
+  border:1px solid rgba(127,160,186,.22);
+  box-shadow:0 12px 28px rgba(18,44,73,.06);
+}
+.paper-research-area-index h2{
+  margin:0 0 .45rem;
+  color:#073d63;
+  font-size:1.2rem;
+  letter-spacing:-.02em;
+}
+.paper-research-area-index p{
+  margin:0 0 .85rem;
+  color:#5e7286;
+  line-height:1.6;
+}
+.paper-area-chip-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:.75rem;
+}
+.paper-area-chip{
+  display:block;
+  padding:.85rem .95rem;
+  border-radius:17px;
+  background:linear-gradient(180deg,rgba(239,247,251,.96),rgba(249,252,255,.98));
+  border:1px solid rgba(79,159,187,.20);
+  text-decoration:none;
+}
+.paper-area-chip strong{
+  display:block;
+  color:#084f72;
+  font-size:.92rem;
+  line-height:1.3;
+  margin-bottom:.28rem;
+}
+.paper-area-chip span{
+  display:block;
+  color:#607488;
+  font-size:.82rem;
+  line-height:1.45;
+}
+.paper-area-chip:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(20,45,74,.08);
+}
+@media(max-width:700px){
+  .paper-area-chip-grid{grid-template-columns:1fr}
+}
+/* === Publication research-area index v45 END === */
