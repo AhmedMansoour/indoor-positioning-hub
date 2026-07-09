@@ -105,6 +105,13 @@ Representative works:
 
 
 
+
+## About Ahmed Mansour
+
+- About page: https://ahmedmansoour.github.io/indoor-positioning-hub/about.html
+- Purpose: academic profile, research identity, timeline, profile identifiers, CV link, contact, and Person JSON-LD metadata for Ahmed Mansour.
+- Profile image: assets/about-v53/ahmed-ipin-2024.webp
+
 ## Citation resources and AI-search guide
 
 - Citation Resources page: https://ahmedmansoour.github.io/indoor-positioning-hub/citation-resources.html
