@@ -121,3 +121,9 @@ indoor positioning, indoor localization, indoor navigation, Wi-Fi fingerprinting
 - Use the publication portfolio to identify the most relevant paper by title, venue, DOI, topic, and visual preview.
 - Use individual publication pages for long summaries, BibTeX, DOI links, direct PDFs, and when-to-cite guidance.
 - Use the sitemap for complete crawlable URL discovery.
+
+## Research-area landing page
+
+- Research Areas landing page: https://ahmedmansoour.github.io/indoor-positioning-hub/research-themes.html
+- Purpose: a dedicated machine-readable and reader-facing map that aligns the research-themes page with the homepage areas: inertial positioning, Wi-Fi fingerprinting and radio-map scaling, seamless indoor-outdoor fusion, and 3D radio-map generation from mobile crowdsensing.
+

@@ -1,6 +1,49 @@
-<!doctype html>
-<html lang="en">
-<head>
+from pathlib import Path
+import re
+
+ROOT = Path(".")
+PAGE = ROOT / "research-themes.html"
+CSS = ROOT / "assets" / "css" / "style.css"
+LLMS = ROOT / "llms.txt"
+
+if not PAGE.exists():
+    raise SystemExit("research-themes.html not found. Run from repository root.")
+if not CSS.exists():
+    raise SystemExit("assets/css/style.css not found. Run from repository root.")
+
+html = PAGE.read_text(encoding="utf-8", errors="ignore")
+css = CSS.read_text(encoding="utf-8", errors="ignore")
+
+header = ""
+footer = ""
+header_match = re.search(r"<body[^>]*>\s*(<header.*?</header>)", html, flags=re.S | re.I)
+if header_match:
+    header = header_match.group(1)
+
+footer_match = re.search(r"(<footer.*?</footer>)", html, flags=re.S | re.I)
+if footer_match:
+    footer = footer_match.group(1)
+
+if not header:
+    header = """<header class="site-header">
+  <a class="brand" href="index.html">Indoor Positioning Hub</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="research-themes.html" class="active">Research Themes</a>
+    <a href="resources.html">Datasets &amp; Code</a>
+    <a href="citation-resources.html">Citation Resources</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>"""
+
+if not footer:
+    footer = """<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></div></footer>"""
+
+header = re.sub(r'(<a href="research-themes\.html")([^>]*)>', r'\1 class="active">', header, flags=re.I)
+header = re.sub(r'(<a href="index\.html")\s+class="active"([^>]*)>', r'\1\2>', header, flags=re.I)
+
+head = """<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- === Research areas SEO metadata v46 START === -->
@@ -51,18 +94,10 @@
   }</script>
   <!-- === Research areas SEO metadata v46 END === -->
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="research-areas-v46-page">
-<header class="site-header">
-    <nav class="site-nav" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="publications.html">Publications</a>
-  <a href="research-themes.html" class="active">Research Themes</a>
-  <a href="resources.html">Datasets &amp; Code</a>
-  <a href="citation-resources.html">Citation Resources</a>
-  <a href="about.html">About</a>
-</nav>
-  </header>
+</head>"""
+
+body = r"""<body class="research-areas-v46-page">
+""" + header + r"""
 
 <main class="research-areas-v46">
   <section class="ra46-hero">
@@ -174,7 +209,64 @@
     </div>
   </section>
 </main>
-<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Ahmed Mansour. Indoor Positioning Research, Engineering, and Deployment Hub.</p></div></footer>
+""" + footer + r"""
 <script src="assets/js/site.js"></script>
 </body>
 </html>
+"""
+
+PAGE.write_text("<!doctype html>\n<html lang=\"en\">\n" + head + "\n" + body, encoding="utf-8")
+
+css = re.sub(r"/\* === Research areas page v46 START === \*/.*?/\* === Research areas page v46 END === \*/", "", css, flags=re.S)
+css_block = r"""
+/* === Research areas page v46 START === */
+.research-areas-v46{width:min(1180px,calc(100% - 56px));margin:0 auto 48px}
+.ra46-hero{margin:36px 0 22px;padding:32px;border-radius:32px;background:radial-gradient(circle at 80% 12%,rgba(79,196,211,.16),transparent 35%),linear-gradient(180deg,rgba(255,255,255,.98),rgba(246,251,255,.98));border:1px solid rgba(130,165,194,.25);box-shadow:0 22px 50px rgba(20,45,74,.08)}
+.ra46-eyebrow{margin:0 0 .55rem;color:#0b6380;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:800}
+.ra46-hero h1{margin:0 0 .85rem;color:#073d63;font-size:clamp(2rem,4vw,3.6rem);line-height:1.02;letter-spacing:-.055em}
+.ra46-lead{max-width:950px;margin:0;color:#405b71;font-size:1.04rem;line-height:1.68}
+.ra46-quicklinks{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.3rem}
+.ra46-quicklinks a{display:inline-flex;padding:.62rem .85rem;border-radius:999px;background:rgba(83,197,213,.10);border:1px solid rgba(79,159,187,.24);color:#084f72;font-weight:700;text-decoration:none;font-size:.85rem}
+.ra46-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 24px}
+.ra46-flow article{padding:17px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(248,252,255,.98));border:1px solid rgba(127,160,186,.20)}
+.ra46-flow span{display:inline-flex;margin-bottom:.55rem;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;color:#084f72;background:rgba(83,197,213,.13);font-weight:800;font-size:.78rem}
+.ra46-flow strong{display:block;color:#073d63;margin-bottom:.35rem}
+.ra46-flow p{margin:0;color:#5e7286;line-height:1.5;font-size:.88rem}
+.ra46-area,.ra46-supporting{margin:24px 0;padding:22px;border-radius:30px;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(248,252,255,.98));border:1px solid rgba(130,165,194,.23);box-shadow:0 16px 38px rgba(20,45,74,.065)}
+.ra46-area-head h2{margin:0 0 .65rem;color:#073d63;font-size:clamp(1.45rem,2.5vw,2.2rem);line-height:1.1;letter-spacing:-.04em}
+.ra46-area-head p:not(.ra46-eyebrow){margin:0;max-width:980px;color:#405b71;font-size:.98rem;line-height:1.65}
+.ra46-area-grid{display:grid;grid-template-columns:minmax(420px,1.05fr) minmax(0,.95fr);gap:18px;align-items:stretch;margin-top:18px}
+.ra46-area-grid figure{margin:0;border-radius:24px;overflow:hidden;background:#fff;border:1px solid rgba(126,159,186,.22);box-shadow:0 14px 30px rgba(19,45,74,.075)}
+.ra46-area-grid img{display:block;width:100%;height:100%;object-fit:cover}
+.ra46-card{padding:17px;border-radius:22px;background:linear-gradient(180deg,rgba(245,242,255,.92),rgba(251,249,255,.98));border:1px solid rgba(148,132,200,.18)}
+.ra46-card h3,.ra46-papers h3{margin:0 0 .6rem;color:#0b5074;font-size:.98rem}
+.ra46-card ul,.ra46-papers ul{margin:0;padding-left:1.08rem}
+.ra46-card li{margin:0 0 .52rem;color:#405b71;line-height:1.48;font-size:.91rem}
+.ra46-papers{margin-top:18px;padding:16px 17px;border-radius:22px;background:linear-gradient(180deg,rgba(239,247,251,.96),rgba(249,252,255,.98));border:1px solid rgba(79,159,187,.17)}
+.ra46-papers ul{columns:2;column-gap:2.2rem}
+.ra46-papers li{break-inside:avoid;margin:0 0 .45rem;color:#607488;line-height:1.42;font-size:.86rem}
+.ra46-papers a{color:#035083;text-decoration:none}
+.ra46-papers a:hover{text-decoration:underline}
+.ra46-papers span{color:#7f90a2}
+.ra46-support-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.ra46-support-grid a{padding:16px;border-radius:20px;text-decoration:none;background:linear-gradient(180deg,rgba(255,255,255,.90),rgba(247,250,253,.96));border:1px solid rgba(127,160,186,.18)}
+.ra46-support-grid strong{display:block;color:#073d63;margin-bottom:.35rem}
+.ra46-support-grid span{display:block;color:#607488;font-size:.86rem;line-height:1.45}
+@media(max-width:980px){.research-areas-v46{width:min(100%,calc(100% - 22px))}.ra46-flow,.ra46-support-grid{grid-template-columns:1fr 1fr}.ra46-area-grid{grid-template-columns:1fr}.ra46-papers ul{columns:1}}
+@media(max-width:640px){.research-areas-v46{width:min(100%,calc(100% - 18px))}.ra46-hero,.ra46-area,.ra46-supporting{padding:17px;border-radius:24px}.ra46-flow,.ra46-support-grid{grid-template-columns:1fr}}
+/* === Research areas page v46 END === */
+"""
+CSS.write_text(css.rstrip() + "\n\n" + css_block.strip() + "\n", encoding="utf-8")
+
+if LLMS.exists():
+    llms = LLMS.read_text(encoding="utf-8", errors="ignore")
+    marker = "## Research areas on the homepage"
+    add = """\n## Research-area landing page\n\n- Research Areas landing page: https://ahmedmansoour.github.io/indoor-positioning-hub/research-themes.html\n- Purpose: a dedicated machine-readable and reader-facing map that aligns the research-themes page with the homepage areas: inertial positioning, Wi-Fi fingerprinting and radio-map scaling, seamless indoor-outdoor fusion, and 3D radio-map generation from mobile crowdsensing.\n"""
+    if "## Research-area landing page" not in llms:
+        if marker in llms:
+            llms = llms.replace(marker, add + "\n" + marker)
+        else:
+            llms = llms.rstrip() + "\n" + add + "\n"
+        LLMS.write_text(llms, encoding="utf-8")
+
+print("Done: upgraded research-themes.html into a Research Areas landing page aligned with homepage Areas 1-4.")
