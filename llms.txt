@@ -123,6 +123,12 @@ Representative works:
 
 
 
+
+## Site-wide copy refinement
+
+- Revised pages: about.html, citation-resources.html, publications.html, research-themes.html, resources.html, and cv.html.
+- Update: process-oriented update language, repetitive mechanical descriptions, internal maintenance notes, and shallow page explanations were replaced with clearer academic website copy while preserving the existing layouts and URLs.
+
 ## Homepage copy refinement
 
 - Homepage: https://ahmedmansoour.github.io/indoor-positioning-hub/index.html

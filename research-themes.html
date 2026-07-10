@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- === Research areas SEO metadata v46 START === -->
   <title>Research Areas | Indoor Positioning Hub | Ahmed Mansour</title>
-  <meta name="description" content="Research-area landing page for Ahmed Mansour's Indoor Positioning Hub, connecting inertial positioning, Wi-Fi fingerprinting, seamless indoor-outdoor fusion, 3D radio-map generation, vertical positioning, and deployment-ready indoor spatial intelligence.">
+  <meta name="description" content="Research program for Ahmed Mansour's Indoor Positioning Hub, connecting inertial positioning, Wi-Fi fingerprinting, mobile crowdsensing, seamless indoor-outdoor positioning, 3D radio-map generation, floor recognition, and vertical positioning.">
   <meta name="author" content="Ahmed Mansour">
   <meta name="keywords" content="indoor positioning, indoor localization, indoor navigation, PDR, Wi-Fi fingerprinting, mobile crowdsensing, radio map generation, 3D radio map, seamless indoor-outdoor positioning, GNSS/PDR integration, floor recognition, vertical positioning, spatial intelligence, Ahmed Mansour">
   <link rel="canonical" href="https://ahmedmansoour.github.io/indoor-positioning-hub/research-themes.html">
@@ -57,8 +57,8 @@
     <nav class="site-nav" aria-label="Main navigation">
   <a href="index.html">Home</a>
   <a href="publications.html">Publications</a>
-  <a href="research-themes.html" class="active">Research Themes</a>
-  <a href="resources.html">Datasets &amp; Code</a>
+  <a href="research-themes.html" class="active">Research Areas</a>
+  <a href="resources.html">Resources</a>
   <a href="citation-resources.html">Citation Resources</a>
   <a href="about.html">About</a>
 </nav>
@@ -66,9 +66,9 @@
 
 <main class="research-areas-v46">
   <section class="ra46-hero">
-    <p class="ra46-eyebrow">Research Areas and Publication Map</p>
-    <h1>Research areas across the Indoor Positioning Hub</h1>
-    <p class="ra46-lead">This page connects the publication portfolio to four research areas that structure Ahmed Mansour's work: inertial positioning, Wi-Fi fingerprinting and radio-map scaling, seamless indoor-outdoor fusion, and 3D indoor spatial context. The goal is to help readers move from a broad positioning question to the most relevant papers, methods, figures, and citation records.</p>
+    <p class="ra46-eyebrow">Research program</p>
+    <h1>Four connected research areas in indoor positioning</h1>
+    <p class="ra46-lead">The research program is organized around four connected problems: maintaining pedestrian motion with inertial sensing, creating dependable indoor references from Wi-Fi and crowdsensed data, preserving continuity across outdoor and indoor spaces, and representing multi-floor environments in 3D. Each area links the underlying research questions to representative publications.</p>
     <div class="ra46-quicklinks" aria-label="Research-area quick links">
       <a href="#area-inertial">Inertial positioning</a>
       <a href="#area-radio-map">Wi-Fi and radio maps</a>
@@ -79,23 +79,23 @@
   </section>
 
   <section class="ra46-flow" aria-label="Research program flow">
-    <article><span>01</span><strong>Relative motion</strong><p>Smartphone inertial sensing keeps the trajectory alive when external positioning cues are weak or unavailable.</p></article>
-    <article><span>02</span><strong>Indoor reference</strong><p>Wi-Fi fingerprints and radio maps provide indoor absolute references for correction, initialization, and map-based services.</p></article>
-    <article><span>03</span><strong>Continuity</strong><p>GNSS, PDR, Wi-Fi, BLE, barometer, maps, and transition awareness are fused to prevent positioning breaks.</p></article>
-    <article><span>04</span><strong>3D context</strong><p>Floor recognition, vertical motion, and building-level map assembly connect positioning to multi-level indoor structure.</p></article>
+    <article><span>01</span><strong>Relative motion</strong><p>Smartphone inertial sensing preserves short-term motion when external references are unavailable, but drift and heading errors must be controlled.</p></article>
+    <article><span>02</span><strong>Indoor reference</strong><p>Wi-Fi fingerprints provide indoor reference information, while scalable deployment depends on how radio maps are created, checked, and updated.</p></article>
+    <article><span>03</span><strong>Continuity</strong><p>Complementary sources are combined so that positioning remains continuous as users move through outdoor, transition, and indoor spaces.</p></article>
+    <article><span>04</span><strong>3D context</strong><p>Floor recognition, vertical motion, and building-level assembly place the position estimate within a meaningful multi-level structure.</p></article>
   </section>
 
   <section class="ra46-area" id="area-inertial">
     <div class="ra46-area-head">
       <p class="ra46-eyebrow">Research Area 1</p>
       <h2>Enhancing Inertial Positioning Performance</h2>
-      <p>Smartphone inertial sensing is the relative-motion layer of pedestrian navigation. It supports positioning when GNSS, Wi-Fi, BLE, vision, or map-based cues are weak, intermittent, or unavailable. The central challenge is to control drift, heading error, pose changes, and walking-direction uncertainty without requiring dedicated infrastructure.</p>
+      <p>Smartphone inertial sensing provides continuous motion information without installed infrastructure. The research focuses on keeping that motion estimate useful despite gyroscope drift, magnetic disturbance, changing phone poses, uncertain walking direction, and interruptions between trusted position updates.</p>
     </div>
     <div class="ra46-area-grid">
       <figure><img src="assets/home/research-area1-v38/inertial-multipose-route-rotated.webp" alt="Inertial positioning and smartphone pedestrian dead reckoning across carrying poses" loading="lazy" decoding="async"></figure>
-      <div class="ra46-card"><h3>Key problems</h3><ul><li>Heading initialization and long-term gyroscope drift.</li><li>Phone-to-body frame alignment under changing carrying modes.</li><li>Magnetic disturbance in steel-rich, electronic, and reinforced indoor spaces.</li><li>Periodic correction from GNSS, Wi-Fi, BLE, maps, or trusted observations.</li></ul></div>
+      <div class="ra46-card"><h3>Research challenges</h3><ul><li>Heading initialization and long-term gyroscope drift.</li><li>Phone-to-body frame alignment under changing carrying modes.</li><li>Magnetic disturbance in steel-rich, electronic, and reinforced indoor spaces.</li><li>Periodic correction from GNSS, Wi-Fi, BLE, maps, or trusted observations.</li></ul></div>
     </div>
-    <div class="ra46-papers"><h3>Linked publications</h3><ul>
+    <div class="ra46-papers"><h3>Representative publications</h3><ul>
       <li><a href="publications/drift-control-pdr-long-period-navigation-smartphone-poses.html">Drift Control of Pedestrian Dead Reckoning for Long Period Navigation under Different Smartphone Poses</a> <span>2021</span></li>
       <li><a href="publications/enhancing-real-time-heading-estimation-deep-learning-smartphone-sensors.html">Enhancing Real-Time Heading Estimation for Pedestrian Navigation via Deep Learning and Smartphone Embedded Sensors</a> <span>2025</span></li>
       <li><a href="publications/hybrid-neural-network-pdr-multi-layer-heading-correction.html">Hybrid Neural Network-Based PDR with Multi-Layer Heading Correction Across Smartphone Carrying Modes</a> <span>2026</span></li>
@@ -109,13 +109,13 @@
     <div class="ra46-area-head">
       <p class="ra46-eyebrow">Research Area 2</p>
       <h2>Scaling Wi-Fi Fingerprinting and Autonomous Radio-Map Generation</h2>
-      <p>Wi-Fi fingerprinting provides an indoor absolute reference, but scalable deployment requires moving beyond manual radio-map surveys. This area studies how ordinary mobile sessions, multisensor logs, RSS observations, and reliability checks can support autonomous map generation, map updating, and long-term maintenance.</p>
+      <p>Wi-Fi fingerprinting can anchor a user to an indoor location, but conventional surveying is expensive to repeat across buildings and floors. The work examines how natural mobile sessions, multisensor logs, crowdsensed fingerprints, and reliability checks can support map creation and long-term maintenance with less dedicated surveying.</p>
     </div>
     <div class="ra46-area-grid">
       <figure><img src="assets/home/research-area2-v40/multisensor-session-log-stream.webp" alt="Mobile crowdsensing session logs for Wi-Fi fingerprinting and autonomous radio-map generation" loading="lazy" decoding="async"></figure>
-      <div class="ra46-card"><h3>Key problems</h3><ul><li>Irregular mobile measurements from natural user movement.</li><li>RSS instability across devices, time, human blockage, and access-point changes.</li><li>Alignment of Wi-Fi scans, IMU, magnetometer, barometer, GNSS, and app events.</li><li>Reliability-governed map updating to avoid writing noisy fingerprints into the map.</li></ul></div>
+      <div class="ra46-card"><h3>Research challenges</h3><ul><li>Irregular mobile measurements from natural user movement.</li><li>RSS instability across devices, time, human blockage, and access-point changes.</li><li>Alignment of Wi-Fi scans, IMU, magnetometer, barometer, GNSS, and app events.</li><li>Reliability-governed map updating to avoid writing noisy fingerprints into the map.</li></ul></div>
     </div>
-    <div class="ra46-papers"><h3>Linked publications</h3><ul>
+    <div class="ra46-papers"><h3>Representative publications</h3><ul>
       <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>2026</span></li>
       <li><a href="publications/towards-ubiquitous-ips-crowdsourced-data-accumulation.html">Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation</a> <span>2024</span></li>
       <li><a href="publications/leveraging-human-mobility-pervasive-smartphone-crowdsourcing.html">Leveraging Human Mobility and Pervasive Smartphone Measurements-Based Crowdsourcing for Developing Self-Deployable and Ubiquitous Indoor Positioning Systems</a> <span>2023</span></li>
@@ -128,13 +128,13 @@
     <div class="ra46-area-head">
       <p class="ra46-eyebrow">Research Area 3</p>
       <h2>Seamless Indoor–Outdoor Positioning and Multi-Source Fusion</h2>
-      <p>Positioning should remain continuous as users move through streets, entrances, semi-open spaces, corridors, elevators, lobbies, and rooms. This area connects GNSS, PDR, Wi-Fi, BLE, barometer, map constraints, and indoor–outdoor awareness so that the trajectory does not break when sensing conditions change.</p>
+      <p>A pedestrian trajectory should remain meaningful as the user moves from open sky to urban canyons, entrances, lobbies, corridors, elevators, and rooms. This work combines GNSS, PDR, Wi-Fi, BLE, barometer readings, maps, and environmental awareness so that the system can adapt as signal conditions change.</p>
     </div>
     <div class="ra46-area-grid">
       <figure><img src="assets/home/research-area3-v41/seamless-indoor-outdoor-transition.webp" alt="Seamless outdoor transition and indoor positioning with multi-source fusion" loading="lazy" decoding="async"></figure>
-      <div class="ra46-card"><h3>Key problems</h3><ul><li>GNSS degradation near buildings before the user enters indoor space.</li><li>Mixed signal conditions in entrances, canopies, lobbies, and transition zones.</li><li>Source-reliability switching when GNSS, Wi-Fi, BLE, IMU, barometer, and maps vary over time.</li><li>Joint handling of position estimation, floor movement, and transition awareness.</li></ul></div>
+      <div class="ra46-card"><h3>Research challenges</h3><ul><li>GNSS degradation near buildings before the user enters indoor space.</li><li>Mixed signal conditions in entrances, canopies, lobbies, and transition zones.</li><li>Source-reliability switching when GNSS, Wi-Fi, BLE, IMU, barometer, and maps vary over time.</li><li>Joint handling of position estimation, floor movement, and transition awareness.</li></ul></div>
     </div>
-    <div class="ra46-papers"><h3>Linked publications</h3><ul>
+    <div class="ra46-papers"><h3>Representative publications</h3><ul>
       <li><a href="publications/suns-seamless-ubiquitous-navigation-indoor-outdoor-awareness.html">SUNS: Seamless Ubiquitous Navigation System Based on GNSS, Wi-Fi, and MEMS Sensors</a> <span>2022</span></li>
       <li><a href="publications/gnss-positioning-aided-with-pdr-in-urban-areas.html">GNSS Positioning Aided with Pedestrian Dead Reckoning in Urban Areas</a> <span>2026</span></li>
       <li><a href="publications/tightly-coupled-bluetooth-enhanced-gnss-pdr-urban.html">Tightly Coupled Bluetooth Enhanced GNSS/PDR System for Pedestrian Navigation in Dense Urban Environments</a> <span>2024</span></li>
@@ -146,13 +146,13 @@
     <div class="ra46-area-head">
       <p class="ra46-eyebrow">Research Area 4</p>
       <h2>3D Radio-Map Generation from Mobile Crowdsensing</h2>
-      <p>Multi-floor indoor positioning requires more than a two-dimensional coordinate. This area studies 3D radio-map generation from mobile crowdsensing, including floor-local skeleton construction, building-level assembly, global refinement, vertical positioning, floor recognition, and multi-level indoor spatial context.</p>
+      <p>A two-dimensional coordinate is insufficient when the same plan location may occur on several floors. This area addresses floor-local trace reconstruction, vertical-motion interpretation, floor recognition, building-level assembly, and global refinement for 3D radio maps generated from mobile crowdsensing.</p>
     </div>
     <div class="ra46-area-grid">
       <figure><img src="assets/home/research-area4-v42/skeleton-assembly-refinement.webp" alt="3D radio-map generation from floor-local skeleton assembly and global refinement" loading="lazy" decoding="async"></figure>
-      <div class="ra46-card"><h3>Key problems</h3><ul><li>Reconstruction of floor-local traces from noisy mobile sessions.</li><li>Vertical interpretation from barometer trends, stairs, elevators, ramps, and topology.</li><li>Signal leakage across floors in atriums, stairwells, open shafts, and dense AP deployments.</li><li>Building-level assembly and global refinement that preserve physical floor connectivity.</li></ul></div>
+      <div class="ra46-card"><h3>Research challenges</h3><ul><li>Reconstruction of floor-local traces from noisy mobile sessions.</li><li>Vertical interpretation from barometer trends, stairs, elevators, ramps, and topology.</li><li>Signal leakage across floors in atriums, stairwells, open shafts, and dense AP deployments.</li><li>Building-level assembly and global refinement that preserve physical floor connectivity.</li></ul></div>
     </div>
-    <div class="ra46-papers"><h3>Linked publications</h3><ul>
+    <div class="ra46-papers"><h3>Representative publications</h3><ul>
       <li><a href="publications/reliability-governed-3d-radio-mapping-lifecycle-review.html">Reliability-Governed Scaling of Mobile Crowdsensing-Based 3D Radio Mapping for Ubiquitous Indoor Positioning</a> <span>2026</span></li>
       <li><a href="publications/towards-ubiquitous-ips-crowdsourced-data-accumulation.html">Towards Ubiquitous IPS: Leveraging Crowdsourced Data Accumulation Over Time to Alleviate Reliance on External Sources in Initial Fingerprinting Map Generation</a> <span>2024</span></li>
       <li><a href="publications/leveraging-human-mobility-pervasive-smartphone-crowdsourcing.html">Leveraging Human Mobility and Pervasive Smartphone Measurements-Based Crowdsourcing for Developing Self-Deployable and Ubiquitous Indoor Positioning Systems</a> <span>2023</span></li>
@@ -162,9 +162,9 @@
 
   <section class="ra46-supporting" aria-label="Supporting themes">
     <div class="ra46-area-head">
-      <p class="ra46-eyebrow">Supporting directions</p>
-      <h2>Related themes connected to the four-area map</h2>
-      <p>Some publications extend the positioning pipeline toward cooperative localization, construction safety, BIM-based risk mapping, AI-guided engagement, and deployment-ready services. These directions remain connected to the four-area structure but serve specific application or system-design needs.</p>
+      <p class="ra46-eyebrow">Cross-cutting directions</p>
+      <h2>Applications and cross-cutting research directions</h2>
+      <p>Several publications extend these core areas into cooperative positioning, construction safety, BIM-based risk mapping, AI-guided user engagement, and location-aware services. These studies show how the underlying positioning methods support broader operational and decision-making needs.</p>
     </div>
     <div class="ra46-support-grid">
       <a href="publications/power-of-many-multi-user-collaborative-indoor-localization.html"><strong>Cooperative positioning</strong><span>Multi-user collaboration for improving standalone user-based indoor localization.</span></a>
