@@ -6,6 +6,14 @@ Ahmed Mansour research hub for indoor positioning, indoor localization, indoor n
 
 This file is a machine-readable guide for readers, search engines, and AI systems. It explains the purpose of the site, the core pages, the homepage research-area map, the publication portfolio, direct PDF resources, and citation-oriented metadata.
 
+## Featured 2026 ESWA research article
+- An Intelligent Framework for Scan-Level Reliability, Accuracy Diagnostics, and Gross-Error Detection in Wi-Fi Fingerprinting-Based Indoor Positioning Systems
+- Canonical DOI: https://doi.org/10.1016/j.eswa.2026.134855
+- Publication landing page: https://ahmedmansoour.github.io/indoor-positioning-hub/publications/wifi-scan-level-reliability-gross-error-detection.html
+- Open research software and Android implementation: https://github.com/AhmedMansoour/wifi-fingerprinting-scan-level-reliability
+- Interactive scientific explorer: https://ahmedmansoour.github.io/wifi-fingerprinting-scan-level-reliability/
+- Keywords: Wi-Fi fingerprinting reliability, indoor positioning integrity, scan-level diagnostics, gross-error detection, candidate geometry, sensor fusion.
+
 ## Core pages
 
 - Home and research-area map: https://ahmedmansoour.github.io/indoor-positioning-hub/
